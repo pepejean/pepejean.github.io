@@ -1,6 +1,7 @@
 <html>
   <body>
     <script>
+      console.log(location.href);
       (async () => {
         const response = await fetch('https://api.github.com/repos/pepejean/pepejean.github.io/contents/content/');
         const data = await response.json();
