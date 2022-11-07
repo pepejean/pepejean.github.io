@@ -4,6 +4,7 @@
       (async () => {
         const response = await fetch('https://api.github.com/repos/pepejean/pepejean.github.io/content/');
         const data = await response.json();
+        console.log(data);
         let htmlString = '<ul>';
         
         for (let file of data) {
