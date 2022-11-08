@@ -60,8 +60,6 @@ function restoreVal(context , key) {
 	let contents = {};	
 	if (JSON.stringify(restoreVal("cuisine" , "infossite")) != JSON.stringify(infos)) {
 		console.log('from fetch');
-
-		
 		if (location.origin.endsWith('.loc')) {
 			// site local, index directory
 			var response = await fetch('content/');
