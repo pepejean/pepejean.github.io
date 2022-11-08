@@ -12,7 +12,7 @@ Recette de Jacques Maniere dans "Le grand livre de la cuisine à la vapeur" (liv
 
 ## Préparation
 
-Il faut 30 minutes de préparation, 25 minutes de cuisson en fermant le couvercle et 10 minutes en ôtant le couvercle.%%%
+-- Il faut 30 minutes de préparation, 25 minutes de cuisson en fermant le couvercle et 10 minutes en ôtant le couvercle.
 Une nuit de repos avant finition.
 
 * Mettez le foie gras 15 minutes au freezer, pour bien le refroidir. 
@@ -36,4 +36,4 @@ Une nuit de repos avant finition.
 
 ## Conservation
 
-Au réfrigérateur, le foie gras peut se conserver une quinzaine de jours.
+- Au réfrigérateur, le foie gras peut se conserver une quinzaine de jours.

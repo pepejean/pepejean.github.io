@@ -1,6 +1,6 @@
 # La ratatouille aux carottes (ou stoemp)
 
-La ratatouille aux carottes, ou stoemp aux carottes en bruxellois, est une recette populaire que l'on sert généralement avec du boudin grillé.
+- La ratatouille aux carottes, ou stoemp aux carottes en bruxellois, est une recette populaire que l'on sert généralement avec du boudin grillé.
 
 ## Ingrédients pour 4 personnes
 * 500 g de pommes de terre (bintje)

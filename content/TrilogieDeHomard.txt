@@ -2,7 +2,7 @@
 
 ## Menu
 
-La trilogie de homard est un menu complet comportant:
+- La trilogie de homard est un menu complet comportant:
 
 * un potage (la bisque de homard)
 * une entrée chaude (nage de homard et de Saint-Jacques aux truffes) 

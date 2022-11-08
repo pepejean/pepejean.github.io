@@ -1,6 +1,6 @@
 # Soupe de pois chiches
 
-Cette délicieuse soupe libanaise est très vite préparée.
+- Cette délicieuse soupe libanaise est très vite préparée.
 
 ## Ingrédients
 
