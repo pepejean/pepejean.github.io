@@ -7,7 +7,6 @@
 <link rel=stylesheet href="cssjs/style.css">
 <script src="cssjs/ejh.js"></script>
 <script src="cssjs/filtre.js"></script>
-<script src="cssjs/lz-string.js"></script>
 </head>
 <body>
 <header>
@@ -51,21 +50,18 @@ function restoreVal(context , key) {
 	var obj = storage ? JSON.parse(storage) || {} : {};
 	return obj[key];
 }
-
-function decompressme(s){return LZString.decompress(s)}
-function encompressme(s){return LZString.compress(s)}
 	
 ;(async function(){
 	var response = await fetch(`infossite.txt` , {cache: "no-cache"});
 	var infos = await response.json();
 	console.log(JSON.stringify(restoreVal("cuisine" , "infossite")));
 	console.log(JSON.stringify(infos));
-	if (JSON.stringify(restoreVal("cuisine" , "infossite")) != JSON.stringify(infos) || !restoreVal("cuisine" , "bodyhtml")) {
-		top1.insertAdjacentHTML('beforeEnd' , infos.site_title);
-		document.title = infos.site_title;
-		about.innerHTML = infos.site_about;
+	let files = [];
+	let contents = {};	
+	if (JSON.stringify(restoreVal("cuisine" , "infossite")) != JSON.stringify(infos)) {
+		console.log('from fetch');
+
 		
-		let files = [];
 		if (location.origin.endsWith('.loc')) {
 			// site local, index directory
 			var response = await fetch('content/');
@@ -82,30 +78,41 @@ function encompressme(s){return LZString.compress(s)}
 				 if (file.name.endsWith('.txt')) files.push(file.name.slice(0 , -4));
 			}
 		}
-		var contents = {};
-		var titles = {};
+
 		for (let file of files){
 			var response = await fetch(`content/${file}.txt` , {cache: "no-cache"});
 			var content = await response.text();
 			contents[file] = content;
-			titles[file] = content.match(/^#.*$/m)[0].replace(/^#*/ , '').trim()
 		}
 		
-		var lifiles = files.map(file => `<li><a href="#${file}"><span>${titles[file]}</span></a> <span>${file}</span></li>`);
-		nav.innerHTML = `<p>Recherche de <input type="text" oninput="filtrer(this.value);"></p>` 
-						+ `\n<ul class=toc>\n${lifiles.join('\n')}\n</ul>`;	
-		nav1.innerHTML = nav.innerHTML;
-		var posts = files.map(file => `\n<section tabindex=0 id="${file}">\n${ejh.easy(contents[file])}\n</section>\n`);
-		
-		placeposts.outerHTML = posts.join('\n');
 		storeVal("cuisine" , "infossite" , infos);
-		storeVal("cuisine" , "bodyhtml" , encompressme(document.body.innerHTML));
-		console.log('from fetch');
+		storeVal("cuisine" , "files" , files);
+		storeVal("cuisine" , "contents" , contents);
+
 	} else {
 		console.log('from storage');
-		document.title = infos.site_title;
-		document.body.innerHTML = decompressme(restoreVal("cuisine" , "bodyhtml"));
+		files = restoreVal("cuisine" , "files");
+		contents = restoreVal("cuisine" , "contents");
 	}
+	
+	let titles = {};
+	for (let file of files){
+		let content = contents[file];
+		titles[file] = content.match(/^#.*$/m)[0].replace(/^#*/ , '').trim()
+	}
+		
+	top1.insertAdjacentHTML('beforeEnd' , infos.site_title);
+	document.title = infos.site_title;
+	about.innerHTML = infos.site_about;
+	
+	var lifiles = files.map(file => `<li><a href="#${file}"><span>${titles[file]}</span></a> <span>${file}</span></li>`);
+	nav.innerHTML = `<p>Recherche de <input type="text" oninput="filtrer(this.value);"></p>` 
+					+ `\n<ul class=toc>\n${lifiles.join('\n')}\n</ul>`;	
+	nav1.innerHTML = nav.innerHTML;
+	var posts = files.map(file => `\n<section tabindex=0 id="${file}">\n${ejh.easy(contents[file])}\n</section>\n`);
+	
+	placeposts.outerHTML = posts.join('\n');
+	storeVal("cuisine" , "infossite" , infos);
 })();	
 	
 function filtrer(inputstring) {
