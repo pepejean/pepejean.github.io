@@ -5,6 +5,21 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" href="img/favicon.ico">
 <link rel=stylesheet href="cssjs/style.css">
+<script>
+// Check if browser supports service workers
+if (navigator.serviceWorker) {
+	console.log("Service Worker Supported");
+	// Start registration process on page load
+	window.addEventListener("load", () => {
+		navigator.serviceWorker
+		// The register function takes as argument the file path to the worker's file
+		.register("./sw.js")
+		// Gives us registration object
+		.then(reg => console.log("Service Worker Registered"))
+		.catch(swErr => console.log(`Service Worker Error: ${swErr}}`));
+	});
+}
+</script>
 <script src="cssjs/ejh.js"></script>
 <script src="cssjs/filtre.js"></script>
 <script src="cssjs/lz-string.js"></script>
