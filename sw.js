@@ -1,4 +1,4 @@
-const CACHE_NAME = "hubilu-0001";
+const CACHE_NAME = "cook-0003";
 
 // Adding the offline page when installing the service worker
 self.addEventListener('install', e => {
@@ -12,7 +12,7 @@ self.addEventListener('install', e => {
 		.then(() => self.skipWaiting())
 	)
 });
-  
+
 // Call Activate Event
 self.addEventListener('activate', e => {
 	console.log('Service Worker - Activated')
@@ -31,28 +31,28 @@ self.addEventListener('activate', e => {
 		})
 	);
 });
-  
+
 // Call Fetch Event 
 const offlineHTML = `<h1>You're offline!</h1>`;
 
 self.addEventListener('fetch', (e) => {
-  console.log(e.request.url);
-  e.respondWith(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.match(e.request).then((response) => {
-        return response || fetch(e.request).then((response) => {
-          if (response.status === 200 && !e.request.url.includes('.txt') && !e.request.url.includes('content/')) {    
-            cache.put(e.request, response.clone());
-          }
-          return response;
-        }).catch(() => {
-          return new Response(offlineHTML, {
-            headers: {
-              'Content-Type': 'text/html;charset=utf-8'
-            }
-          });
-        });
-      });
-    })
-  );
+	console.log(e.request.url);
+	e.respondWith(
+		caches.open(CACHE_NAME).then((cache) => {
+			return cache.match(e.request).then((response) => {
+				return response || fetch(e.request).then((response) => {
+					if (response.status === 200 && !e.request.url.includes('.txt') && !e.request.url.includes('content/')) {
+						cache.put(e.request, response.clone());
+					}
+					return response;
+				}).catch(() => {
+					return new Response(offlineHTML, {
+						headers: {
+							'Content-Type': 'text/html;charset=utf-8'
+						}
+					});
+				});
+			});
+		})
+	);
 });
