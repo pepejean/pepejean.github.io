@@ -63,6 +63,7 @@ function encompressme(s){return LZString.compress(s)}
 	let infos = await response.json();
 	let files = [];
 	let contents = {};
+	let json_contents;
 	let infos0 = await IDB.get("infossite")
 	console.log(JSON.stringify(infos0));
 	console.log(JSON.stringify(infos));
@@ -91,16 +92,20 @@ function encompressme(s){return LZString.compress(s)}
 			var content = await response.text();
 			contents[file] = content;
 		}
-		IDB.setMany([ ["infossite" , infos] , ["files" , files] , ["contents" , contents] ]);
+		json_contents = JSON.stringify(contents);
+		IDB.setMany(["infossite" , "files" , "contents"] , [infos , files , encompressme(json_contents)]);
 	} else {
-		[infos , files , contents] = await IDB.getMany(["infossite" , "files" , "contents"]);
+		IDB.getMany(["files" , "contents"]).then(ar => {
+			files = ar[0];
+			json_contents = decompressme(ar[1]);
+		});			
 		console.log('from indexedDB');
 	}
 
 	let titles = {};
 	for (let file of files){
 		let content = contents[file];
-		if (content) titles[file] = content.match(/^#.*$/m)[0].replace(/^#*/ , '').trim()
+		titles[file] = content.match(/^#.*$/m)[0].replace(/^#*/ , '').trim()
 	}
 		
 	top1.insertAdjacentHTML('beforeEnd' , infos.site_title);
@@ -112,6 +117,7 @@ function encompressme(s){return LZString.compress(s)}
 					+ `\n<ul class=toc>\n${lifiles.join('\n')}\n</ul>`;	
 	nav1.innerHTML = nav.innerHTML;
 	var posts = files.map(file => `\n<section tabindex=0 id="${file}">\n${ejh.easy(contents[file])}\n</section>\n`);
+	
 	placeposts.outerHTML = posts.join('\n');
 })();	
 	
