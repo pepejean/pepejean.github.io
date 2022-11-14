@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" href="img/favicon.ico">
-<link rel=stylesheet href="cssjs/style.css">
+<link rel=stylesheet href="css/style.css">
 <script>
 // Check if browser supports service workers
 if (navigator.serviceWorker) {
@@ -20,9 +20,10 @@ if (navigator.serviceWorker) {
 	});
 }
 </script>
-<script src="cssjs/ejh.js"></script>
-<script src="cssjs/filtre.js"></script>
-<script src="cssjs/idb.js"></script>
+<script src="js/ejh.js"></script>
+<script src="js/lz-string.js"></script>
+<script src="js/filtre.js"></script>
+<script src="js/idb.js"></script>
 </head>
 <body>
 <header>
@@ -62,6 +63,7 @@ function encompressme(s){return LZString.compress(s)}
 	let infos = await response.json();
 	let files = [];
 	let contents = {};
+	let s_contents;
 	let infos0 = await IDB.get("infossite")
 	console.log(JSON.stringify(infos0));
 	console.log(JSON.stringify(infos));
@@ -90,27 +92,29 @@ function encompressme(s){return LZString.compress(s)}
 			var content = await response.text();
 			contents[file] = content;
 		}
-		IDB.setMany([ ["infossite" , infos] , ["files" , files] , ["contents" , contents] ]);
+		let s_contents = encompressme(JSON.stringify(contents));
+		IDB.setMany([ ["infossite" , infos] , ["contents" , s_contents] ]);
 	} else {
-		[infos , files , contents] = await IDB.getMany(["infossite" , "files" , "contents"]);
+		[infos , s_contents] = await IDB.getMany(["infossite" , "contents"]);
+		contents = JSON.parse(decompressme(s_contents));
 		console.log('from indexedDB');
 	}
 
-	let titles = {};
-	for (let file of files){
-		let content = contents[file];
-		if (content) titles[file] = content.match(/^#.*$/m)[0].replace(/^#*/ , '').trim()
-	}
-		
+	let titles = {};	
+	let posts = [];	
+	let lifiles = [];
+	for (let file in contents ){
+		titles[file] = contents[file].match(/^#.*$/m)[0].replace(/^#*/ , '').trim();
+		lifiles.push(`<li><a href="#${file}"><span>${titles[file]}</span></a> <span>${file}</span></li>`);
+		posts.push(`\n<section tabindex=0 id="${file}">\n${ejh.easy(contents[file])}\n</section>\n`);
+	}	
+
+	document.title = infos.site_title;		
 	top1.insertAdjacentHTML('beforeEnd' , infos.site_title);
-	document.title = infos.site_title;
 	about.innerHTML = infos.site_about;
-	
-	var lifiles = files.map(file => `<li><a href="#${file}"><span>${titles[file]}</span></a> <span>${file}</span></li>`);
 	nav.innerHTML = `<p>Recherche de <input type="text" oninput="filtrer(this.value);"></p>` 
 					+ `\n<ul class=toc>\n${lifiles.join('\n')}\n</ul>`;	
 	nav1.innerHTML = nav.innerHTML;
-	var posts = files.map(file => `\n<section tabindex=0 id="${file}">\n${ejh.easy(contents[file])}\n</section>\n`);
 	placeposts.outerHTML = posts.join('\n');
 })();	
 	
