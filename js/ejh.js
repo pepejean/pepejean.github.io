@@ -16,6 +16,7 @@ ejh.easy = src => {
 		out += '</li>' + tabs(level) + '</ul>';
 		return out;
 	}
+	
 	function makeArray(t){
 		let ar0 = ("\n" + t).split("\n* ");
 		ar0.shift();
@@ -33,6 +34,54 @@ ejh.easy = src => {
 		return ar;
 	}
 	
+	function makeTable(table) {
+		let ar = table.split('\n').filter(txt => txt.trim() != '');
+		let outb = '';
+		let outh = '<thead>\n</thead>\n';
+		let index ,p , ctr , aligns , align;
+		// Préprocessing
+		for (index in ar) {
+			if (! /\| *$/.test(ar[index])) ar[index] += '|';  // Compléter si | final manque
+			// Déterminer les alignements
+			if (/^[ |:-]*$/.test(ar[index])) {
+				aligns = ar[index].split('|').slice(1,-1);
+				for(let i in aligns) {
+					align = aligns[i].trim();
+					if (align.startsWith(':') && align.endsWith(':')) aligns[i] = ' align=center';
+					else if (align.startsWith(':')) aligns[i] = ' align=left';
+					else if (align.endsWith(':')) aligns[i] = ' align=right';
+					else aligns[i] = '';
+				}
+				p = index;
+				break;
+			}
+		}
+		for (index in ar) {
+			line = ar[index];
+			if (!/^[ |:-]*$/.test(line)) {
+				if (index < p) {
+					line = line.split('|')
+						.slice(1 , -1)
+						.map(txt => inline(txt.trim()))
+						.join('</th><th>');
+					ctr = 1;
+					line = line.replace(/<(th)>/g , () => {let x = `<th${aligns[ctr]}>`;ctr++;return x});
+					outh += `<tr><th${aligns[0]}>${line}</th></tr>\n`;
+				} else {
+					line = line.split('|').slice(1 , -1);
+					while(line.length > aligns.length) align.push('');  // Si trop peu de aligns, normalement jamais
+					line = line.map(txt => inline(txt.trim())).join('</td><td>');
+					ctr = 1;
+					line = line.replace(/<(td)>/g , () => {let x = `<td${aligns[ctr]}>`;ctr++;return x});						
+					outb += `<tr><td${aligns[0]}>${line}</td></tr>\n`;					
+				}
+			}
+		};
+		outb = `<tbody>\n${outb}</tbody>\n`;
+		let out = `<table>\n${outh}${outb}</table>\n`;
+		return out;
+	}
+
 	const makeLink = e => {
 		var t = e.href;
 		if (/^data:.*?;base64,[0-9a-zA-Z+\/]*=*$/.test(t)){
@@ -88,10 +137,11 @@ ejh.easy = src => {
 	
 	let srcs = ejh.splitSrc(src);
 	
+	// Les txt des attributs (entre {})
 	let b4 = 'txt';
 	for (let i = 1; i < srcs.length; i++){
 		// Regex partie gauche, sans attribut, partie droite avec
-		let typ = /^(\n[*#+-]+\s|\n[*#+-]+\{.*?\}\s)$/.test(srcs[i]) ? 'tag' : 'txt';
+		let typ = /^(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)$/.test(srcs[i]) ? 'tag' : 'txt';
 		if (typ == b4) srcs.splice(i,0,'');
 		b4 = b4 == 'txt' ? 'tag' : 'txt';
 	}
@@ -120,11 +170,19 @@ ejh.easy = src => {
 		// console.log(tag, atr, text);	
 		// Listes
 		let t = tag + text;
+		
 		let listes = t.match(/(\n((  )*)\* (.*))+/g);
 		if (listes) {
 			listes = listes.sort((a,b) => b.length - a.length);  // Tri par longueurs décroissantes pour si certaines chaînes sont comprises dans d'autres
 			listes.forEach(liste => {t = t.replace(liste , makeList(makeArray(liste)))});
 			t = inline(t);
+			arout.push(t);
+			continue;
+		}
+		
+		let tables = t.match(/(\n\| (.*))+/g);
+		if (tables) {
+			tables.forEach(table => {t = t.replace(table , makeTable(table))});
 			arout.push(t);
 			continue;
 		}
@@ -239,7 +297,6 @@ ejh.easy = src => {
 	if (div.lastElementChild) div.lastElementChild.innerHTML = div.lastElementChild.innerHTML.trimEnd();
 
 	out = div.innerHTML.trim();
-	// console.log(out);
 	return out;
 }
 
@@ -247,7 +304,7 @@ ejh.splitSrc = src => {
 	//src = src.replace(/(\n----*\s?\n)/ , '$1\n');
 	src = '\n\n' + src.trim() + '\n\n';
 	// Regex partie gauche, sans attribut, partie droite avec
-	let srcs=src.split(/(\n[*#+-]+\s|\n[*#+-]+\{.*?\}\s)/);
+	let srcs=src.split(/(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)/);
 	for (let i = 1; i < srcs.length; i++){
 		if (srcs[i].startsWith('\n* ')){
 			while(srcs[i+3] && srcs[i+2].startsWith('\n* ')) {
@@ -258,7 +315,17 @@ ejh.splitSrc = src => {
 				srcs[i+1] += concat;
 				srcs.splice(i+2 , 2);
 			}
-		} 
+		}
+		if (srcs[i].startsWith('\n\| ')){
+			while(srcs[i+3] && srcs[i+2].startsWith('\n\| ')) {
+				let concat = srcs[i+2] + srcs[i+3];
+				let arconcat = concat.split('\n');
+				arconcat = arconcat.filter(val => !val.trim().startsWith('|')).filter(val => val.length > 0);
+				if (arconcat.length != 0) break;
+				srcs[i+1] += concat;
+				srcs.splice(i+2 , 2);
+			}
+		}		
 	}
 	if (srcs[0].trim() != '') srcs.splice(0 , 0 , '');
 	ejh.zz = '';
