@@ -1,6 +1,39 @@
 const ejh = {};
 
 ejh.easy = src => {
+	splitSrc = function(src) {
+		//src = src.replace(/(\n----*\s?\n)/ , '$1\n');
+		src = '\n\n' + src.trim() + '\n\n';
+		// Regex partie gauche, sans attribut, partie droite avec
+		let srcs=src.split(/(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)/);
+		
+		// Grouper les lignes des listes
+		for (let i = 1; i < srcs.length; i=i+2){  // i++ ?
+			if (srcs[i].startsWith('\n* ')){
+				while(srcs[i+3] && srcs[i+2].startsWith('\n* ')) {
+					let concat = srcs[i+2] + srcs[i+3];
+					srcs[i+1] += concat;
+					srcs.splice(i+2 , 2);
+				}
+			}
+		}
+		// Grouper les lignes des tables
+		for (let i = 1; i < srcs.length; i=i+2){  // i++ ?
+			if (srcs[i].startsWith('\n| ')){
+				while(srcs[i+3] && srcs[i+2].startsWith('\n\| ')) {
+					let concat = srcs[i+2] + srcs[i+3];
+					srcs[i+1] += concat;
+					srcs.splice(i+2 , 2);
+				}
+			}		
+		}
+		if (srcs[0].trim() != '') srcs.splice(0 , 0 , '');
+		// srcs :  alternativement élément, séparateur, élément, séparateur, ....
+		// Les éléments sans séparateur sont "collés" à la fin de l'élément précédent
+		// Possible tout au début, après hr, après ul, après table
+		// console.table(srcs);
+		return srcs;
+	}	
 	function tabs(n){return "\n" + "\t".repeat(n);}
 	function makeList(ar , level) {
 		//Recursive Step: make a list with child lists
@@ -35,10 +68,11 @@ ejh.easy = src => {
 	}
 	
 	function makeTable(table) {
+		// console.log(table);
 		let ar = table.split('\n').filter(txt => txt.trim() != '');
 		let outb = '';
 		let outh = '<thead>\n</thead>\n';
-		let index ,p , ctr , aligns , align;
+		let index ,p , ctr , aligns = [] , align;
 		// Préprocessing
 		for (index in ar) {
 			if (! /\| *$/.test(ar[index])) ar[index] += '|';  // Compléter si | final manque
@@ -56,6 +90,7 @@ ejh.easy = src => {
 				break;
 			}
 		}
+		// Processing
 		for (index in ar) {
 			line = ar[index];
 			if (!/^[ |:-]*$/.test(line)) {
@@ -69,7 +104,7 @@ ejh.easy = src => {
 					outh += `<tr><th${aligns[0]}>${line}</th></tr>\n`;
 				} else {
 					line = line.split('|').slice(1 , -1);
-					while(line.length > aligns.length) align.push('');  // Si trop peu de aligns, normalement jamais
+					while(line.length > aligns.length) aligns.push('');  // Si trop peu de aligns, normalement jamais
 					line = line.map(txt => inline(txt.trim())).join('</td><td>');
 					ctr = 1;
 					line = line.replace(/<(td)>/g , () => {let x = `<td${aligns[ctr]}>`;ctr++;return x});						
@@ -81,17 +116,6 @@ ejh.easy = src => {
 		let out = `<table>\n${outh}${outb}</table>\n`;
 		return out;
 	}
-
-	const makeLink = e => {
-		var t = e.href;
-		if (/^data:.*?;base64,[0-9a-zA-Z+\/]*=*$/.test(t)){
-			var blob = dataURItoBlob(t);
-			var url = window.URL.createObjectURL(blob);
-			e.href = url;
-		} else if (/^<!DOCTYPE *HTML.*>/i.test(t)) e.href = window.URL.createObjectURL(new Blob([t], {encoding:"UTF-8",type:"text/html;charset=UTF-8"}));
-		else e.href = window.URL.createObjectURL(new Blob([t], {encoding:"UTF-8",type:"text/plain;charset=UTF-8"}));
-	}
-
 
 	const brcode = html => html.replace(/\r/g , '').trim().split(/\n/).map(line => `<code>${line}</code>`).join('\n');
 	const brspan = html => html.replace(/\r/g , '').trim().split(/\n/).map(line => `<span>${line}</span>`).join('\n');
@@ -125,6 +149,8 @@ ejh.easy = src => {
 	const rawmap = {'&' : '&amp;' , '<' : '&lt;' , '>' : '&gt;' , '"' : '&quot;'};
 	const rawmark = {'*' : '&#42;' , '+' : '&#43;' , '-' : '&#45;'};
 	function protectMark(s){return s.replace(/[*+-]/g,function(i){return rawmark[i]})};	
+	const htmlDecode = function(h) {return(h.replace(/&quot;/g,'"').replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/&amp;/g,"&"));}
+
 
 	// Pas de html
 	src = src.replace(/[&<>"]/g,function(i){return rawmap[i]});
@@ -135,7 +161,7 @@ ejh.easy = src => {
 	src = src.replace(/©(.+?)©.+/gm , function(m,s){s=s.split('').map(c => /[a-zA-Z0-9]/.test(c) ? c : '&#' + c.charCodeAt(0) + ';');return s.join('')})
 		.replace(/©./gm , function(m){return '&#' + m.charCodeAt(1) + ';'});
 	
-	let srcs = ejh.splitSrc(src);
+	let srcs = splitSrc(src);
 	
 	// Les txt des attributs (entre {})
 	let b4 = 'txt';
@@ -155,6 +181,15 @@ ejh.easy = src => {
 		texts.push(srcs[i]);
 	}
 	
+	function pusht(t) {
+		let p = 1 + t.lastIndexOf('>');
+		let t1 = t.substr(0 , p);
+		let t2 = t.substr(p);
+		if (t2.trim() != '') t2 = `\n<p>${t2}</p>`;
+		t =t1 + t2;
+		arout.push(t);
+	}
+	
 	let arout = [];	
 	for(j = 0; j < tags.length; j++) {
 		let text = texts[j];
@@ -163,9 +198,7 @@ ejh.easy = src => {
 		let atr = m ? ' ' + m.pop() : '';
 		if (atr) {
 			tag = tag.replace(/\{(.*)\}/ , '');	
-			let xt = document.createElement("textarea");
-			xt.innerHTML = atr;
-			atr = xt.value;
+			atr = htmlDecode(atr);   // Les entités numériques sont toutes remplacées à la fin
 		}
 		// console.log(tag, atr, text);	
 		// Listes
@@ -176,14 +209,14 @@ ejh.easy = src => {
 			listes = listes.sort((a,b) => b.length - a.length);  // Tri par longueurs décroissantes pour si certaines chaînes sont comprises dans d'autres
 			listes.forEach(liste => {t = t.replace(liste , makeList(makeArray(liste)))});
 			t = inline(t);
-			arout.push(t);
+			pusht(t);
 			continue;
 		}
 		
 		let tables = t.match(/(\n\| (.*))+/g);
 		if (tables) {
 			tables.forEach(table => {t = t.replace(table , makeTable(table))});
-			arout.push(t);
+			pusht(t);
 			continue;
 		}
 		
@@ -192,7 +225,7 @@ ejh.easy = src => {
 			let L = tag.trim().length;
 			t = inline(text).trimEnd();
 			t = `<h${L}${atr}>${t}</h${L}>`;
-			arout.push(t);
+			pusht(t);
 			continue;			
 		}
 		
@@ -202,7 +235,7 @@ ejh.easy = src => {
 			//t = '<hr>';
 			t = inline(text).trimEnd();
 			t = `<hr${atr}>${t}`;			
-			arout.push(t);
+			pusht(t);
 			continue;
 		}
 		
@@ -210,7 +243,7 @@ ejh.easy = src => {
 		if(/^-$/.test(tag.trim())) {
 			t = inline(text).trimEnd();
 			t = `<p${atr}>${t}</p>`;
-			arout.push(t);
+			pusht(t);
 			continue;
 		}
 		
@@ -218,16 +251,16 @@ ejh.easy = src => {
 		if(/^--$/.test(tag.trim())) {
 			t = inline(text).trimEnd().replace(/\n/g , '<br>\n');
 			t = `<p${atr}>${brspan(t)}</p>`;
-			arout.push(t);
+			pusht(t);
 			continue;
 		}
 		
 		// Paragraphes type notes
 		if(/^---$/.test(tag.trim())) {
-			t = text.trimEnd().replace(/&gt;/g , ' &gt;').replace(/(https?:\/\/[^\s'">]+)/g , '<a href="$1" rel="noopener noreferrer" target="_blank">$1</a>').replace(/ &gt;/g , '&gt;');
+			t = text.trimEnd().replace(/&gt;/g , ' &gt;').replace(/(https?:\/\/[^\s'">]+)/g , '<a href="$1">$1</a>').replace(/ &gt;/g , '&gt;');
 			if (atr == '') atr = ' class=notes';
 			t = `<p${atr}>${t}</p>`;
-			arout.push(t);
+			pusht(t);
 			continue;			
 		}
 		
@@ -235,101 +268,59 @@ ejh.easy = src => {
 		if(/^\+$/.test(tag.trim())) {
 			t = inline(text).trimEnd();
 			t = `<pre${atr}>${brcode(t)}</pre>`;
-			arout.push(t);
+			pusht(t);
 			continue;
 		}			
 
 		// Code formatté
 		if(/^\+\+$/.test(tag.trim())) {
 			t = `<pre${atr}>${brcode(text.trimEnd())}</pre>`;
-			arout.push(t);
+			pusht(t);
 			continue;
 		}
 		
 		// Code formatté pen
 		if(/^\+\+\+$/.test(tag.trim())) {
-			t = `<form><pre${atr}>${brcode(text.trimEnd())}</pre><a href="WebEditor?t=${encodeURIComponent(text)}" target="_blank"><input type=button value=Run></a></form>`;
-			arout.push(t);
+			t = `<form><pre${atr}>${brcode(text.trimEnd())}</pre><a href="WebEditor?t=${encodeURIComponent(text)}"><input type=button value=Run></a></form>`;
+			pusht(t);
 			continue;
 		}
 		
 		
 		// Bloc html pur
 		if(/^\*\*$/.test(tag.trim())) {
-			text = text.replace(/&quot;/g , '"').replace(/&gt;/g , '>').replace(/&lt;/g , '<').replace(/&amp;/g , '&');
-			arout.push(text.trimEnd());
+			t = text.replace(/&quot;/g , '"').replace(/&gt;/g , '>').replace(/&lt;/g , '<').replace(/&amp;/g , '&').trimEnd();
+			pusht(t);
 			continue;
 		}			
 
-		// Si rien ne convient, retourner un node text
+		// Si rien ne convient
 		t = tag + text.trim();
-		arout.push(t);
+		pusht(t);
 	} 
 	let out =  arout.join('\n');
 	// Retirer l'encodage des entités
 	out = out.replace(/&#(\d+);/g, function(m,m1){return String.fromCharCode(m1)});
 	out = out.replace(/◄(.+?)►/gm , '<$1>');
-	
-	const div = document.createElement("div");
-	div.innerHTML = out;
-	
-	let nodes = div.childNodes;
-	for (var i = 0, m = nodes.length; i < m; i++) {
-		var n = nodes[i];
-		if (n.nodeType == n.TEXT_NODE) {
-			if (n.textContent.trim() != '') {
-				let replacementNode = document.createElement('pre');
-				replacementNode.style.backgroundColor = 'gold';
-				replacementNode.innerHTML = n.textContent;
-				n.parentNode.insertBefore(replacementNode, n);
-				n.parentNode.removeChild(n);			
-			}
-		}
-	}
-	div.querySelectorAll('a').forEach(a => {
-		if (a.href.startsWith('http')) {
-			a.rel="noopener noreferrer";
-			a.target="_blank";
-		}
-		if (a.href.startsWith('data:')) a.onclick=makeLink(a);
-	});
-	
-	if (div.lastElementChild) div.lastElementChild.innerHTML = div.lastElementChild.innerHTML.trimEnd();
 
-	out = div.innerHTML.trim();
-	return out;
-}
-
-ejh.splitSrc = src => {
-	//src = src.replace(/(\n----*\s?\n)/ , '$1\n');
-	src = '\n\n' + src.trim() + '\n\n';
-	// Regex partie gauche, sans attribut, partie droite avec
-	let srcs=src.split(/(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)/);
-	for (let i = 1; i < srcs.length; i++){
-		if (srcs[i].startsWith('\n* ')){
-			while(srcs[i+3] && srcs[i+2].startsWith('\n* ')) {
-				let concat = srcs[i+2] + srcs[i+3];
-				let arconcat = concat.split('\n');
-				arconcat = arconcat.filter(val => !val.trim().startsWith('*')).filter(val => val.length > 0);
-				if (arconcat.length != 0) break;
-				srcs[i+1] += concat;
-				srcs.splice(i+2 , 2);
-			}
+	function dataURItoBlob(dataURI) {
+		if(typeof dataURI !== 'string'){
+			throw new Error('Invalid argument: dataURI must be a string');
 		}
-		if (srcs[i].startsWith('\n\| ')){
-			while(srcs[i+3] && srcs[i+2].startsWith('\n\| ')) {
-				let concat = srcs[i+2] + srcs[i+3];
-				let arconcat = concat.split('\n');
-				arconcat = arconcat.filter(val => !val.trim().startsWith('|')).filter(val => val.length > 0);
-				if (arconcat.length != 0) break;
-				srcs[i+1] += concat;
-				srcs.splice(i+2 , 2);
-			}
-		}		
+		dataURI = dataURI.split(',');
+		var type = dataURI[0].split(':')[1].split(';')[0],
+			byteStringLength = byteString.length,
+			arrayBuffer = new ArrayBuffer(byteStringLength),
+			intArray = new Uint8Array(arrayBuffer);
+		for (var i = 0; i < byteStringLength; i++) {
+			intArray[i] = byteString.charCodeAt(i);
+		}
+		return new Blob([intArray], {
+			type: type
+		});
 	}
-	if (srcs[0].trim() != '') srcs.splice(0 , 0 , '');
-	ejh.zz = '';
-	return srcs;
+	
+	return out.trim();
 }
 
 ejh.checkbal = html => {
