@@ -1,7 +1,7 @@
 const ejh = {};
 
 ejh.easy = src => {
-	splitSrc = function(src) {
+	const splitSrc = src => {
 		//src = src.replace(/(\n----*\s?\n)/ , '$1\n');
 		src = '\n\n' + src.trim() + '\n\n';
 		// Regex partie gauche, sans attribut, partie droite avec
@@ -9,7 +9,7 @@ ejh.easy = src => {
 		
 		// Grouper les lignes des listes
 		for (let i = 1; i < srcs.length; i=i+2){  // i++ ?
-			if (srcs[i].startsWith('\n* ')){
+			if (/^\n\*(\{.*\})? /.test(srcs[i])){
 				while(srcs[i+3] && srcs[i+2].startsWith('\n* ')) {
 					let concat = srcs[i+2] + srcs[i+3];
 					srcs[i+1] += concat;
@@ -185,7 +185,7 @@ ejh.easy = src => {
 		let p = 1 + t.lastIndexOf('>');
 		let t1 = t.substr(0 , p);
 		let t2 = t.substr(p);
-		if (t2.trim() != '') t2 = `\n<p>${t2}</p>`;
+		if (t2.trim() != '') t2 = `\n<pre style="background-color:yellow">${t2}</pre>`;
 		t =t1 + t2;
 		arout.push(t);
 	}
@@ -208,6 +208,7 @@ ejh.easy = src => {
 		if (listes) {
 			listes = listes.sort((a,b) => b.length - a.length);  // Tri par longueurs décroissantes pour si certaines chaînes sont comprises dans d'autres
 			listes.forEach(liste => {t = t.replace(liste , makeList(makeArray(liste)))});
+			if (atr &&/\bol\b/.test(atr)) t=t.split('ul>').join('ol>');
 			t = inline(t);
 			pusht(t);
 			continue;
@@ -295,31 +296,14 @@ ejh.easy = src => {
 		}			
 
 		// Si rien ne convient
-		t = tag + text.trim();
+		t = tag + text.trimEnd();
 		pusht(t);
 	} 
 	let out =  arout.join('\n');
 	// Retirer l'encodage des entités
 	out = out.replace(/&#(\d+);/g, function(m,m1){return String.fromCharCode(m1)});
-	out = out.replace(/◄(.+?)►/gm , '<$1>');
+	out = out.replace(/˂(.+?)˃/gm , '<$1>');   // pas des vrais < et > , signes &#706; et &#707;
 
-	function dataURItoBlob(dataURI) {
-		if(typeof dataURI !== 'string'){
-			throw new Error('Invalid argument: dataURI must be a string');
-		}
-		dataURI = dataURI.split(',');
-		var type = dataURI[0].split(':')[1].split(';')[0],
-			byteStringLength = byteString.length,
-			arrayBuffer = new ArrayBuffer(byteStringLength),
-			intArray = new Uint8Array(arrayBuffer);
-		for (var i = 0; i < byteStringLength; i++) {
-			intArray[i] = byteString.charCodeAt(i);
-		}
-		return new Blob([intArray], {
-			type: type
-		});
-	}
-	
 	return out.trim();
 }
 
