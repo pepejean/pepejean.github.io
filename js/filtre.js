@@ -8,7 +8,8 @@
 		find = find.replace(/[\-\[\]\/\{\}\(\)\+\.\\\^\$\|]/g, "\\$&");
 		find = find.replace(/\*/g, ".*");
 		find = find.replace(/\?/g, ".");
-		var regEx = new RegExp(find, "i");
+		find = find.replace(/^\\\^/m , '^').replace(/\\\$$/m , '$');  //Si mmatch debut/fin
+		var regEx = new RegExp(find, "im");
 		return regEx.test(source);		
 	}
 	o.lowernoaccent = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -24,7 +25,7 @@
 			o.match = o.matchnull;
 		} else {
 			o.p = o.lowernoaccent(p);
-			if (p.includes('?') || p.includes('*')) o.match = o.matchwild; 
+			if (p.includes('?') || p.includes('*')  || p.startsWith('^')  || p.endsWith('$')) o.match = o.matchwild; 
 			else o.match = o.matchstr;
 		}
 	}
