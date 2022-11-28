@@ -19,7 +19,7 @@ ejh.easy = src => {
 		}
 		// Grouper les lignes des tables
 		for (let i = 1; i < srcs.length; i=i+2){  // i++ ?
-			if (srcs[i].startsWith('\n| ')){
+			if (/^\n\|(\{.*\})? /.test(srcs[i])){
 				while(srcs[i+3] && srcs[i+2].startsWith('\n\| ')) {
 					let concat = srcs[i+2] + srcs[i+3];
 					srcs[i+1] += concat;
@@ -185,7 +185,7 @@ ejh.easy = src => {
 		let p = 1 + t.lastIndexOf('>');
 		let t1 = t.substr(0 , p);
 		let t2 = t.substr(p);
-		if (t2.trim() != '') t2 = `\n<pre style="background-color:yellow">${t2}</pre>`;
+		if (t2.trim() != '') t2 = `\n<pre class=notag>${t2}</pre>`;
 		t =t1 + t2;
 		arout.push(t);
 	}
@@ -208,7 +208,15 @@ ejh.easy = src => {
 		if (listes) {
 			listes = listes.sort((a,b) => b.length - a.length);  // Tri par longueurs décroissantes pour si certaines chaînes sont comprises dans d'autres
 			listes.forEach(liste => {t = t.replace(liste , makeList(makeArray(liste)))});
-			if (atr &&/\bol\b/.test(atr)) t=t.split('ul>').join('ol>');
+			// if (atr &&/\bol\b/.test(atr)) t=t.split('ul>').join('ol>');
+			if (atr) {
+				let atr1 = `${atr} `;
+				if (atr1.includes(' ol ')) {
+					t=t.split('ul>').join('ol>');
+					atr = atr1.split(' ol ').join(' ').trimRight();
+				}
+				t = t.replace(/<(o|u)l>/ , `<$1l${atr}>`);
+			}
 			t = inline(t);
 			pusht(t);
 			continue;
@@ -217,6 +225,7 @@ ejh.easy = src => {
 		let tables = t.match(/(\n\| (.*))+/g);
 		if (tables) {
 			tables.forEach(table => {t = t.replace(table , makeTable(table))});
+			t = t.replace(/<table>/ , `<table${atr}>`);
 			pusht(t);
 			continue;
 		}
