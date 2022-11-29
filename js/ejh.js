@@ -91,8 +91,8 @@ ejh.easy = src => {
 			}
 		}
 		// Processing
-		for (index in ar) {
-			line = ar[index];
+		for (let index in ar) {
+			let line = ar[index];
 			if (!/^[ |:-]*$/.test(line)) {
 				if (index < p) {
 					line = line.split('|')
@@ -121,6 +121,7 @@ ejh.easy = src => {
 	const brspan = html => html.replace(/\r/g , '').trim().split(/\n/).map(line => `<span>${line}</span>`).join('\n');
 
 	function inline(t) {
+		if (swraw) return t;
 		// Inlines code, img, a, b , i	
 		// remplacer les '+' par des '©' dans les liens et dans les images (nécessaire pour ce qui est en base64)
 		t = t.replace(/\[.*?\]\(.*?\)/g, function(m){return m.replace(/\+/g,'©')})
@@ -191,14 +192,21 @@ ejh.easy = src => {
 	}
 	
 	let arout = [];	
+	let swol = false;
+	let swraw = false;
 	for(j = 0; j < tags.length; j++) {
 		let text = texts[j];
 		let tag = tags[j];
 		let m = tag.match(/\{(.*)\}/);
 		let atr = m ? ' ' + m.pop() : '';
+		let mod = [];
 		if (atr) {
 			tag = tag.replace(/\{(.*)\}/ , '');	
 			atr = htmlDecode(atr);   // Les entités numériques sont toutes remplacées à la fin
+			mod = [...atr.matchAll(/@\w+/g)].map(el => el[0]);
+			atr = atr.replace(/@\w+/g , '').replace(/ +/g , ' ').trimRight();
+			swol = mod.indexOf('@ol') > -1;
+			swraw = mod.indexOf('@raw') > -1;
 		}
 		// console.log(tag, atr, text);	
 		// Listes
@@ -208,15 +216,8 @@ ejh.easy = src => {
 		if (listes) {
 			listes = listes.sort((a,b) => b.length - a.length);  // Tri par longueurs décroissantes pour si certaines chaînes sont comprises dans d'autres
 			listes.forEach(liste => {t = t.replace(liste , makeList(makeArray(liste)))});
-			// if (atr &&/\bol\b/.test(atr)) t=t.split('ul>').join('ol>');
-			if (atr) {
-				let atr1 = `${atr} `;
-				if (atr1.includes(' ol ')) {
-					t=t.split('ul>').join('ol>');
-					atr = atr1.split(' ol ').join(' ').trimRight();
-				}
-				t = t.replace(/<(o|u)l>/ , `<$1l${atr}>`);
-			}
+			if (swol) t=t.split('ul>').join('ol>');
+			t = t.replace(/<(o|u)l>/ , `<$1l${atr}>`);
 			t = inline(t);
 			pusht(t);
 			continue;
