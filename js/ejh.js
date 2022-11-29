@@ -122,6 +122,7 @@ ejh.easy = src => {
 
 	function inline(t) {
 		if (swraw) return t;
+		if (swhtml) return t = t.replace(/&quot;/g , '"').replace(/&gt;/g , '>').replace(/&lt;/g , '<').replace(/&amp;/g , '&');
 		// Inlines code, img, a, b , i	
 		// remplacer les '+' par des '©' dans les liens et dans les images (nécessaire pour ce qui est en base64)
 		t = t.replace(/\[.*?\]\(.*?\)/g, function(m){return m.replace(/\+/g,'©')})
@@ -192,14 +193,18 @@ ejh.easy = src => {
 	}
 	
 	let arout = [];	
-	let swol = false;
-	let swraw = false;
+	let swol , swraw , swhtml , swpen, swnote;
 	for(j = 0; j < tags.length; j++) {
 		let text = texts[j];
 		let tag = tags[j];
 		let m = tag.match(/\{(.*)\}/);
 		let atr = m ? ' ' + m.pop() : '';
 		let mod = [];
+		swol = false;
+		swraw = false;
+		swhtml = false;		
+		swpen = false;
+		swnote = false;
 		if (atr) {
 			tag = tag.replace(/\{(.*)\}/ , '');	
 			atr = htmlDecode(atr);   // Les entités numériques sont toutes remplacées à la fin
@@ -207,6 +212,9 @@ ejh.easy = src => {
 			atr = atr.replace(/@\w+/g , '').replace(/ +/g , ' ').trimRight();
 			swol = mod.indexOf('@ol') > -1;
 			swraw = mod.indexOf('@raw') > -1;
+			swhtml = mod.indexOf('@html') > -1;
+			swpen = mod.indexOf('@pen') > -1;
+			swnote = mod.indexOf('@note') > -1;
 		}
 		// console.log(tag, atr, text);	
 		// Listes
@@ -258,21 +266,18 @@ ejh.easy = src => {
 			continue;
 		}
 		
-		// Paragraphes avec retour lignes
+		// Paragraphes avec retour lignes ou note
 		if(/^--$/.test(tag.trim())) {
-			t = inline(text).trimEnd().replace(/\n/g , '<br>\n');
-			t = `<p${atr}>${brspan(t)}</p>`;
+			if (swnote) {
+				t = text.trimEnd().replace(/&gt;/g , ' &gt;').replace(/(https?:\/\/[^\s'">]+)/g , '<a href="$1">$1</a>').replace(/ &gt;/g , '&gt;');
+				if (atr == '') atr = ' class=notes';
+				t = `<p${atr}>${t}</p>`;				
+			} else {
+				t = inline(text).trimEnd().replace(/\n/g , '<br>\n');
+				t = `<p${atr}>${brspan(t)}</p>`;
+			}
 			pusht(t);
 			continue;
-		}
-		
-		// Paragraphes type notes
-		if(/^---$/.test(tag.trim())) {
-			t = text.trimEnd().replace(/&gt;/g , ' &gt;').replace(/(https?:\/\/[^\s'">]+)/g , '<a href="$1">$1</a>').replace(/ &gt;/g , '&gt;');
-			if (atr == '') atr = ' class=notes';
-			t = `<p${atr}>${t}</p>`;
-			pusht(t);
-			continue;			
 		}
 		
 		// Texte formatté
@@ -283,20 +288,13 @@ ejh.easy = src => {
 			continue;
 		}			
 
-		// Code formatté
+		// Code formatté ou pen
 		if(/^\+\+$/.test(tag.trim())) {
 			t = `<pre${atr}>${brcode(text.trimEnd())}</pre>`;
+			if (swpen) t = `<form>\n<pre${atr}>${brcode(text.trimEnd())}</pre>\n<a href="WebEditor?t=${encodeURIComponent(text)}"><input type=button value=Run></a>\n</form>`;
 			pusht(t);
 			continue;
 		}
-		
-		// Code formatté pen
-		if(/^\+\+\+$/.test(tag.trim())) {
-			t = `<form><pre${atr}>${brcode(text.trimEnd())}</pre><a href="WebEditor?t=${encodeURIComponent(text)}"><input type=button value=Run></a></form>`;
-			pusht(t);
-			continue;
-		}
-		
 		
 		// Bloc html pur
 		if(/^\*\*$/.test(tag.trim())) {
@@ -312,8 +310,6 @@ ejh.easy = src => {
 	let out =  arout.join('\n');
 	// Retirer l'encodage des entités
 	out = out.replace(/&#(\d+);/g, function(m,m1){return String.fromCharCode(m1)});
-	out = out.replace(/˂(.+?)˃/gm , '<$1>');   // pas des vrais < et > , signes &#706; et &#707;
-
 	return out.trim();
 }
 
