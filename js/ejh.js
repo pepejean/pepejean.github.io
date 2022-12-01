@@ -193,7 +193,7 @@ ejh.easy = src => {
 	}
 	
 	let arout = [];	
-	let swol , swraw , swhtml , swpen, swnote;
+	let swol , swraw , swhtml , swpen, swhref, swrem;
 	for(j = 0; j < tags.length; j++) {
 		let text = texts[j];
 		let tag = tags[j];
@@ -204,7 +204,8 @@ ejh.easy = src => {
 		swraw = false;
 		swhtml = false;		
 		swpen = false;
-		swnote = false;
+		swhref = false;
+		swrem = false;
 		if (atr) {
 			tag = tag.replace(/\{(.*)\}/ , '');	
 			atr = htmlDecode(atr);   // Les entités numériques sont toutes remplacées à la fin
@@ -214,8 +215,10 @@ ejh.easy = src => {
 			swraw = mod.indexOf('@raw') > -1;
 			swhtml = mod.indexOf('@html') > -1;
 			swpen = mod.indexOf('@pen') > -1;
-			swnote = mod.indexOf('@note') > -1;
+			swhref = mod.indexOf('@href') > -1;
+			swrem = mod.indexOf('@rem') > -1;
 		}
+
 		// console.log(tag, atr, text);	
 		// Listes
 		let t = tag + text;
@@ -231,21 +234,19 @@ ejh.easy = src => {
 			continue;
 		}
 		
+		// Bloc html pur
+		if(/^\*\*$/.test(tag.trim())) {
+			t = text.replace(/&quot;/g , '"').replace(/&gt;/g , '>').replace(/&lt;/g , '<').replace(/&amp;/g , '&').trimEnd();
+			pusht(t);
+			continue;
+		}		
+		
 		let tables = t.match(/(\n\| (.*))+/g);
 		if (tables) {
 			tables.forEach(table => {t = t.replace(table , makeTable(table))});
 			t = t.replace(/<table>/ , `<table${atr}>`);
 			pusht(t);
 			continue;
-		}
-		
-		// Titres
-		if (/^(#{1,6}) (.*)$/m.test(t)) {
-			let L = tag.trim().length;
-			t = inline(text).trimEnd();
-			t = `<h${L}${atr}>${t}</h${L}>`;
-			pusht(t);
-			continue;			
 		}
 		
 		// Séparations
@@ -258,6 +259,17 @@ ejh.easy = src => {
 			continue;
 		}
 		
+		if (swrem) continue;  // tag - + #	
+		
+		// Titres
+		if (/^(#{1,6}) (.*)$/m.test(t)) {
+			let L = tag.trim().length;
+			t = inline(text).trimEnd();
+			t = `<h${L}${atr}>${t}</h${L}>`;
+			pusht(t);
+			continue;			
+		}
+		
 		// Paragraphes simples
 		if(/^-$/.test(tag.trim())) {
 			t = inline(text).trimEnd();
@@ -266,16 +278,10 @@ ejh.easy = src => {
 			continue;
 		}
 		
-		// Paragraphes avec retour lignes ou note
+		// Paragraphes avec retour lignes
 		if(/^--$/.test(tag.trim())) {
-			if (swnote) {
-				t = text.trimEnd().replace(/&gt;/g , ' &gt;').replace(/(https?:\/\/[^\s'">]+)/g , '<a href="$1">$1</a>').replace(/ &gt;/g , '&gt;');
-				if (atr == '') atr = ' class=notes';
-				t = `<p${atr}>${t}</p>`;				
-			} else {
-				t = inline(text).trimEnd().replace(/\n/g , '<br>\n');
-				t = `<p${atr}>${brspan(t)}</p>`;
-			}
+			t = inline(text).trimEnd().replace(/\n/g , '<br>\n');
+			t = `<p${atr}>${brspan(t)}</p>`;
 			pusht(t);
 			continue;
 		}
@@ -288,20 +294,14 @@ ejh.easy = src => {
 			continue;
 		}			
 
-		// Code formatté ou pen
+		// Code formatté ou href ou pen
 		if(/^\+\+$/.test(tag.trim())) {
 			t = `<pre${atr}>${brcode(text.trimEnd())}</pre>`;
-			if (swpen) t = `<form>\n<pre${atr}>${brcode(text.trimEnd())}</pre>\n<a href="WebEditor?t=${encodeURIComponent(text)}"><input type=button value=Run></a>\n</form>`;
+			if (swhref)	t = t.replace(/(https?:\/\/[^\s'"<>]+)/g , '<a href="$1">$1</a>');
+			else if (swpen) t = `<form>\n<pre${atr}>${brcode(text.trimEnd())}</pre>\n<a href="WebEditor?t=${encodeURIComponent(text)}"><input type=button value=Run></a>\n</form>`;
 			pusht(t);
 			continue;
 		}
-		
-		// Bloc html pur
-		if(/^\*\*$/.test(tag.trim())) {
-			t = text.replace(/&quot;/g , '"').replace(/&gt;/g , '>').replace(/&lt;/g , '<').replace(/&amp;/g , '&').trimEnd();
-			pusht(t);
-			continue;
-		}			
 
 		// Si rien ne convient
 		t = tag + text.trimEnd();
