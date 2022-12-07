@@ -1,11 +1,28 @@
 const ejh = {};
 
 ejh.easy = src => {
+	
+	// Regex partie gauche, sans attribut, partie droite avec
+	// let srcs=src.split(/(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)/);
+	// let regex = new RegExp("(\\n[*#+|-]+\\s|\\n[*#+|-]+\\{.*?\\}\\s)");
+	// let s = "(\\n[*#+|-]+\\s|\\n[*#+|-]+\\{.*?\\}\\s)";
+	const s = "("
+			+ "\\n[+][+]\\s"   +   "|"   +   "\\n[+][+]\\{.*?\\}\\s"
+			+ "|"
+			+ "\\n[-][-]?\\s"   +   "|"   +   "\\n[-][-]?\\{.*?\\}\\s"
+			+ "|"				
+			+ "\\n[|]\\s"   +   "|"   +   "\\n[|]\\{.*?\\}\\s"
+			+ "|"
+			// + "\\n[#]{1,6}\\s"   +   "|"   +   "\\n[#]{1,6}\\{.*?\\}\\s"
+			+ "\\n\\s*\\n[#]{1,6}\\s"   +   "|"   +   "\\n\\s*\\n[#]{1,6}\\{.*?\\}\\s"
+			+ "|"
+			+ "\\n[*]+\\s"   +   "|"   +   "\\n[*]+\\{.*?\\}\\s"
+			+ ")";		
+	const regex = new RegExp(s);
+	
 	const splitSrc = src => {
-		//src = src.replace(/(\n----*\s?\n)/ , '$1\n');
 		src = '\n\n' + src.trim() + '\n\n';
-		// Regex partie gauche, sans attribut, partie droite avec
-		let srcs=src.split(/(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)/);
+		let srcs = src.split(regex);
 		
 		// Grouper les lignes des listes
 		for (let i = 1; i < srcs.length; i=i+2){  // i++ ?
@@ -68,7 +85,6 @@ ejh.easy = src => {
 	}
 	
 	function makeTable(table) {
-		// console.log(table);
 		let ar = table.split('\n').filter(txt => txt.trim() != '');
 		let outb = '';
 		let outh = '<thead>\n</thead>\n';
@@ -117,22 +133,29 @@ ejh.easy = src => {
 		return out;
 	}
 
+	const rawmap = {'&' : '&amp;' , '<' : '&lt;' , '>' : '&gt;' , '"' : '&quot;'};
+	const rawmark = {'*' : '&#42;' , '+' : '&#43;' , '-' : '&#45;'};
+	function protectMark(s){return s.replace(/[*+-]/g,function(i){return rawmark[i]})};	
+	const htmlDecode = h => h.replace(/&quot;/g,'"').replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/&amp;/g,"&");
 	const brcode = html => html.replace(/\r/g , '').trim().split(/\n/).map(line => `<code>${line}</code>`).join('\n');
 	const brspan = html => html.replace(/\r/g , '').trim().split(/\n/).map(line => `<span>${line}</span>`).join('\n');
 
 	function inline(t) {
 		if (swraw) return t;
-		if (swhtml) return t = t.replace(/&quot;/g , '"').replace(/&gt;/g , '>').replace(/&lt;/g , '<').replace(/&amp;/g , '&');
-		// Inlines code, img, a, b , i	
-		// remplacer les '+' par des '©' dans les liens et dans les images (nécessaire pour ce qui est en base64)
-		t = t.replace(/\[.*?\]\(.*?\)/g, function(m){return m.replace(/\+/g,'©')})
+		if (swhtml) return htmlDecode(t);
+		let tl = t.split('\n');
+		for (i in tl) {
+			tl[i] = tl[i].split('©©').map((x, i) => i%2 === 0 ? inl(x) : htmlDecode(x)).join('');
+		}
+		return tl.join('\n');
+	}
+	
+	function inl(t) {
 		// code
-			.replace(/(\+{1,2})(.+?)\1/g, function(m,m1,m2){
-				if (m1=='+') return '<code>' + m2 + '</code>';
-				if (m1=='++') return '<code>' + protectMark(m2) + '</code>';
+		t = t.replace(/\+:(.+?):\+/g, function(m,m1){
+				return '<code>' + protectMark(m1) + '</code>';
 			})
-		// remettre les '+' dans les liens et dans les images
-			.replace(/\[.*?\]\(.*?\)/g, function(m){return m.replace(/©/g,'+')})		
+			
 		// b, i
 		.replace(/(\*{1,3})(.+?)\1/g, function(m,m1,m2){
 			if (m1=='*') return '<i>' + m2 + '</i>';
@@ -142,26 +165,17 @@ ejh.easy = src => {
 		// Liens, images
 			.replace(/!\[(.*?)\]\((.*?)\)/g, '<img loading="lazy" alt="$1" src="$2">')
 			.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
-			.replace(/&lt;(https?:\/\/\S+?)&gt;/g , function(m,m1){
-				return '<a href="' + m1 + '">' + m1 + '</a>';
-			});
-		return t;
+			.replace(/&lt;(https?:\/\/\S+?)&gt;/g , function(m,m1){return '<a href="' + m1 + '">' + m1 + '</a>'});
+		return t.replace(/¶/g , '<br>');
 	}
 
-	const rawmap = {'&' : '&amp;' , '<' : '&lt;' , '>' : '&gt;' , '"' : '&quot;'};
-	const rawmark = {'*' : '&#42;' , '+' : '&#43;' , '-' : '&#45;'};
-	function protectMark(s){return s.replace(/[*+-]/g,function(i){return rawmark[i]})};	
-	const htmlDecode = function(h) {return(h.replace(/&quot;/g,'"').replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/&amp;/g,"&"));}
-
+	/**** Début ****/
+	src = src.replace(/\r/g , '');
+	// Traitement des © de fin de ligne
+	src = src.replace(/© *\n/g , '');
 
 	// Pas de html
 	src = src.replace(/[&<>"]/g,function(i){return rawmap[i]});
-	
-	// Echapper juste 1 caractère avec 1 ©, 
-	// ou plusieurs caractères non lette/chiffre situés entre 2 © sur la même ligne,
-	// ou échapper un © si 2 © successifs
-	src = src.replace(/©(.+?)©.+/gm , function(m,s){s=s.split('').map(c => /[a-zA-Z0-9]/.test(c) ? c : '&#' + c.charCodeAt(0) + ';');return s.join('')})
-		.replace(/©./gm , function(m){return '&#' + m.charCodeAt(1) + ';'});
 	
 	let srcs = splitSrc(src);
 	
@@ -169,7 +183,8 @@ ejh.easy = src => {
 	let b4 = 'txt';
 	for (let i = 1; i < srcs.length; i++){
 		// Regex partie gauche, sans attribut, partie droite avec
-		let typ = /^(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)$/.test(srcs[i]) ? 'tag' : 'txt';
+		// let typ = /^(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)$/.test(srcs[i]) ? 'tag' : 'txt';
+		let typ = regex.test(srcs[i]) ? 'tag' : 'txt';
 		if (typ == b4) srcs.splice(i,0,'');
 		b4 = b4 == 'txt' ? 'tag' : 'txt';
 	}
@@ -193,7 +208,7 @@ ejh.easy = src => {
 	}
 	
 	let arout = [];	
-	let swol , swraw , swhtml , swpen, swhref, swrem;
+	let swol , swraw , swhtml , swpen, swlnk, swrem;
 	for(j = 0; j < tags.length; j++) {
 		let text = texts[j];
 		let tag = tags[j];
@@ -204,22 +219,22 @@ ejh.easy = src => {
 		swraw = false;
 		swhtml = false;		
 		swpen = false;
-		swhref = false;
+		swlnk = false;
 		swrem = false;
+		
 		if (atr) {
 			tag = tag.replace(/\{(.*)\}/ , '');	
 			atr = htmlDecode(atr);   // Les entités numériques sont toutes remplacées à la fin
-			mod = [...atr.matchAll(/@\w+/g)].map(el => el[0]);
-			atr = atr.replace(/@\w+/g , '').replace(/ +/g , ' ').trimRight();
-			swol = mod.indexOf('@ol') > -1;
-			swraw = mod.indexOf('@raw') > -1;
-			swhtml = mod.indexOf('@html') > -1;
-			swpen = mod.indexOf('@pen') > -1;
-			swhref = mod.indexOf('@href') > -1;
-			swrem = mod.indexOf('@rem') > -1;
+			mod = [...atr.matchAll(/:\w+/g)].map(el => el[0]);
+			atr = atr.replace(/:\w+/g , '').replace(/ +/g , ' ').trimRight();
+			swol = mod.indexOf(':ol') > -1;
+			swraw = mod.indexOf(':raw') > -1;
+			swhtml = mod.indexOf(':html') > -1;
+			swpen = mod.indexOf(':pen') > -1;
+			swlnk = mod.indexOf(':lnk') > -1;
+			swrem = mod.indexOf(':rem') > -1;
 		}
 
-		// console.log(tag, atr, text);	
 		// Listes
 		let t = tag + text;
 		
@@ -236,7 +251,7 @@ ejh.easy = src => {
 		
 		// Bloc html pur
 		if(/^\*\*$/.test(tag.trim())) {
-			t = text.replace(/&quot;/g , '"').replace(/&gt;/g , '>').replace(/&lt;/g , '<').replace(/&amp;/g , '&').trimEnd();
+			t = htmlDecode(text).trimEnd();
 			pusht(t);
 			continue;
 		}		
@@ -262,7 +277,7 @@ ejh.easy = src => {
 		if (swrem) continue;  // tag - + #	
 		
 		// Titres
-		if (/^(#{1,6}) (.*)$/m.test(t)) {
+		if (/\n\s*\n#{1,6} (.*)$/s.test(t)) {
 			let L = tag.trim().length;
 			t = inline(text).trimEnd();
 			t = `<h${L}${atr}>${t}</h${L}>`;
@@ -294,10 +309,10 @@ ejh.easy = src => {
 			continue;
 		}			
 
-		// Code formatté ou href ou pen
+		// Code formatté : inline pas interprétés, possible href ou pen
 		if(/^\+\+$/.test(tag.trim())) {
 			t = `<pre${atr}>${brcode(text.trimEnd())}</pre>`;
-			if (swhref)	t = t.replace(/(https?:\/\/[^\s'"<>]+)/g , '<a href="$1">$1</a>');
+			if (swlnk)	t = t.replace(/(https?:\/\/[^\s'"<>]+)/g , '<a href="$1">$1</a>');
 			else if (swpen) t = `<form>\n<pre${atr}>${brcode(text.trimEnd())}</pre>\n<a href="WebEditor?t=${encodeURIComponent(text)}"><input type=button value=Run></a>\n</form>`;
 			pusht(t);
 			continue;
@@ -306,10 +321,10 @@ ejh.easy = src => {
 		// Si rien ne convient
 		t = tag + text.trimEnd();
 		pusht(t);
-	} 
+	}
 	let out =  arout.join('\n');
-	// Retirer l'encodage des entités
-	out = out.replace(/&#(\d+);/g, function(m,m1){return String.fromCharCode(m1)});
+	// Retirer les © et l'encodage des entités
+	out = out.replace(/©/g , '').replace(/&#(\d+);/g, function(m,m1){return String.fromCharCode(m1)});
 	return out.trim();
 }
 
