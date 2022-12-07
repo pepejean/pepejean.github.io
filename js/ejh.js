@@ -22,7 +22,7 @@ ejh.easy = src => {
 	const splitSrc = src => {
 		src = '\n\n' + src.trim() + '\n\n';
 		let srcs = src.split(regex);
-		
+		// let srcs=src.split(/(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)/);
 		// Grouper les lignes des listes
 		for (let i = 1; i < srcs.length; i=i+2){  // i++ ?
 			if (/^\n\*(\{.*\})? /.test(srcs[i])){
@@ -182,13 +182,13 @@ ejh.easy = src => {
 	let b4 = 'txt';
 	for (let i = 1; i < srcs.length; i++){
 		// Regex partie gauche, sans attribut, partie droite avec
-		let typ = /^(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)$/.test(srcs[i]) ? 'tag' : 'txt';
-		//let typ = regex.test(srcs[i]) ? 'tag' : 'txt';   Résultat différent, listes mal rendues
+		// let typ = /^(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)$/.test(srcs[i]) ? 'tag' : 'txt';
+		// let typ = regex.test(srcs[i]) ? 'tag' : 'txt';  // Résultat différent, listes mal rendues
+		let typ = /^(\s*\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)$/.test(srcs[i]) ? 'tag' : 'txt';  // OK
 		console.log(typ , srcs[i]);
 		if (typ == b4) srcs.splice(i,0,'');
 		b4 = b4 == 'txt' ? 'tag' : 'txt';
 	}
-	console.log(srcs);
 	let tags = [];
 	let texts = [];
 	let j = 0;
@@ -238,6 +238,8 @@ ejh.easy = src => {
 		// Listes
 		let t = tag + text;
 		
+		console.log(t);
+		
 		let listes = t.match(/(\n((  )*)\* (.*))+/g);
 		if (listes) {
 			listes = listes.sort((a,b) => b.length - a.length);  // Tri par longueurs décroissantes pour si certaines chaînes sont comprises dans d'autres
@@ -277,7 +279,9 @@ ejh.easy = src => {
 		if (swrem) continue;  // tag - + #	
 		
 		// Titres
-		if (/\n\s*\n#{1,6} (.*)$/s.test(t)) {
+		//if (/\n\s*\n#{1,6} (.*)$/s.test(t)) {
+		if (/^(#{1,6}) (.*)$/.test(t.trim())) {
+			console.log(t);
 			let L = tag.trim().length;
 			t = inline(text).trimEnd();
 			t = `<h${L}${atr}>${t}</h${L}>`;
