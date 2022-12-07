@@ -1,7 +1,6 @@
 const ejh = {};
 
 ejh.easy = src => {
-	
 	// Regex partie gauche, sans attribut, partie droite avec
 	// let srcs=src.split(/(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)/);
 	// let regex = new RegExp("(\\n[*#+|-]+\\s|\\n[*#+|-]+\\{.*?\\}\\s)");
@@ -183,12 +182,13 @@ ejh.easy = src => {
 	let b4 = 'txt';
 	for (let i = 1; i < srcs.length; i++){
 		// Regex partie gauche, sans attribut, partie droite avec
-		// let typ = /^(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)$/.test(srcs[i]) ? 'tag' : 'txt';
-		let typ = regex.test(srcs[i]) ? 'tag' : 'txt';
+		let typ = /^(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)$/.test(srcs[i]) ? 'tag' : 'txt';
+		//let typ = regex.test(srcs[i]) ? 'tag' : 'txt';   Résultat différent, listes mal rendues
+		console.log(typ , srcs[i]);
 		if (typ == b4) srcs.splice(i,0,'');
 		b4 = b4 == 'txt' ? 'tag' : 'txt';
 	}
-	
+	console.log(srcs);
 	let tags = [];
 	let texts = [];
 	let j = 0;
