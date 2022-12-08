@@ -1,27 +1,26 @@
 const ejh = {};
 
 ejh.easy = src => {
-	// Regex partie gauche, sans attribut, partie droite avec
-	// let srcs=src.split(/(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)/);
-	// let regex = new RegExp("(\\n[*#+|-]+\\s|\\n[*#+|-]+\\{.*?\\}\\s)");
-	// let s = "(\\n[*#+|-]+\\s|\\n[*#+|-]+\\{.*?\\}\\s)";
-	const s = "("
-			+ "\\n[+][+]\\s"   +   "|"   +   "\\n[+][+]\\{.*?\\}\\s"
-			+ "|"
-			+ "\\n[-][-]?\\s"   +   "|"   +   "\\n[-][-]?\\{.*?\\}\\s"
-			+ "|"				
-			+ "\\n[|]\\s"   +   "|"   +   "\\n[|]\\{.*?\\}\\s"
-			+ "|"
-			// + "\\n[#]{1,6}\\s"   +   "|"   +   "\\n[#]{1,6}\\{.*?\\}\\s"
-			+ "\\n\\s*\\n[#]{1,6}\\s"   +   "|"   +   "\\n\\s*\\n[#]{1,6}\\{.*?\\}\\s"
-			+ "|"
-			+ "\\n[*]+\\s"   +   "|"   +   "\\n[*]+\\{.*?\\}\\s"
-			+ ")";		
-	const regex = new RegExp(s);
+	const Spre  = "\\n[+][+]\\s"   +   "|"   +   "\\n[+][+]\\{.*?\\}\\s";
+	const Sp    = "\\n[-]\\s"   +   "|"   +   "\\n[-]\\{.*?\\}\\s";
+	const Spr   = "\\n[-][-]\\s"   +   "|"   +   "\\n[-][-]\\{.*?\\}\\s";
+	const STab  = "\\n[|]\\s"   +   "|"   +   "\\n[|]\\{.*?\\}\\s";
+	const Sh    = "\\n\\s*\\n[#]{1,6}\\s"   +   "|"   +   "\\n\\s*\\n[#]{1,6}\\{.*?\\}\\s";
+	const Sli   = "\\n[*]\\s"   +   "|"   +   "\\n[*]\\{.*?\\}\\s";
+	const Shtml = "\\n[*][*]\\s"   +   "|"   +   "\\n[*][*]\\{.*?\\}\\s";
+	const Shr   = "\\n[-]{4,}\\s"   +   "|"   +   "\\n[-]{4,}\\{.*?\\}\\s";
+	
+	const Regsplit = new RegExp(`(${Spre}|${Sp}|${Spr}|${STab}|${Sh}|${Sli}|${Shtml}|${Shr})`);
+	const Regpre   = new RegExp(`^(${Spre})`);
+	const Regp     = new RegExp(`^(${Sp})`);
+	const Regpr    = new RegExp(`^(${Spr})`);
+	const Regh    = new RegExp(`^(${Sh})`);
+	const Reghr    = new RegExp(`^(${Shr})`);
+	const Reghtml    = new RegExp(`^(${Shtml})`);
 	
 	const splitSrc = src => {
 		src = '\n\n' + src.trim() + '\n\n';
-		let srcs = src.split(regex);
+		let srcs = src.split(Regsplit);
 		// let srcs=src.split(/(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)/);
 		// Grouper les lignes des listes
 		for (let i = 1; i < srcs.length; i=i+2){  // i++ ?
@@ -133,7 +132,7 @@ ejh.easy = src => {
 	}
 
 	const rawmap = {'&' : '&amp;' , '<' : '&lt;' , '>' : '&gt;' , '"' : '&quot;'};
-	const rawmark = {'*' : '&#42;' , '+' : '&#43;' , '-' : '&#45;'};
+	const rawmark = {'*' : '&#42;' , '+' : '&#43;' , '-' : '&#45;' , '¶' : '&#182;'};
 	function protectMark(s){return s.replace(/[*+-]/g,function(i){return rawmark[i]})};	
 	const htmlDecode = h => h.replace(/&quot;/g,'"').replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/&amp;/g,"&");
 	const brcode = html => html.replace(/\r/g , '').trim().split(/\n/).map(line => `<code>${line}</code>`).join('\n');
@@ -185,7 +184,6 @@ ejh.easy = src => {
 		// let typ = /^(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)$/.test(srcs[i]) ? 'tag' : 'txt';
 		// let typ = regex.test(srcs[i]) ? 'tag' : 'txt';  // Résultat différent, listes mal rendues
 		let typ = /^(\s*\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)$/.test(srcs[i]) ? 'tag' : 'txt';  // OK
-		console.log(typ , srcs[i]);
 		if (typ == b4) srcs.splice(i,0,'');
 		b4 = b4 == 'txt' ? 'tag' : 'txt';
 	}
@@ -235,11 +233,9 @@ ejh.easy = src => {
 			swrem = mod.indexOf(':rem') > -1;
 		}
 
-		// Listes
 		let t = tag + text;
-		
-		console.log(t);
-		
+
+		// Listes		
 		let listes = t.match(/(\n((  )*)\* (.*))+/g);
 		if (listes) {
 			listes = listes.sort((a,b) => b.length - a.length);  // Tri par longueurs décroissantes pour si certaines chaînes sont comprises dans d'autres
@@ -251,13 +247,6 @@ ejh.easy = src => {
 			continue;
 		}
 		
-		// Bloc html pur
-		if(/^\*\*$/.test(tag.trim())) {
-			t = htmlDecode(text).trimEnd();
-			pusht(t);
-			continue;
-		}		
-		
 		let tables = t.match(/(\n\| (.*))+/g);
 		if (tables) {
 			tables.forEach(table => {t = t.replace(table , makeTable(table))});
@@ -266,9 +255,15 @@ ejh.easy = src => {
 			continue;
 		}
 		
-		// Séparations
+		// Bloc html pur
+		if (Reghtml.test(t)) {
+			t = htmlDecode(text).trimEnd();
+			pusht(t);
+			continue;
+		}		
 		
-		if(/^\-{4,}$/m.test(tag.trim())) {
+		// Séparations hr
+		if (Reghr.test(t)) {
 			//t = '<hr>';
 			t = inline(text).trimEnd();
 			t = `<hr${atr}>${t}`;			
@@ -279,9 +274,7 @@ ejh.easy = src => {
 		if (swrem) continue;  // tag - + #	
 		
 		// Titres
-		//if (/\n\s*\n#{1,6} (.*)$/s.test(t)) {
-		if (/^(#{1,6}) (.*)$/.test(t.trim())) {
-			console.log(t);
+		if (Regh.test(t)) {
 			let L = tag.trim().length;
 			t = inline(text).trimEnd();
 			t = `<h${L}${atr}>${t}</h${L}>`;
@@ -290,38 +283,30 @@ ejh.easy = src => {
 		}
 		
 		// Paragraphes simples
-		if(/^-$/.test(tag.trim())) {
+		if (Regp.test(t)) {
 			t = inline(text).trimEnd();
 			t = `<p${atr}>${t}</p>`;
 			pusht(t);
 			continue;
 		}
 		
-		// Paragraphes avec retour lignes
-		if(/^--$/.test(tag.trim())) {
+		// Paragraphes avec retour lignes p
+		if (Regpr.test(t)) {
 			t = inline(text).trimEnd().replace(/\n/g , '<br>\n');
 			t = `<p${atr}>${brspan(t)}</p>`;
 			pusht(t);
 			continue;
 		}
 		
-		// Texte formatté
-		if(/^\+$/.test(tag.trim())) {
-			t = inline(text).trimEnd();
-			t = `<pre${atr}>${brcode(t)}</pre>`;
-			pusht(t);
-			continue;
-		}			
-
-		// Code formatté : inline pas interprétés, possible href ou pen
-		if(/^\+\+$/.test(tag.trim())) {
+		// Texte formatté pre
+		if (Regpre.test(t)) {
 			t = `<pre${atr}>${brcode(text.trimEnd())}</pre>`;
-			if (swlnk)	t = t.replace(/(https?:\/\/[^\s'"<>]+)/g , '<a href="$1">$1</a>');
+			if (swlnk) t = t.replace(/(https?:\/\/[^\s'"<>]+)/g , '<a href="$1">$1</a>');
 			else if (swpen) t = `<form>\n<pre${atr}>${brcode(text.trimEnd())}</pre>\n<a href="WebEditor?t=${encodeURIComponent(text)}"><input type=button value=Run></a>\n</form>`;
 			pusht(t);
 			continue;
-		}
-
+		}			
+		
 		// Si rien ne convient
 		t = tag + text.trimEnd();
 		pusht(t);
@@ -330,31 +315,4 @@ ejh.easy = src => {
 	// Retirer les © et l'encodage des entités
 	out = out.replace(/©/g , '').replace(/&#(\d+);/g, function(m,m1){return String.fromCharCode(m1)});
 	return out.trim();
-}
-
-ejh.checkbal = html => {
-	const ahtml = html.split('<');
-	let pile = ['ok'];
-	let ctrplus = 0;
-	let ctrmoins = 0;
-	for(let i = 1, L = ahtml.length; i < L;  i++){  // Commencer à 1 pour sauter l'élément qui précède le 1er <
-		let element = ahtml[i].replace(/[\s>].*/g , '');
-		if (element != '' && ['br' , 'col' , 'hr' , 'img' , 'input'].indexOf(element) < 0){
-			if (element.substr(0,1) == '/'){
-				const popval = pile.pop();
-				const elval = element.substr(1);
-				if (popval != elval) {
-					err = elval + ' au lieu de ' + popval;
-					return elval + ' au lieu de ' + popval;
-				}
-				ctrmoins++;
-			} else {
-				pile.push(element);
-				ctrplus++;
-			}
-		}
-	}
-	if (pile.length == 1) return true;
-	pile.shift();
-	return ('balises initiales non fermées: ' + pile.join(' '));
 }
