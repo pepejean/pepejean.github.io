@@ -29,4 +29,4 @@
 			else o.match = o.matchstr;
 		}
 	}
-})(window , 'lefiltre');
+})(this , 'lefiltre');

@@ -11,6 +11,8 @@ ejh.easy = src => {
 	const Shr   = "\\n[-]{4,}\\s"   +   "|"   +   "\\n[-]{4,}\\{.*?\\}\\s";
 	
 	const Regsplit = new RegExp(`(${Spre}|${Sp}|${Spr}|${STab}|${Sh}|${Sli}|${Shtml}|${Shr})`);
+	const Regtyp = new RegExp(`^(${Spre}|${Sp}|${Spr}|${STab}|${Sh}|${Sli}|${Shtml}|${Shr})`);
+	
 	const Regpre   = new RegExp(`^(${Spre})`);
 	const Regp     = new RegExp(`^(${Sp})`);
 	const Regpr    = new RegExp(`^(${Spr})`);
@@ -150,12 +152,11 @@ ejh.easy = src => {
 	
 	function inl(t) {
 		// code
-		t = t.replace(/\+:(.+?):\+/g, function(m,m1){
+		t = t.replace(/\+\+([^\n©]+?)\+\+/g, function(m,m1){
 				return '<code>' + protectMark(m1) + '</code>';
 			})
-			
 		// b, i
-		.replace(/(\*{1,3})(.+?)\1/g, function(m,m1,m2){
+		.replace(/(\*{1,3})([^\n©]+?)\1/g, function(m,m1,m2){
 			if (m1=='*') return '<i>' + m2 + '</i>';
 			if (m1=='**') return '<b>' + m2 + '</b>';
 			return '<b><i>' + m2 + '</i></b>';  // ***
@@ -180,10 +181,8 @@ ejh.easy = src => {
 	// Les txt des attributs (entre {})
 	let b4 = 'txt';
 	for (let i = 1; i < srcs.length; i++){
-		// Regex partie gauche, sans attribut, partie droite avec
-		// let typ = /^(\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)$/.test(srcs[i]) ? 'tag' : 'txt';
-		// let typ = regex.test(srcs[i]) ? 'tag' : 'txt';  // Résultat différent, listes mal rendues
-		let typ = /^(\s*\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)$/.test(srcs[i]) ? 'tag' : 'txt';  // OK
+		// let typ = /^(\s*\n[*#+|-]+\s|\n[*#+|-]+\{.*?\}\s)$/.test(srcs[i]) ? 'tag' : 'txt';  // OK
+		let typ = Regtyp.test(srcs[i]) ? 'tag' : 'txt';
 		if (typ == b4) srcs.splice(i,0,'');
 		b4 = b4 == 'txt' ? 'tag' : 'txt';
 	}
