@@ -8,7 +8,7 @@ ejh.easy = src => {
 	const Sh    = "\\n\\s*\\n[#]{1,6}\\s"   +   "|"   +   "\\n\\s*\\n[#]{1,6}\\{.*?\\}\\s";
 	const Sli   = "\\n[*]\\s"   +   "|"   +   "\\n[*]\\{.*?\\}\\s";
 	const Shtml = "\\n[*][*]\\s"   +   "|"   +   "\\n[*][*]\\{.*?\\}\\s";
-	const Shr   = "\\n[-]{4,}\\s"   +   "|"   +   "\\n[-]{4,}\\{.*?\\}\\s";
+	const Shr   = "\\n[-]{4,}"   +   "|"   +   "\\n[-]{4,}\\{.*?\\}";
 	
 	const Regsplit = new RegExp(`(${Spre}|${Sp}|${Spr}|${STab}|${Sh}|${Sli}|${Shtml}|${Shr})`);
 	const Regtyp = new RegExp(`^(${Spre}|${Sp}|${Spr}|${STab}|${Sh}|${Sli}|${Shtml}|${Shr})`);
