@@ -8,18 +8,18 @@ ejh.easy = src => {
 	const Sh    = "\\n\\s*\\n[#]{1,6}\\s"   +   "|"   +   "\\n\\s*\\n[#]{1,6}\\{.*?\\}\\s";
 	const Sli   = "\\n[*]\\s"   +   "|"   +   "\\n[*]\\{.*?\\}\\s";
 	const Shtml = "\\n[*][*]\\s"   +   "|"   +   "\\n[*][*]\\{.*?\\}\\s";
-	const Shr   = "\\n[-]{4,}"   +   "|"   +   "\\n[-]{4,}\\{.*?\\}";
-	
+	const Shr   = "\\n[-]{4,}\\s"   +   "|"   +   "\\n[-]{4,}\\{.*?\\}\\s";
+
 	const Regsplit = new RegExp(`(${Spre}|${Sp}|${Spr}|${STab}|${Sh}|${Sli}|${Shtml}|${Shr})`);
 	const Regtyp = new RegExp(`^(${Spre}|${Sp}|${Spr}|${STab}|${Sh}|${Sli}|${Shtml}|${Shr})`);
-	
+
 	const Regpre   = new RegExp(`^(${Spre})`);
 	const Regp     = new RegExp(`^(${Sp})`);
 	const Regpr    = new RegExp(`^(${Spr})`);
 	const Regh    = new RegExp(`^(${Sh})`);
 	const Reghr    = new RegExp(`^(${Shr})`);
 	const Reghtml    = new RegExp(`^(${Shtml})`);
-	
+
 	const splitSrc = src => {
 		src = '\n\n' + src.trim() + '\n\n';
 		let srcs = src.split(Regsplit);
@@ -42,7 +42,7 @@ ejh.easy = src => {
 					srcs[i+1] += concat;
 					srcs.splice(i+2 , 2);
 				}
-			}		
+			}
 		}
 		if (srcs[0].trim() != '') srcs.splice(0 , 0 , '');
 		// srcs :  alternativement élément, séparateur, élément, séparateur, ....
@@ -50,7 +50,7 @@ ejh.easy = src => {
 		// Possible tout au début, après hr, après ul, après table
 		// console.table(srcs);
 		return srcs;
-	}	
+	}
 	function tabs(n){return "\n" + "\t".repeat(n);}
 	function makeList(ar , level) {
 		//Recursive Step: make a list with child lists
@@ -66,7 +66,7 @@ ejh.easy = src => {
 		out += '</li>' + tabs(level) + '</ul>';
 		return out;
 	}
-	
+
 	function makeArray(t){
 		let ar0 = ("\n" + t).split("\n* ");
 		ar0.shift();
@@ -83,7 +83,7 @@ ejh.easy = src => {
 		});
 		return ar;
 	}
-	
+
 	function makeTable(table) {
 		let ar = table.split('\n').filter(txt => txt.trim() != '');
 		let outb = '';
@@ -123,8 +123,8 @@ ejh.easy = src => {
 					while(line.length > aligns.length) aligns.push('');  // Si trop peu de aligns, normalement jamais
 					line = line.map(txt => inline(txt.trim())).join('</td><td>');
 					ctr = 1;
-					line = line.replace(/<(td)>/g , () => {let x = `<td${aligns[ctr]}>`;ctr++;return x});						
-					outb += `<tr><td${aligns[0]}>${line}</td></tr>\n`;					
+					line = line.replace(/<(td)>/g , () => {let x = `<td${aligns[ctr]}>`;ctr++;return x});
+					outb += `<tr><td${aligns[0]}>${line}</td></tr>\n`;
 				}
 			}
 		};
@@ -135,7 +135,7 @@ ejh.easy = src => {
 
 	const rawmap = {'&' : '&amp;' , '<' : '&lt;' , '>' : '&gt;' , '"' : '&quot;'};
 	const rawmark = {'*' : '&#42;' , '+' : '&#43;' , '-' : '&#45;' , '¶' : '&#182;'};
-	function protectMark(s){return s.replace(/[*+-]/g,function(i){return rawmark[i]})};	
+	function protectMark(s){return s.replace(/[*+-]/g,function(i){return rawmark[i]})};
 	const htmlDecode = h => h.replace(/&quot;/g,'"').replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/&amp;/g,"&");
 	const brcode = html => html.replace(/\r/g , '').trim().split(/\n/).map(line => `<code>${line}</code>`).join('\n');
 	const brspan = html => html.replace(/\r/g , '').trim().split(/\n/).map(line => `<span>${line}</span>`).join('\n');
@@ -149,7 +149,7 @@ ejh.easy = src => {
 		}
 		return tl.join('\n');
 	}
-	
+
 	function inl(t) {
 		// code
 		t = t.replace(/\+\+([^\n©]+?)\+\+/g, function(m,m1){
@@ -160,7 +160,7 @@ ejh.easy = src => {
 			if (m1=='*') return '<i>' + m2 + '</i>';
 			if (m1=='**') return '<b>' + m2 + '</b>';
 			return '<b><i>' + m2 + '</i></b>';  // ***
-		})	
+		})
 		// Liens, images
 			.replace(/!\[(.*?)\]\((.*?)\)/g, '<img loading="lazy" alt="$1" src="$2">')
 			.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
@@ -175,9 +175,13 @@ ejh.easy = src => {
 
 	// Pas de html
 	src = src.replace(/[&<>"]/g,function(i){return rawmap[i]});
-	
+
+	// Ajouter un \n supplémentaire après ---- car balise sans aucun contenu
+	// et le \n qui suit risque d'être bouffé si on n'insère pas d'espace après le ----
+	src = src.replace(new RegExp(`^(${Shr})` , 'g') , '$0\n');
+
 	let srcs = splitSrc(src);
-	
+
 	// Les txt des attributs (entre {})
 	let b4 = 'txt';
 	for (let i = 1; i < srcs.length; i++){
@@ -194,7 +198,7 @@ ejh.easy = src => {
 		i++;
 		texts.push(srcs[i]);
 	}
-	
+
 	function pusht(t) {
 		let p = 1 + t.lastIndexOf('>');
 		let t1 = t.substr(0 , p);
@@ -203,8 +207,8 @@ ejh.easy = src => {
 		t =t1 + t2;
 		arout.push(t);
 	}
-	
-	let arout = [];	
+
+	let arout = [];
 	let swol , swraw , swhtml , swpen, swlnk, swrem;
 	for(j = 0; j < tags.length; j++) {
 		let text = texts[j];
@@ -214,13 +218,13 @@ ejh.easy = src => {
 		let mod = [];
 		swol = false;
 		swraw = false;
-		swhtml = false;		
+		swhtml = false;
 		swpen = false;
 		swlnk = false;
 		swrem = false;
-		
+
 		if (atr) {
-			tag = tag.replace(/\{(.*)\}/ , '');	
+			tag = tag.replace(/\{(.*)\}/ , '');
 			atr = htmlDecode(atr);   // Les entités numériques sont toutes remplacées à la fin
 			mod = [...atr.matchAll(/:\w+/g)].map(el => el[0]);
 			atr = atr.replace(/:\w+/g , '').replace(/ +/g , ' ').trimRight();
@@ -234,7 +238,7 @@ ejh.easy = src => {
 
 		let t = tag + text;
 
-		// Listes		
+		// Listes
 		let listes = t.match(/(\n((  )*)\* (.*))+/g);
 		if (listes) {
 			listes = listes.sort((a,b) => b.length - a.length);  // Tri par longueurs décroissantes pour si certaines chaînes sont comprises dans d'autres
@@ -245,7 +249,7 @@ ejh.easy = src => {
 			pusht(t);
 			continue;
 		}
-		
+
 		let tables = t.match(/(\n\| (.*))+/g);
 		if (tables) {
 			tables.forEach(table => {t = t.replace(table , makeTable(table))});
@@ -253,34 +257,34 @@ ejh.easy = src => {
 			pusht(t);
 			continue;
 		}
-		
+
 		// Bloc html pur
 		if (Reghtml.test(t)) {
 			t = htmlDecode(text).trimEnd();
 			pusht(t);
 			continue;
-		}		
-		
+		}
+
 		// Séparations hr
 		if (Reghr.test(t)) {
 			//t = '<hr>';
 			t = inline(text).trimEnd();
-			t = `<hr${atr}>${t}`;			
+			t = `<hr${atr}>${t}`;
 			pusht(t);
 			continue;
 		}
-		
-		if (swrem) continue;  // tag - + #	
-		
+
+		if (swrem) continue;  // tag - + #
+
 		// Titres
 		if (Regh.test(t)) {
 			let L = tag.trim().length;
 			t = inline(text).trimEnd();
 			t = `<h${L}${atr}>${t}</h${L}>`;
 			pusht(t);
-			continue;			
+			continue;
 		}
-		
+
 		// Paragraphes simples
 		if (Regp.test(t)) {
 			t = inline(text).trimEnd();
@@ -288,7 +292,7 @@ ejh.easy = src => {
 			pusht(t);
 			continue;
 		}
-		
+
 		// Paragraphes avec retour lignes p
 		if (Regpr.test(t)) {
 			t = inline(text).trimEnd().replace(/\n/g , '<br>\n');
@@ -296,7 +300,7 @@ ejh.easy = src => {
 			pusht(t);
 			continue;
 		}
-		
+
 		// Texte formatté pre
 		if (Regpre.test(t)) {
 			t = `<pre${atr}>${brcode(text.trimEnd())}</pre>`;
@@ -304,8 +308,8 @@ ejh.easy = src => {
 			else if (swpen) t = `<form>\n<pre${atr}>${brcode(text.trimEnd())}</pre>\n<a href="WebEditor?t=${encodeURIComponent(text)}"><input type=button value=Run></a>\n</form>`;
 			pusht(t);
 			continue;
-		}			
-		
+		}
+
 		// Si rien ne convient
 		t = tag + text.trimEnd();
 		pusht(t);
