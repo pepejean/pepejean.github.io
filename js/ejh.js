@@ -178,7 +178,7 @@ ejh.easy = src => {
 
 	// Ajouter un \n supplémentaire après ---- car balise sans aucun contenu
 	// et le \n qui suit risque d'être bouffé si on n'insère pas d'espace après le ----
-	src = src.replace(new RegExp(`^(${Shr})` , 'g') , '$0\n');
+	src = src.replace(new RegExp(`(${Shr})` , 'g') , '$1\n');
 
 	let srcs = splitSrc(src);
 
