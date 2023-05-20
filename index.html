@@ -20,7 +20,6 @@ if (navigator.serviceWorker) {
 	});
 }
 </script>
-<script src="js/ejh.js"></script>
 <script src="js/lz-string.js"></script>
 <script src="js/filtre.js"></script>
 <script src="js/idb.js"></script>
@@ -104,9 +103,9 @@ function encompressme(s){return LZString.compress(s)}
 	let posts = [];	
 	let lifiles = [];
 	for (let file in contents ){
-		titles[file] = contents[file].match(/^#.*$/m)[0].replace(/^#*/ , '').trim();
+		titles[file] = contents[file].match(/^<h.*$/m)[0].replace(/<.*?>/g , '').trim();
 		lifiles.push(`<li><a href="#${file}"><span>${titles[file]}</span></a> <span>${file}</span></li>`);
-		posts.push(`\n<section tabindex=0 id="${file}">\n${ejh.easy(contents[file])}\n</section>\n`);
+		posts.push(`\n<section tabindex=0 id="${file}">\n${contents[file]}\n</section>\n`);
 	}	
 
 	document.title = infos.site_title;		
