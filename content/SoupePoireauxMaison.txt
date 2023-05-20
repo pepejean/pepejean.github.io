@@ -1,19 +1,24 @@
-# Soupe aux poireaux maison
+<h1>Soupe aux poireaux maison</h1>
 
-## Ingrédients
+<h1>Ingrédients</h1>
 
-* Poireaux 
-* Un peu de beurre 
-* Sel (1 cuillère à café) 
-* Poivre 
-* Thym 
-* Laurier
+<ul>
+	<li>Poireaux </li>
+	<li>Un peu de beurre </li>
+	<li>Sel (1 cuillère à café) </li>
+	<li>Poivre </li>
+	<li>Thym </li>
+	<li>Laurier</li>
+</ul>
 
-![Poireaux](./img/poireaux.jpg)
+<img src="./img/poireaux.jpg" alt="Poireaux"
 
-## Préparation
-* Nettoyez les poireaux, en laissant un peu de vert. Coupez-les en 2 dans le sens de la longueur, débitez-les en morceaux de 1,5 à 2 cm de long puis lavez-les bien. 
-* Mettez l'eau dans une grande casserole et ajoutez-y 1 feuille de laurier, du thym, puis salez et faites bouillir le tout. 
-* Quand l'eau bout, ajoutez les poireaux. Faites cuire le tout en remuant de temps en temps. 
-* Après 30 minutes de cuisson, retirez le thym et le laurier et passez le tout au mixer. 
-* Poivrez et rectifiez l'assaisonnement.
+<h1>Préparation</h1>
+
+<ul>
+	<li>Nettoyez les poireaux, en laissant un peu de vert. Coupez-les en 2 dans le sens de la longueur, débitez-les en morceaux de 1,5 à 2 cm de long puis lavez-les bien. </li>
+	<li>Mettez l'eau dans une grande casserole et ajoutez-y 1 feuille de laurier, du thym, puis salez et faites bouillir le tout. </li>
+	<li>Quand l'eau bout, ajoutez les poireaux. Faites cuire le tout en remuant de temps en temps. </li>
+	<li>Après 30 minutes de cuisson, retirez le thym et le laurier et passez le tout au mixer. </li>
+	<li>Poivrez et rectifiez l'assaisonnement.</li>
+</ul>

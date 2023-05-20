@@ -1,30 +1,36 @@
-# Soupe de pois chiches
+<h1>Soupe de pois chiches</h1>
 
-- Cette délicieuse soupe libanaise est très vite préparée.
+<p>Cette délicieuse soupe libanaise est très vite préparée.</p>
 
-## Ingrédients
+<h1>Ingrédients</h1>
 
-* 450 g de pois chiches en conserve
-* 2 C à s d'huile d'olive
-* 1 oignon
-* 3 gousses d'ail
-* 1.2 1 de bouillon de volaille ou de légumes
-* 4 c à s de crème
-* 2c à s de persil haché
-* sel et poivre
+<ul>
+	<li>450 g de pois chiches en conserve</li>
+	<li>2 C à s d'huile d'olive</li>
+	<li>1 oignon</li>
+	<li>3 gousses d'ail</li>
+	<li>1.2 1 de bouillon de volaille ou de légumes</li>
+	<li>4 c à s de crème</li>
+	<li>2c à s de persil haché</li>
+	<li>sel et poivre</li>
+</ul>
 
-## Préparation
+<h1>Préparation</h1>
 
 ### Le houmous
-* Pelez et râpez l'oignon.
-* Epluchez l'ail. 
-* Egouttez les pois chiches en conservant leur jus et versez-les dans le bol de votre mixer. 
-* Ajoutez l'huile d'olive, l'oignon, l'ail, du sel et du poivre. 
-* Mixez le tout, en ajou­tant un peu de jus de pois chiches si nécessai­re. 
+<ul>
+	<li>Pelez et râpez l'oignon.</li>
+	<li>Epluchez l'ail. </li>
+	<li>Egouttez les pois chiches en conservant leur jus et versez-les dans le bol de votre mixer. </li>
+	<li>Ajoutez l'huile d'olive, l'oignon, l'ail, du sel et du poivre. </li>
+	<li>Mixez le tout, en ajou­tant un peu de jus de pois chiches si nécessai­re. </li>
+</ul>
 ### La soupe
-* Versez ce houmous dans une casserole.
-* Réchauffez le bouillon et versez-le, brûlant, dans la casserole. 
-* Mélangez intimement et vérifiez l'assaisonnement.
-* Versez la soupe dans des bols ou dans des assiettes creuses. 
-* Versez 1 c à s de crème dans chaque récipient
-* Saupoudrez de persil et servez.
+<ul>
+	<li>Versez ce houmous dans une casserole.</li>
+	<li>Réchauffez le bouillon et versez-le, brûlant, dans la casserole. </li>
+	<li>Mélangez intimement et vérifiez l'assaisonnement.</li>
+	<li>Versez la soupe dans des bols ou dans des assiettes creuses. </li>
+	<li>Versez 1 c à s de crème dans chaque récipient</li>
+	<li>Saupoudrez de persil et servez.</li>
+</ul>

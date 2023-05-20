@@ -1,104 +1,110 @@
-# La cuisson au four
+<h1>La cuisson au four</h1>
 
-## Rôtir au four
+<h1>Rôtir au four</h1>
 
-- Rôtir au four, c'est faire cuire et dorer au four avec un peu de matière grasse, à une température variant de 200 à 250 degrés. 
+<p>Rôtir au four, c'est faire cuire et dorer au four avec un peu de matière grasse, à une température variant de 200 à 250 degrés. </p>
 
-- Ce mode de cuisson convient aux grosses pièces de viande.
+<p>Ce mode de cuisson convient aux grosses pièces de viande.</p>
 
-* Assaisonner la viande et la poser sur la plaque à rôtir. 
-* Ajouter un peu de matière grasse.
-* Disposer les légumes (carottes, oignons, céleri) autour de la viande.
-* Faire rôtir à forte chaleur pendant 15 minutes environ. 
-* Ajouter peu de liquide (eau ou vin) pour déglacer. 
-* Réduire la chaleur et poursuivre la cuisson à 200 degrés environ.
-* Arroser le rôti de temps à autre en cours de cuisson. 
-* Utiliser le fond pour préparer la sauce.
+<ul>
+	<li>Assaisonner la viande et la poser sur la plaque à rôtir. </li>
+	<li>Ajouter un peu de matière grasse.</li>
+	<li>Disposer les légumes (carottes, oignons, céleri) autour de la viande.</li>
+	<li>Faire rôtir à forte chaleur pendant 15 minutes environ. </li>
+	<li>Ajouter peu de liquide (eau ou vin) pour déglacer. </li>
+	<li>Réduire la chaleur et poursuivre la cuisson à 200 degrés environ.</li>
+	<li>Arroser le rôti de temps à autre en cours de cuisson. </li>
+	<li>Utiliser le fond pour préparer la sauce.</li>
+</ul>
 
-## Rôtir au four dans un diable
+<h1>Rôtir au four dans un diable</h1>
 
-* Assaisonner la pièce à cuire. 
-* La placer dans le diable, avec ou sans légumes, le cas échéant avec un peu de matière grasse.
-* Couvrir et mettre au four (200 à 250 degrés). 
-* Pour obtenir une belle coloration, retirer le couvercle 20 minutes environ avant la fin de la cuisson.
+<ul>
+	<li>Assaisonner la pièce à cuire. </li>
+	<li>La placer dans le diable, avec ou sans légumes, le cas échéant avec un peu de matière grasse.</li>
+	<li>Couvrir et mettre au four (200 à 250 degrés). </li>
+	<li>Pour obtenir une belle coloration, retirer le couvercle 20 minutes environ avant la fin de la cuisson.</li>
+</ul>
 
-## Braiser au four
+<h1>Braiser au four</h1>
 
-- En braisant au four, pn obtient de meilleurs résultats, la répartition de la chaleur étant plus régulière.
+<p>En braisant au four, pn obtient de meilleurs résultats, la répartition de la chaleur étant plus régulière.</p>
 
-- On commence par faire revenir sur la cuisinière pour que les aliments prennent plus vite couleur et que les pores de la viande se ferment plus vite. Après mouillement, la cocotte est mise au four à 180 degrés.
+<p>On commence par faire revenir sur la cuisinière pour que les aliments prennent plus vite couleur et que les pores de la viande se ferment plus vite. Après mouillement, la cocotte est mise au four à 180 degrés.</p>
 
-- On éteindra le four 20 minutes avant la fin de la cuisson, de façon à ce que celle-ci se termine lentement, pour le plus grand bien de la pièce à braiser.
+<p>On éteindra le four 20 minutes avant la fin de la cuisson, de façon à ce que celle-ci se termine lentement, pour le plus grand bien de la pièce à braiser.</p>
 
-## Griller
+<h1>Griller</h1>
 
-- Griller, c'est faire dorer à four ouvert sans l'action d'une chaleur rayonnante, à une température de 350 degrés. Sosu l'action de la forte chaleur, l'albumine coagule immédiatement et les aliments gardent tout leur jus.
+<p>Griller, c'est faire dorer à four ouvert sans l'action d'une chaleur rayonnante, à une température de 350 degrés. Sosu l'action de la forte chaleur, l'albumine coagule immédiatement et les aliments gardent tout leur jus.</p>
 
-- Les grillades conviennent bien pour la cuisson des viande, poisson et volaille. Elles ne demandent que peu de temps de cuisson et peu de matière grasse.
+<p>Les grillades conviennent bien pour la cuisson des viande, poisson et volaille. Elles ne demandent que peu de temps de cuisson et peu de matière grasse.</p>
 
-* Chauffer le gril avant de commencer la cuisson.
-* Assaisonner la pièce à griller avant de la poser sur le gril, mais ne la saler qu'après.  
-* Badigeonner éventuellement avant cuisson avec un peu d'huile, ou enduire de beurre, pour obtenir une belle couleur dorée.
-* Poser les morceaux à griller sur le gril ou les enfiler sur la broche.
-* Placer les morceaux plats le plus près possible du gril. 
-* Placer plus loin les grosses pièces qui demandent une cuisson prolongée.
+<ul>
+	<li>Chauffer le gril avant de commencer la cuisson.</li>
+	<li>Assaisonner la pièce à griller avant de la poser sur le gril, mais ne la saler qu'après.  </li>
+	<li>Badigeonner éventuellement avant cuisson avec un peu d'huile, ou enduire de beurre, pour obtenir une belle couleur dorée.</li>
+	<li>Poser les morceaux à griller sur le gril ou les enfiler sur la broche.</li>
+	<li>Placer les morceaux plats le plus près possible du gril. </li>
+	<li>Placer plus loin les grosses pièces qui demandent une cuisson prolongée.</li>
+</ul>
 
-## Gratiner
+<h1>Gratiner</h1>
 
-- Gratiner, c'est faire dorer au four le dessus d'un plat en le passant quelques minutes sous le gril
+<p>Gratiner, c'est faire dorer au four le dessus d'un plat en le passant quelques minutes sous le gril</p>
 
-- On recouvre souvent le plat à gratiner, de fromage ou de chapelure avec quelques noix de graisse. 
+<p>On recouvre souvent le plat à gratiner, de fromage ou de chapelure avec quelques noix de graisse. </p>
 
-## Cuire au four
+<h1>Cuire au four</h1>
 
-- Cuire au four, c'est faire cuire dans un moule placé au four, à une température variant de 120 à 250 degrés.
+<p>Cuire au four, c'est faire cuire dans un moule placé au four, à une température variant de 120 à 250 degrés.</p>
 
-- Cette méthode s'emploie surtout pour les pâtisseries et les soufflés.
+<p>Cette méthode s'emploie surtout pour les pâtisseries et les soufflés.</p>
 
-- Ne jamais poser le moule dans le fond du four, ni sur le côté, mais toujours au centre, gâteaux plats sur la plaque du milieu, gâteaux épais sur la plaque du bas.
+<p>Ne jamais poser le moule dans le fond du four, ni sur le côté, mais toujours au centre, gâteaux plats sur la plaque du milieu, gâteaux épais sur la plaque du bas.</p>
 
-## Le bain-marie au four
+<h1>Le bain-marie au four</h1>
 
-- La préparation est placée dans un moule en faïence ou en porcelaine, beurré et obligatoirement fermé, lui-même placé au four dans un bain-marie.
+<p>La préparation est placée dans un moule en faïence ou en porcelaine, beurré et obligatoirement fermé, lui-même placé au four dans un bain-marie.</p>
 
-- Il est important est la température de l'eau soit constante (75 à 85 degrés). Pour cela, la température du four doit être de 120 à 150 degrés, selon le modèle. 
+<p>Il est important est la température de l'eau soit constante (75 à 85 degrés). Pour cela, la température du four doit être de 120 à 150 degrés, selon le modèle. </p>
 
-- C'est le mode de cuisson classique pour les terrines et les pâtés.
+<p>C'est le mode de cuisson classique pour les terrines et les pâtés.</p>
 
-## Les fours à chaleur tournante (à air pulsé)
+<h1>Les fours à chaleur tournante (à air pulsé)</h1>
 
-- Dans les fours à chaleur tournante, un ventilateur placé à l'arrière du four aspire l'air chaud et le refoule sur la pièce à cuire. 
+<p>Dans les fours à chaleur tournante, un ventilateur placé à l'arrière du four aspire l'air chaud et le refoule sur la pièce à cuire. </p>
 
-- On peut enfourner plusieurs plaques à la fois et cuire sur plusieurs étages, puisque la chaleur est régulièrement répartie.
+<p>On peut enfourner plusieurs plaques à la fois et cuire sur plusieurs étages, puisque la chaleur est régulièrement répartie.</p>
 
-## Les fours à micro-ondes
+<h1>Les fours à micro-ondes</h1>
 
-- Ces appareils permettent de cuire et de réchauffer très rapidement les aliments les plus divers.
+<p>Ces appareils permettent de cuire et de réchauffer très rapidement les aliments les plus divers.</p>
 
-- Les micro-ondes sont absorbées par les substances organiques, aussi bien crues que cuites ou surgelées. Les ondes pénètrent à l'intérieur du produit et le réchauffent ou le cuisent. 
+<p>Les micro-ondes sont absorbées par les substances organiques, aussi bien crues que cuites ou surgelées. Les ondes pénètrent à l'intérieur du produit et le réchauffent ou le cuisent. </p>
 
-- Du fait du raccourcissement des temps de cuisson, les éléments nutritifs sont bien préservés et les produits gardent leur saveur naturelle; les plats ne se dessèchent pas et restent appétissants. 
+<p>Du fait du raccourcissement des temps de cuisson, les éléments nutritifs sont bien préservés et les produits gardent leur saveur naturelle; les plats ne se dessèchent pas et restent appétissants. </p>
 
-- Dans un four à micro-ondes, les aliments ne dorent pas, sauf si on les met dans des plats en porcelaine ou en verre dont le fond est muni d'une couche d'oxyde de zinc. Certains appareils ont un gril incorporé qui peut être utilisé pour les grillades.
+<p>Dans un four à micro-ondes, les aliments ne dorent pas, sauf si on les met dans des plats en porcelaine ou en verre dont le fond est muni d'une couche d'oxyde de zinc. Certains appareils ont un gril incorporé qui peut être utilisé pour les grillades.</p>
 
-- Les fours à micro-ondes permettent d'une part de préparer un repas sans problème dans un laps de temps très court (en particulier des mets congelés) et, d'autre part, de cuire de nombreux aliments sans adjonction d'eau ou de graisse.
+<p>Les fours à micro-ondes permettent d'une part de préparer un repas sans problème dans un laps de temps très court (en particulier des mets congelés) et, d'autre part, de cuire de nombreux aliments sans adjonction d'eau ou de graisse.</p>
 
-## Les grillades au charbon de bois 
+<h1>Les grillades au charbon de bois </h1>
 
-- Les grillades au charbon de bois sont fort appréciées en plein air. 
+<p>Les grillades au charbon de bois sont fort appréciées en plein air. </p>
 
-- La viande prend un léger goût fumé; il faut l'assaisonner avant de la griller après l'avoir fait macérer quelques heures dans une marinade.
+<p>La viande prend un léger goût fumé; il faut l'assaisonner avant de la griller après l'avoir fait macérer quelques heures dans une marinade.</p>
 
-- Ne jamais faire griller au-dessus des flammes vives, mais au-dessus de la braise. 
+<p>Ne jamais faire griller au-dessus des flammes vives, mais au-dessus de la braise. </p>
 
-- Eviter les viandes grasses: la graisse tombe goutte à goutte sur le feu et brûle en dégageant beaucoup de fumée.
+<p>Eviter les viandes grasses: la graisse tombe goutte à goutte sur le feu et brûle en dégageant beaucoup de fumée.</p>
 
-## Rôtir dans une feuille d'aluminium, un sac de cuisson ou une feuille à rôtir
+<h1>Rôtir dans une feuille d'aluminium, un sac de cuisson ou une feuille à rôtir</h1>
 
-- Ce procédé convient pour les viandes, les poissons et les légumes.
+<p>Ce procédé convient pour les viandes, les poissons et les légumes.</p>
 
-- Il permet de garder aux aliments tous leurs sucs, mais par contre, ne leur fait pas prendre couleur.
+<p>Il permet de garder aux aliments tous leurs sucs, mais par contre, ne leur fait pas prendre couleur.</p>
 
-- Il n'est pas nécessaire d'ajouter de graisse. Le jus s'écoule dans la papillote et ne peut s'évaporer. 
+<p>Il n'est pas nécessaire d'ajouter de graisse. Le jus s'écoule dans la papillote et ne peut s'évaporer. </p>
 
-- Si on désire obtenir un mets bien doré, il faut ouvrir la papillote 20 minutes environ avant la fin de la cuisson. 
+<p>Si on désire obtenir un mets bien doré, il faut ouvrir la papillote 20 minutes environ avant la fin de la cuisson. </p>

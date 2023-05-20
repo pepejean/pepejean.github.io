@@ -1,23 +1,30 @@
-# Taboulé
+<h1>Taboulé</h1>
 
-## Ingrédients pour 2 personnes
-* 120 g de semoule de couscous
-* 2 tomates fermes
-* 2 oignons blancs
-* 1 bouquet de menthe
-* 1 petit bouquet de persil
-* 1 poivron jaune ou rouge
-* 20 g de raisins secs
-* 1 gros citrons
-* 3 cuillères à soupe d'huile d'olive
-* poivre, éventuellement sel
+<h1>Ingrédients pour 2 personnes</h1>
 
-## Préparation
-* Mettre la semoule dans une casserole, versez du bouillon chaud, laissez gonfler 15 min, placez au réfrigérateur.
-* Pressez les citrons, équeutez le persil et la menthe. Ciselez ces herbes séparément afin d’obtenir un bol rempli de persil et un demi-bol de menthe. Partagez les tomates en deux, épépinez-les, puis détaillez-les en petits dés.
-* Ébarbez, pelez et hachez les oignons blancs avec un peu de leur tige verte. Taillez le poivron en petits cubes.
-* Versez la semoule dans un plat creux et ajoutez le persil, la menthe, les tomates, le poivron, les oignons et les raisins secs égouttés.
-* Dans un bol, mettez une bonne pincée de poivre, le jus de citron, et l’huile d’olive. Mélangez puis versez cette vinaigrette sur la semoule. Replacez éventuellement au réfrigérateur et servir.
+<ul>
+	<li>120 g de semoule de couscous</li>
+	<li>2 tomates fermes</li>
+	<li>2 oignons blancs</li>
+	<li>1 bouquet de menthe</li>
+	<li>1 petit bouquet de persil</li>
+	<li>1 poivron jaune ou rouge</li>
+	<li>20 g de raisins secs</li>
+	<li>1 gros citrons</li>
+	<li>3 cuillères à soupe d'huile d'olive</li>
+	<li>poivre, éventuellement sel</li>
+</ul>
 
-## Amélioration
-On peut améliorer la recette en ajoutant du poulet cuit découpé en lanières ou en morceaux.
+<h1>Préparation</h1>
+
+<ul>
+	<li>Mettre la semoule dans une casserole, versez du bouillon chaud, laissez gonfler 15 min, placez au réfrigérateur.</li>
+	<li>Pressez les citrons, équeutez le persil et la menthe. Ciselez ces herbes séparément afin d’obtenir un bol rempli de persil et un demi-bol de menthe. Partagez les tomates en deux, épépinez-les, puis détaillez-les en petits dés.</li>
+	<li>Ébarbez, pelez et hachez les oignons blancs avec un peu de leur tige verte. Taillez le poivron en petits cubes.</li>
+	<li>Versez la semoule dans un plat creux et ajoutez le persil, la menthe, les tomates, le poivron, les oignons et les raisins secs égouttés.</li>
+	<li>Dans un bol, mettez une bonne pincée de poivre, le jus de citron, et l’huile d’olive. Mélangez puis versez cette vinaigrette sur la semoule. Replacez éventuellement au réfrigérateur et servir.</li>
+</ul>
+
+<h1>Amélioration</h1>
+
+<p>On peut améliorer la recette en ajoutant du poulet cuit découpé en lanières ou en morceaux.</p>

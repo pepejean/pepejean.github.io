@@ -1,21 +1,27 @@
-# Le pain machine
+<h1>Le pain machine</h1>
 
 -- Voici les proportions à respecter pour fabriquer du pain à la machine dont on ne se lasse pas.
-Idéalement, la matière grasse à utiliser est du saindoux.
+<p>Idéalement, la matière grasse à utiliser est du saindoux.</p>
 
-## Pour un pain blanc de 700 g   
-* 460 g de farine blanche panifiable 
-* 275 g d'eau 
-* 9 g de levure fraîche 
-* 8 g de sel 
-* 9 g de sucre 
-* 18 à 30 g de matière grasse 
+<h1>Pour un pain blanc de 700 g   </h1>
 
-## Pour un pain gris de 700 g
-* 270 g de farine blanche panifiable 
-* 180 g de farine grise 
-* 270 g d'eau 
-* 9 g de levure fraîche 
-* 7 g de sel 
-* 9 g de sucre 
-* 18 à 30 g de matière grasse
+<ul>
+	<li>460 g de farine blanche panifiable </li>
+	<li>275 g d'eau </li>
+	<li>9 g de levure fraîche </li>
+	<li>8 g de sel </li>
+	<li>9 g de sucre </li>
+	<li>18 à 30 g de matière grasse </li>
+</ul>
+
+<h1>Pour un pain gris de 700 g</h1>
+
+<ul>
+	<li>270 g de farine blanche panifiable </li>
+	<li>180 g de farine grise </li>
+	<li>270 g d'eau </li>
+	<li>9 g de levure fraîche </li>
+	<li>7 g de sel </li>
+	<li>9 g de sucre </li>
+	<li>18 à 30 g de matière grasse</li>
+</ul>

@@ -1,25 +1,31 @@
-# Soupe thaï au poulet et lait de coco
+<h1>Soupe thaï au poulet et lait de coco</h1>
 
 -- Temps de préparation : 30 minutes
-Temps de cuisson : 20 minutes
+<p>Temps de cuisson : 20 minutes</p>
 
-## Ingrédients pour 8 personnes :
-* 1 oignon
-* 2 gousses d'ail
-* 1/2 poivron rouge
-* 1 cuillère à soupe de citron vert
-* 2 carottes
-* 7 champignons de Paris frais
-* 1 boite de 40 cl de lait de coco
-* 1 bouquet de coriandre fraîche
-* 1 cuillère à café de curry en poudre
-* 1 pincée de piment
-* 1 pouce de gingembre frais
-* 1 blanc de poulet (environ 120 g)
-* sel et poivre
+<h1>Ingrédients pour 8 personnes :</h1>
 
-## Préparation de la recette :
-* Couper tous les légumes et le poulet en fines lamelles.
-* Mettre tous les ingrédients dans une cocotte, sauf la coriandre fraîche, les recouvrir d'eau, ajouter les épices et aromates ainsi que le lait de coco.
-* Laisser cuire pendant 15 minutes.
-* Quand les légumes sont presque cuits, ajouter la coriandre fraîche. Laisser cuire encore 5 minutes, jusqu'à ce que les légumes soient cuits mais fermes. Bon appétit ! 
+<ul>
+	<li>1 oignon</li>
+	<li>2 gousses d'ail</li>
+	<li>1/2 poivron rouge</li>
+	<li>1 cuillère à soupe de citron vert</li>
+	<li>2 carottes</li>
+	<li>7 champignons de Paris frais</li>
+	<li>1 boite de 40 cl de lait de coco</li>
+	<li>1 bouquet de coriandre fraîche</li>
+	<li>1 cuillère à café de curry en poudre</li>
+	<li>1 pincée de piment</li>
+	<li>1 pouce de gingembre frais</li>
+	<li>1 blanc de poulet (environ 120 g)</li>
+	<li>sel et poivre</li>
+</ul>
+
+<h1>Préparation de la recette :</h1>
+
+<ul>
+	<li>Couper tous les légumes et le poulet en fines lamelles.</li>
+	<li>Mettre tous les ingrédients dans une cocotte, sauf la coriandre fraîche, les recouvrir d'eau, ajouter les épices et aromates ainsi que le lait de coco.</li>
+	<li>Laisser cuire pendant 15 minutes.</li>
+	<li>Quand les légumes sont presque cuits, ajouter la coriandre fraîche. Laisser cuire encore 5 minutes, jusqu'à ce que les légumes soient cuits mais fermes. Bon appétit ! </li>
+</ul>

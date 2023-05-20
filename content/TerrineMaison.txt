@@ -1,26 +1,38 @@
-# Terrine maison
+<h1>Terrine maison</h1>
 
-## Ingrédients pour 1 Kg de viande
-* 1/4 au minimum de foie de porc / volaille (cutter)
-* 1/4 au maximum de haché porc / veau non assaisonné
-* 1/4 de blancs de poulet ou de dinde
-* 1/4 de lard frais en tout petits cubes (3 mm de côté)
-* 12 g de sel nitrité
-* 2 g de poivre (3 à 4 pincées)
-* 1 g de 4 épices (2 pincées)
-* 1 oeuf entier / Kg
-* 1 cuiller à café de fécule de maïs
-* 3 à 4 cl de porto, cognac, armagnac, etc.
-* 50 à 70 g de champignons, noisettes, pistaches, etc.
+<h1>Ingrédients pour 1 Kg de viande</h1>
 
-## Garniture
-* 2 feuilles de laurier
-* environ 40 grains de genévrier
+<ul>
+	<li>1/4 au minimum de foie de porc / volaille (cutter)</li>
+	<li>1/4 au maximum de haché porc / veau non assaisonné</li>
+	<li>1/4 de blancs de poulet ou de dinde</li>
+	<li>1/4 de lard frais en tout petits cubes (3 mm de côté)</li>
+	<li>12 g de sel nitrité</li>
+	<li>2 g de poivre (3 à 4 pincées)</li>
+	<li>1 g de 4 épices (2 pincées)</li>
+	<li>1 oeuf entier / Kg</li>
+	<li>1 cuiller à café de fécule de maïs</li>
+	<li>3 à 4 cl de porto, cognac, armagnac, etc.</li>
+	<li>50 à 70 g de champignons, noisettes, pistaches, etc.</li>
+</ul>
 
-## Gelée
-* 3 feuilles de gélatine
-* 12,5 cl d'eau
-* 12,5 cl de madère
+<h1>Garniture</h1>
 
-## Cuisson
-* 2h à 150°C au bain marie, ou 2h30 à la vapeur dans de petites terrines.
+<ul>
+	<li>2 feuilles de laurier</li>
+	<li>environ 40 grains de genévrier</li>
+</ul>
+
+<h1>Gelée</h1>
+
+<ul>
+	<li>3 feuilles de gélatine</li>
+	<li>12,5 cl d'eau</li>
+	<li>12,5 cl de madère</li>
+</ul>
+
+<h1>Cuisson</h1>
+
+<ul>
+	<li>2h à 150°C au bain marie, ou 2h30 à la vapeur dans de petites terrines.</li>
+</ul>
