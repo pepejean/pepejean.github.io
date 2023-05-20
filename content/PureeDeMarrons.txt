@@ -1,0 +1,23 @@
+<h1>Purée de marrons</h1>
+
+<h1>Ingrédients</h1>
+
+<ul>
+	<li>1 boîte de marrons </li>
+	<li>1 branche de céleri </li>
+	<li>1 morceau de sucre </li>
+	<li>un peu de beurre </li>
+</ul>
+
+<h1>Méthode</h1>
+
+<ul>
+	<li>Mettre le céleri dans une casserole, cuire dans du bouillon. </li>
+	<li>Mettre les marrons dans une autre casserole. </li>
+	<li>Ajouter le céleri, le sucre et assez du bouillon pour recouvrir le tout. </li>
+	<li>Faire prendre ébullition pour que les marrons deviennent brûlants. </li>
+	<li>Renverser sur un tamis et passer rapidement pendant qu'ils sont brûlants. </li>
+	<li>Recueillir la purée dans un sautoir. </li>
+	<li>Remuer à feu très vif pour mettre à la consistance voulue avec un peu de bouillon. </li>
+	<li>Hors du feu, compléter avec du beurre, du lait ou de la crème.</li>
+</ul>

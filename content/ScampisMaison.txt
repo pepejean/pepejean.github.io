@@ -1,0 +1,28 @@
+<h1>Scampis maison</h1>
+
+<h1>Ingrédients pour 2 personnes en plat ou 4 personnes en entrée</h1>
+
+<ul>
+	<li>24 gros scampis </li>
+	<li>100 g lardons nature </li>
+	<li>1 oignon </li>
+	<li>1 petite carotte </li>
+	<li>beurre </li>
+	<li>un peu de vin blanc </li>
+	<li>éventuellement un peu de persil </li>
+	<li>poivre</li>
+</ul>
+
+<h1>Préparation</h1>
+
+<ul>
+	<li>Décortiquez les scampis, ouvrez-les dans le sens de la longueur et enlevez-leur le filament. </li>
+	<li>Faites chauffer le beurre dans une poêle sauteuse. </li>
+	<li>Ajoutez-y l'oignon coupé très fin et mélangez bien le tout. </li>
+	<li>Ajoutez-y ensuite quelques  carottes râpées et mélangez bien le tout (NB: les carottes absorbent le goût du sel des scampis et du lard). </li>
+	<li>Ajoutez-y des lardons coupés en dés et mélangez bien le tout. </li>
+	<li>Ajoutez-y ensuite les scampis et poivrez le tout. </li>
+	<li>Quand les scampis sont bien dorés, mouillez-les avec un peu de vin blanc et faites cuire encore un peu le tout. </li>
+	<li>Parsemez éventuellement l'assiette d'un peu de persil haché en servant. </li>
+	<li>__Ne salez pas__.</li>
+</ul>

@@ -1,0 +1,29 @@
+<h1>Tomates aux crevettes</h1>
+
+<h1>Ingrédients pour 2 tomates</h1>
+
+<ul>
+	<li>1 avocat bien mûr</li>
+	<li>2 tomates</li>
+	<li>100 g crevettes épluchées </li>
+	<li>jus de citron</li>
+	<li>poivre, tabasco ou chili</li>
+</ul>
+
+<h1>Préparation</h1>
+
+<ul>
+	<li>Vider les tomates à la cuillère, sans les blesser.</li>
+	<li>Couper l'avocat en deux et en prendre la chair à la cuillère.</li>
+	<li>Ecraser la chair des avocats avec le jus du citron vert, éventuellement relever avec du poivre, du tabasco ou du chili. Ne pas saler.</li>
+	<li>Mélanger délicatement avec les crevettes.</li>
+	<li>Remplir les tomates vidées.</li>
+</ul>
+
+<h1>Avocat aux crevettes</h1>
+
+<p>Comme les tomates aux crevettes, sauf que l'on place le mélange dans l'écorce des avocats vidés.</p>
+
+<h1>Le guacamole</h1>
+
+<p>On mélange la chair d'un avocat avec une petite de tomate, une demi-échalote ou un demi-oignon blanc ou rouge, du citron vert, du cumin et des piments. Cette sauce se mange idéalement avec des chips mexicains.</p>

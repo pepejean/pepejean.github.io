@@ -1,0 +1,34 @@
+<h1>Feuilleté de saumon à l'aneth</h1>
+
+<h1>Ingrédients pour 4 personnes</h1>
+
+<ul>
+	<li>1 feuille de laurier</li>
+	<li>6 grains de poivre</li>
+	<li>1 gros bouquet de persil </li>
+	<li>400 g de filet de saumon </li>
+	<li>4 carrés de pâte feuilletée d'environ 12 cm de côté</li>
+	<li>200 g de jeunes branches d'épinard</li>
+	<li>un filet d'huile d'olive</li>
+	<li>40 cl de crème fraîche</li>
+	<li>2 cuillères à café de moutarde</li>
+	<li>2 cuillères à soupe d'aneth frais haché</li>
+	<li>sel et poivre</li>
+</ul>
+
+<h1>Préparation</h1>
+
+<ul>
+	<li>Préchauffez le four à 200°C. </li>
+	<li>Dans une sauteuse, mettez le laurier, les grains de poivre, le persil et le saumon et ajoutez juste assez d'eau pour recouvrir le poisson.</li>
+	<li>Amenez à ébullition, puis réduisez le feu et pochez le poisson 5 minutes jusqu'à ce qu'il s'émiette facilement.</li>
+	<li>Réservez dans un ravier.</li>
+	<li>Badigeonnez chaque carré de pâte feuilletée d'oeuf battu.</li>
+	<li>Disposez-les sur une plaque à pâtisserie légèrement huilée et mettez-les au four jusqu'à ce que les feuilles deviennent dorées et croustillantes.</li>
+	<li>Faites cuire les épinards dans de l'eau bouillante légèrement salée pendant 2 minutes.</li>
+	<li>Égouttez-les soigneusement et gardez-les au chaud. </li>
+	<li>Mélangez dans une petite casserole la crème fraîche, la moutarde et l'aneth et faites chauffer à feu doux. </li>
+	<li>Salez et poivrez. </li>
+	<li>Répartissez les épinards entre les nids de pâte feuilletée et émiettez le saumon dessus.</li>
+	<li>Arrosez-les ensuite de sauce à la moutarde et servez sans tarder.</li>
+</ul>

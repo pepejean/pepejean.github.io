@@ -1,0 +1,27 @@
+<h1>Boulettes maison</h1>
+
+<h1>Ingrédients pour 10 boulettes</h1>
+
+<ul>
+	<li>350 g de viande de veau maigre</li>
+	<li>150 g de lard non-salé</li>
+	<li>1 oignon</li>
+	<li>2 gousses d'ail</li>
+	<li>2 tranches de pain de mie</li>
+	<li>1 œuf</li>
+	<li>sel, poivre, cumin</li>
+</ul>
+
+<h1>Préparation</h1>
+
+<p><img src="img/boulettes.jpg" alt="boulettes maison"</p>
+
+<ul>
+	<li>Couper la viande, bien mélanger et hacher</li>
+	<li>Saler très légèrement, ajouter poivre et cumin</li>
+	<li>Hacher l'oignon avec l'ail et l'incorporer à la viande</li>
+	<li>Battre l'œuf dans un récipient</li>
+	<li>Ajouter dans l'œuf le pain de mie haché</li>
+	<li>Incorporer dans la viande hachée et rectifier l'assaisonnement</li>
+	<li>Rouler les boulettes et cuire à la poêle</li>
+</ul>

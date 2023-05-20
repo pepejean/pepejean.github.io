@@ -1,0 +1,27 @@
+<h1>Soupe aux tomates maison</h1>
+
+<h1>Ingrédients</h1>
+
+<ul>
+	<li>Tomates </li>
+	<li>Quelques branches de céleri </li>
+	<li>Quelques carottes </li>
+	<li>1 oignon ou 1 poireau </li>
+	<li>Sel (1 cuiller à café) </li>
+	<li>Poivre </li>
+</ul>
+
+<h1>Préparation</h1>
+
+<ul>
+	<li>Équeutez des tomates puis rincez-les. </li>
+	<li>Mettez 1 cm d'eau dans une grande casserole, ajoutez-y 1 feuille de laurier, du thym puis salez un peu le tout et faites bouillir. </li>
+	<li>Quand l'eau bout, ajoutez les tomates coupées en 4 (pour bien cuire la pulpe et bien épaissir la soupe) puis faites cuire en remuant de temps en temps. </li>
+	<li>Pendant ce temps, mettez de l'eau à chauffer dans une autre casserole. </li>
+	<li>Coupez l'oignon en 8, retirez-en la grosse peau (un poireau peut remplacer l'oignon), préparez un peu de céleri et quelques carottes et jetez-les dans l'eau bouillante de la deuxième casserole. </li>
+	<li>Quand les tomates se défont bien (après au moins 30 minutes de cuisson), mettez  un passe-vite avec une fine grille sur une casserole, versez-y les tomates et leur jus et passez le tout. Attention: les pépins et la peau des tomates ne passent pas. Pensez également à bien récupérer la pulpe qui colle sous la grille. </li>
+	<li>Ajoutez le contenu de l'autre casserole puis passez le tout au mixer. </li>
+	<li>Poivrez le tout. </li>
+	<li>Continuez la cuisson pendant encore au moins 30 minutes. </li>
+	<li>Rectifier l'assaisonnement.</li>
+</ul>

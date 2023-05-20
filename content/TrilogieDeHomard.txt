@@ -1,0 +1,102 @@
+<h1>Trilogie de homard</h1>
+
+<h1>Menu</h1>
+
+<p>La trilogie de homard est un menu complet comportant:</p>
+
+<ul>
+	<li>un potage (la bisque de homard)</li>
+	<li>une entrée chaude (nage de homard et de Saint-Jacques aux truffes) </li>
+	<li>un plat (le homard grillé au cognac)</li>
+</ul>
+
+<h1>La cuisson du homard</h1>
+
+<ul>
+	<li>Faites bouillir suffisamment d'eau dans une grande casserole et ajoutez-y plusieurs cubes de bouillon Knorr (légumes et poissons). </li>
+	<li>Jetez ensuite les homards dans la casserole et faites cuire le tout pendant 20 minutes. </li>
+	<li>Retirez la casserole de la flamme et laissez tiédir le homard dans son bouillon. </li>
+</ul>
+
+<h1>La bisque de homard (potage)</h1>
+### Ingrédients pour 4 personnes
+<ul>
+	<li>2 carottes </li>
+	<li>1 petite pomme de terre </li>
+	<li>1 gros oignon </li>
+	<li>2 dl de vin blanc sec </li>
+	<li>2 dl de fumet de poisson </li>
+	<li>de l'eau </li>
+	<li>1 verre de cognac </li>
+	<li>les miettes du homard contenues dans le coffre et ses pattes. </li>
+	<li>2 tomates fraîches </li>
+	<li>2 dl de crème fraîche. </li>
+</ul>
+
+### Préparation
+<ul>
+	<li>Hachez les carottes, l'oignon et la petite pomme de terre et faites revenir le tout dans un peu de beurre. </li>
+	<li>Ajoutez-y le cognac et faites flamber le tout, mouillez avec le vin banc ajouter la chair des tomates préalablement épluchées et épépinées, un ½ morceau de sucre et les miettes de homard. </li>
+	<li>Ajoutez ensuite le fumet de poisson et suffisamment d'eau. </li>
+	<li>Assaisonnez et faites mijoter le tout à petit feu minimum 1 h. </li>
+	<li>A la fin de la cuisson, mixez la préparation et ajoutez la crème fraîche. </li>
+</ul>
+
+<h1>Nage de homard et Saint-Jacques aux truffes (entrée)</h1>
+### Ingrédients 
+<ul>
+	<li>6 coquilles Saint-Jacques </li>
+	<li>La chair contenue dans les pinces du homard </li>
+	<li>1 poireau </li>
+	<li>10 g de beurre </li>
+	<li>16 cl de fumet de poisson </li>
+	<li>13 cl de crème fraîche </li>
+	<li>2 truffes en conserves (facultatif) </li>
+	<li>Herbes fraîches (ciboulette et cerfeuil) </li>
+</ul>
+
+### Préparation
+<ul>
+	<li>Rincez les coquilles afin d'éliminer le sable résiduel, puis épongez-les sur un linge. </li>
+	<li>Ouvrez le poireau en 4 dans le sens de la longueur et lavez-les bien, puis émincez-les en fine julienne. </li>
+	<li>Faites fondre le beurre dans une marmite et saisissez la julienne de poireau puis faites revenir le tout pendant 1 minute sans coloration. </li>
+	<li>Mouillez ensuite les poireaux avec le fumet et faites cuire le tout pendant 15 minutes à petite ébullition. </li>
+	<li>10 minutes avant la fin de cette cuisson, ajoutez la chair des pinces du homard si celles-ci sont froides (5 minutes avant la fin si elles sont encore chaudes). </li>
+	<li>Emincez les noix en 2 ou 3 selon l'épaisseur, intercalez-y les rondelles de truffe et ajoutez-les au bouillon de poireau et au homard puis faites cuire le tout pendant 1 minute. </li>
+	<li>Ajoutez au bouillon la crème fraîche, des lamelles de truffe et leur jus et faites cuire le tout pendant 5 minutes. </li>
+	<li>Servir chaud et parsemer d'herbes fraîches. </li>
+</ul>
+
+<h1>Le homard grillé au cognac (plat)</h1>
+### Ingrédients 
+<ul>
+	<li>Les queues du homard </li>
+	<li>Du cognac </li>
+	<li>200 gr de beurre </li>
+	<li>1 pincée de poivre de Cayenne </li>
+	<li>1 un peu de persil haché </li>
+</ul>
+
+### Préparation 
+<ul>
+	<li>Placez les queues de homard dans un plat allant au four, côté carapace contre le fond du plat. </li>
+	<li>Arrosez d'un jet de cognac et 50 gr de beurre fondu. </li>
+	<li>Glissez au four préchauffé thermostat 8 - 250°C. </li>
+	<li>Pendant ce temps, coupez le restant du beurre en petits morceaux et en lui incorporant une cuiller à soupe de cognac, assaisonnez le tout et relevez ce beurre d'une petite pincée de poivre de Cayenne. </li>
+	<li>Ajoutez-y ensuite le persil haché. </li>
+	<li>Au moment de servir, arrosez le homard avec un peu de cognac et flambez le tout. </li>
+	<li>Servez le beurre dans une saucière. </li>
+</ul>
+
+<h1>Astuces</h1>
+### Reconnaître les homards mâles des homards femelles.
+<ul>
+	<li>Le mâle possède un thorax bombé alors que la femelle présente une large queue.</li>
+	<li>La femelle a, sous la carapace, deux petites palmes pour retenir les oeufs.</li>
+</ul>
+
+### La chair des petites pattes est très facile à extraire
+<ul>
+	<li>Coupez les 8 petites pattes avant la base, au ciseau.</li>
+	<li>Videz-les en les roulant sur une planche à l'aide du rouleau à pâtisserie, la chair sort de la patte comme un macaroni.</li>
+</ul>

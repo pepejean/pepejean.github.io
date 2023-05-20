@@ -1,0 +1,22 @@
+<h1>Le pain perdu</h1>
+
+<h1>Ingrédients</h1>
+
+<ul>
+	<li>1/2 litre de lait</li>
+	<li>1 oeuf</li>
+	<li>1 cuillère à soupe de sucre vanillé</li>
+	<li>25 g de cassonade ou de sucre fin</li>
+	<li>50 g de beurre sans sel</li>
+	<li>3 tranches de pain de mie ou de pain rassis</li>
+</ul>
+
+<h1>Préparation</h1>
+
+<ul>
+	<li>Mélanger en fouettant les oeufs avec le lait et le sucre vanillé.</li>
+	<li>Trempez les tranches de pain dans le mélange.</li>
+	<li>Égouttez-les légèrement.</li>
+	<li>Cuisez-les à la poêle, sur les 2 faces, dans le beurre bien chaud.</li>
+	<li>Lorsqu'elles sont bien dorées des deux côtés, retirez-les, saupoudrez-les de cassonade ou de sucre et servez.</li>
+</ul>

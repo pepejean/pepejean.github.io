@@ -1,0 +1,89 @@
+<h1>La cuisson dans une matière grasse</h1>
+
+<h1>Difficulté de la cuisson dans une matière grasse</h1>
+
+<p>La cuisson dans une matière grasse est un peu plus délicate que la cuisson à l'eau:</p>
+
+<ul>
+	<li>Du fait que les températures sont plus de deux fois plus élevées que pour la cuisson à l'eau, une minute peut suffire (pour un steak par exemple) à faire rater un plat. </li>
+	<li>Il faut bien choisir la matière grasse. Le beurre est certainement la matière la plus noble, mais il ne convient absolument pas pour saisir une viande. </li>
+</ul>
+
+<p>L'emploi conjugué de matière grasse et de liquide est encore plus difficile: celui qui réussit bien ses braisages sait tout faire.</p>
+
+<h1>Rôtir à la poêle</h1>
+
+<p>Rôtir à la poêle, c'est faire cuire et dorer rapidement dans une poêle.</p>
+
+<ul>
+	<li>Il faut que la poêle soit bien chaude pour que la pièce à rôtir ne colle pas au fond et prenne couleur.</li>
+	<li>La matière grasse doit atteindre une température de 250 degrés.</li>
+	<li>Ne jamais ajouter de matière grasse froide en cours de cuisson: le rôtissage serait de ce fait interrompu et la pièce à rôtir perdrait de son jus.</li>
+	<li>N'utiliser que des matières grasses ne contenant ni eau ni protéines, c'est-à-dire supportant des températures élevées, huile et graisse végétale par exemple.</li>
+	<li>Ne saler les viandes non panées qu'après les avoir rôties, le sel leurferait perdre de leur jus et elles seraient sèches.</li>
+	<li>Ne jamais piquer la viande au cours de cuisson, cela lui ferait aussi perdre de son jus. La retourner à l'aide d'une spatule. </li>
+</ul>
+
+<h1>Sauter</h1>
+
+<p>Sauter, c'est faire cuire de petits morceaux de viande, relativement vite, dans une cocotte, à une température plus faible que pour le rôtissage à la poêle. Pour sauter, utiliser de préférence un mélange de beurre et d'huile.</p>
+
+<p>Poissons, foie, rognons, viandes émincées ou petits morceaux sont excellents sautés.</p>
+
+<p>Assaisonner en fin de cuisson. Porter à table au sortir de la sauteuse. Cela signifie que toutes les garnitures qui accompagnent le plat doivent être prêtes avant qu'on fasse sauter la viande ou le poisson.</p>
+
+<p>Les meilleures sauteuses sont en cuivre ou en acier émaillé à fond épais. L'important est en effet d'obtenir une répartition régulière de la chaleur. Les sauteuses doivent avant tout être faciles à manier; les cocottes en fonte sont donc peu recommandables du fait de leur poids. </p>
+
+<h1>Frire</h1>
+
+<p>Frire, c'est cuire à la grande friture dans une matière grasse chauffée à une température de 180 à 200 degrés. </p>
+
+<p>Pommes de terre, viandes et poissons en morceaux et légumes panés peuvent être cuits de cette manière.</p>
+
+<ul>
+	<li>L'aliment à frire doit nager dans la graisse ou l'huile.</li>
+	<li>N'utiliser que des matières grasses appropriées: huile, saindoux, etc.</li>
+	<li>Ne pas utiliser le même bain plus de deux à trois fois.</li>
+	<li>Veiller à ce que la friture soit toujours bien chaude.</li>
+	<li>Sécher soigneusement les aliments qui doivent être plongés dans la friture.</li>
+	<li>Ne jeter les aliments que petit à petit dans la bassine à frire, afin que la température du bain ne baisse pas d'un coup et que les aliments prennent couleur.</li>
+</ul>
+
+
+<h1>Fondue à la viande</h1>
+
+<p>La viande coupée en petits dés est frite dans un bain d'huile puis servie avec des sauces et des salades diverses.</p>
+
+<h1>Fondue chinoise</h1>
+
+<p>La viande et les légumes sont cuits dans du bouillon. </p>
+
+<h1>Braiser</h1>
+
+<p>Braiser, c'est faire revenir et cuire un aliment avec une matière grasse au choix et un peu d'eau dans une braisière couverte, à une température de 100 degrés. Cette méthode combine les avantages de l'apport en matière grasse, en liquide et en vapeur. Elle convient en particulier aux morceaux de viande bon marché tels que l'épaule et la poitrine ainsi que pour la cuisson des paupiettes, des ragoûts et du goulache.</p>
+
+<ul>
+	<li>Faire revenir la pièce à braiser à découvert dans une matière grasse chauffée à une température de 180 à 200 degrés.</li>
+	<li>Jeter la graisse qui aurait chauffé trop fort.</li>
+	<li>Mouiller jusqu'à mi-hauteur avec un liquide chaud et poursuivre la cuisson à couvert.</li>
+</ul>
+
+<p>Au contact de la graisse, une succulente croûte dorée se forme sur le morceau braisé. La sauce est de ce fait particulièrement corsée.</p>
+
+<p>Les aliments gardent en grande partie leur valeur alimentaire, seules les vitamines sont perdues.</p>
+
+<p>On peut aussi braiser au four.</p>
+
+<h1>Déglacer</h1>
+
+<p>Déglacer, c'est ajouter un liquide au fond de cuisson d'une pièce braisée pour en dissoudre les sucs et obtenir une sauce corsée.</p>
+
+<h1>Flamber</h1>
+
+<p>Arroser d'alcool (cognac, calvados, rhum, etc.) que l'on fait brûler, en général en fin de cuisson, pour mouiller le fond dans la poêle et en affiner la saveur. L'alcool brûle, il ne reste plus que les principes aromatiques.</p>
+
+<h1>Faire suer</h1>
+
+<p>Faire suer, c'est cuire dans de la graisse chaude, mais à faible température et sans laisser prendre couleur, comme dans le cas des oignons par exemple. </p>
+
+<p>Faire fondre une matière grasse au choix dans une casserole, en tournant à la spatule, à faible température et sans laisser prendre couleur, puis ajouter la farine tout en remuant jusqu'à ce qu'il n'apparaisse plus de petites bulles. Mouiller et laisser épaissir à feu doux.</p>

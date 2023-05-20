@@ -1,0 +1,22 @@
+<h1>Crème de brocoli et chou-fleur</h1>
+
+<h1>Ingrédients</h1>
+
+<ul>
+	<li>1 chou-fleur</li>
+	<li>1 fleur de brocoli</li>
+	<li>1 échalote</li>
+	<li>1 noix de beurre</li>
+	<li>15 cl de crème fraîche</li>
+	<li>Sel, poivre</li>
+	<li>1 cube de bouillon de volaille</li>
+</ul>
+
+<h1>Préparation</h1>
+
+<ul>
+	<li>Lavez le chou-fleur et le brocoli. Pelez et hachez l'échalote.</li>
+	<li>Dans une casserole, faites revenir l'échalote hachée avec la noix de beurre. Quand celle-ci à blondi, ajoutez le chou-fleur ainsi que le brocoli coupés en morceaux, un peu de sel, de poivre et le cube de bouillon. Couvrez d'eau froide et laissez cuire 20 minutes.</li>
+	<li>Mixez le potage, ajoutez la crème fraîche, mélangez et servez.</li>
+	<li>Si vous souhaitez préparer ce potage la veille, faites cuire les légumes, laissez refroidir puis déposez la casserole dans le réfrigérateur. Ne rajoutez là crème qu'après avoir réchauffé le potage, juste avant de servir.</li>
+</ul>
