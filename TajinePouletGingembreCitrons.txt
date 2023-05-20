@@ -1,0 +1,47 @@
+<h1>Tajine de poulet au gingembre et aux citrons confits</h1>
+
+<p>20 minutes de préparation, 1h45 de cuisson.</p>
+
+<h1>Ingrédients pour 4 personnes</h1>
+
+<ul>
+	<li>4 morceaux de poulet</li>
+	<li>2 citrons confits </li>
+	<li>1 morceau de gingembre frais </li>
+	<li>1 bouquet de coriandre fraîche</li>
+	<li>2 oignons </li>
+	<li>7 cl d'huile d'olive </li>
+	<li>1 c. à café rase de cumin</li>
+	<li>sel et poivre</li>
+	<li>160 g de couscous grain moyen</li>
+</ul>
+
+<h1>Préparation</h1>
+
+<ul>
+	<li>Coupez les citrons confits en quartiers. </li>
+	<li>Epluchez et râpez le gingembre. </li>
+	<li>Pelez et émincez les oignons. </li>
+	<li>Lavez, séchez et effeuillez la coriandre. Gardez quelques brins entiers pour décorer, ciselez le reste.</li>
+	<li>Faites chauffer l'huile dans une cocotte.</li>
+	<li>Faites-y dorer les morceaux de poulet. </li>
+	<li>Quand ils sont bien colorés, retirez-les de la cocotte et remplacez-les par les oignons. Faites-les revenir jusqu'à ce qu'ils soient dorés.</li>
+	<li>Remettez alors les morceaux de poulet, ajoutez les citrons confits, la coriandre ciselée, le gingembre râpé et le cumin. </li>
+	<li>Mélangez, salez et poivrez. </li>
+	<li>Versez un fond d'eau et couvrez. </li>
+	<li>Faites cuire 1 heure 30 à feu doux en remuant de temps à autre. Si besoin, remettez un peu d'eau au cours de la cuisson.</li>
+	<li>Avant la fin de la cuisson, préparez le couscous et servez-le dans les assiettes.</li>
+	<li>Versez le tajine sur le couscous préparé, ajoutez les feuilles de coriandre entières et servez très chaud. </li>
+</ul>
+
+<h1>Préparation du couscous rapide (environ 7 minutes)</h1>
+
+<ul>
+	<li>Versez dans un récipient un volume de couscous.</li>
+	<li>Versez le même volume d'eau bouillante salée, couvrir.</li>
+	<li>Laissez gonfler jusqu'à l'absorption complète de l'eau.</li>
+	<li>Egrenez le couscous à la fourchette.</li>
+	<li>Faites fondre une noix de beurre dans une casserole.</li>
+	<li>Versez-y le couscous et mélanger durant 5 minutes avec une cuillère en bois.</li>
+	<li>Servez en assiette.</li>
+</ul>

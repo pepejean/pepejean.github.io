@@ -1,0 +1,25 @@
+<h1>Tagliatelles au saumon et fondue de poireaux</h1>
+
+<h1>Ingrédients</h1>
+
+<ul>
+	<li>1 paquet de pâtes fraîches</li>
+	<li>2 tranches de saumon ou de thon rouge frais</li>
+	<li>3 poireaux</li>
+	<li>sel, poivre</li>
+	<li>muscade</li>
+	<li>le zeste d'un demi citron bio</li>
+	<li>20 cl de crème fraîche</li>
+</ul>
+
+<h1>Préparation</h1>
+
+<ul>
+	<li>Faites bouillir de l'eau selon la quantité indiqué sur l'emballage avec un peu de sel.</li>
+	<li>Coupez le saumon en morceaux.</li>
+	<li>Lavez, émincez les poireaux.</li>
+	<li>Faites revenir les poireaux dans un peu d'huile à feu doux pendant 5 min, puis ajoutez le zeste de citron et la crème. Portez à ébullition pendant 5 min, baisser à feu moyen, ajoutez le saumon et laissez cuire 10 min.</li>
+	<li>Versez les tagliatelles dans l'eau bouillante et laissez cuire selon les instructions sur l'emballage (al dente).</li>
+	<li>Égouttez, puis mélangez avec la fondue de poireau crémeuse au saumon, assaisonnez.</li>
+	<li>Mélangez délicatement, servez bien chaud avec du parmesan. </li>
+</ul>

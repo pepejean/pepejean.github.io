@@ -1,0 +1,35 @@
+<h1>Curry de poulet au coco</h1>
+
+<h1>Ingrédients pour 2 personnes</h1>
+
+<ul>
+	<li>2 dl de lait de coco</li>
+	<li>15 g de pâte de curry verte</li>
+	<li>1 c à c de cassonade</li>
+	<li>2 c à c de sauce de poisson</li>
+	<li>1 feuille de citronnier thaï</li>
+	<li>250 g de blancs de poulet</li>
+	<li>35 g de haricots verts</li>
+	<li>2 c à c d'huile d'arachide</li>
+	<li>7 feuilles de basilic thaï ou de basilic</li>
+	<li>25 g de cacahuètes fraîches</li>
+	<li>1 grand piment rouge</li>
+</ul>
+
+<h1>Préparation</h1>
+
+<img src="img/currypouletcoco.jpg" alt="Poulet au coco et curry"
+
+<ul>
+	<li>Chauffez le lait de coco avec la pâte de curry, la cassonade, la sauce poisson et les feuilles de citronnier, dans un wok ou une poêle profonde. Laissez mijoter pendant 10 minutes, sans couvercle.</li>
+	<li>Coupez le poulet en dés et faites-les dorer 3 minutes dans l'huile, dans une autre poêle. Ajoutez-les au lait de coco avec les haricots verts et la moitié des feuilles de basilic. Laissez mijoter 7 minutes.</li>
+	<li>Hachez les cacahuètes et faites-les griller dans une poêle anti-adhésive.</li>
+	<li>Égrenez les piments et coupez-les en rondelles. Ajoutez-les au curry avec les cacahuètes et le reste des feuilles de basilic. Servez immédiatement. </li>
+</ul>
+
+<h1>Remarque</h1>
+
+<ul>
+	<li>Recette hot comme en Thaïlande.</li>
+	<li>Servir avec du riz thaï ou avec des nouilles de riz.</li>
+</ul>

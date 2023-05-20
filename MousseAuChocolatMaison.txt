@@ -1,0 +1,27 @@
+<h1>Mousse au chocolat maison</h1>
+
+<h1>Ingrédients</h1>
+
+<ul>
+	<li>75 g de chocolat au lait </li>
+	<li>15 g de beurre sans sel </li>
+	<li>35 g de sucre semoule vanillé </li>
+	<li>2 oeufs moyens </li>
+	<li>un peu de crème chantilly </li>
+	<li>des copeaux de chocolat </li>
+	<li>1 petite boîte de fruits (cerises, mandarines, etc.) </li>
+</ul>
+
+<h1>Préparation</h1>
+
+<ul>
+	<li>Chauffez au bain-marie le chocolat avec le beurre et une cuiller à soupe d'eau, mélangez le tout et, dès que le chocolat est fondu, retirez la casserole. </li>
+	<li>Cassez les oeufs en séparant les jaunes des blancs. </li>
+	<li>Ajoutez les jaunes et le sucre dans le chocolat et mélangez bien le tout. </li>
+	<li>Mettez une pincée de sel dans les blancs d'oeufs et faites-les monter en neige. </li>
+	<li>Mélangez-les ensuite à a la crème au chocolat, en soulevant la crème pour la faire retomber sur les blancs d'oeufs. </li>
+	<li>Versez le tout dans 2 coupes et mettez-les au frigo. </li>
+	<li>Au moment de servir, préparez une crème chantilly et, à l'aide d'une poche à douille et déposez-la en 5 tas sur la mousse au chocolat. </li>
+	<li>Autour de celui du milieu, rangez les fruits bien égouttés. </li>
+	<li>Dans les places vides, mettez des copeaux de chocolat.</li>
+</ul>

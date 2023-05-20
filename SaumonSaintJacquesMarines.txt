@@ -1,0 +1,10 @@
+<h1>Saumon et Saint-Jacques marinés</h1>
+
+
+<h1>Préparation</h1>
+
+<ul>
+	<li>Préparez la marinade avec du jus de citron, de l'huile d'arachide, très peu d'huile d'olive, un peu de vin blanc et un trait de vodka. Salez et poivrez le tout. </li>
+	<li>Etalez le carpaccio de saumon dans un plat, déposez au-dessus les Saint-Jacques en fines tranches et recouvrez le tout avec la marinade. Posez un peu d'aneth au-dessus. </li>
+	<li>Laissez plusieurs heures au frigo avant de servir.</li>
+</ul>

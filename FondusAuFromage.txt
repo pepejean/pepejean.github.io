@@ -1,0 +1,24 @@
+<h1>Fondus au fromage</h1>
+
+<h1>Ingrédients pour 12 fondus</h1>
+
+<ul>
+	<li>100 g de beurre </li>
+	<li>150 g de farine </li>
+	<li>0,25L de lait </li>
+	<li>200 g de fromage râpé (du parmesan par exemple) </li>
+	<li>3 jaunes d'œuf </li>
+	<li>le blanc des 3 œufs </li>
+	<li>sel </li>
+	<li>chapelure </li>
+</ul>
+
+<h1>Préparation</h1>
+
+<ul>
+	<li>Chauffez le lait sans le faire bouillir, faites-y fondre le beurre et ajoutez la farine en une fois. Mélangez à la spatule jusqu'à ce que la pâte se détache de la casserole. </li>
+	<li>Hors du feu, ajoutez l'un après l'autre les 3 jaunes d'œuf, ensuite le fromage. </li>
+	<li>Étendez la pâte obtenue sur une plaque bien huilée et laissez refroidir (± 2 cm d'épaisseur). </li>
+	<li>Découpez la pâte à l'emporte-pièce ou au couteau. </li>
+	<li>Passez dans le blanc d'œuf battu, la chapelure puis passez dans la friture bien chaude.</li>
+</ul>

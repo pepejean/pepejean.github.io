@@ -1,0 +1,27 @@
+<h1>Poulet au coco et curry</h1>
+
+<ul>
+	<li>Temps de préparation : 15 minutes</li>
+	<li>Temps de cuisson : 60 minutes</li>
+</ul>
+
+<h1>Ingrédients pour 4 personnes</h1>
+
+<ul>
+	<li>4 escalopes de poulet (environ 120 g l'une)</li>
+	<li>des copeaux de noix de coco</li>
+	<li>du gingembre en boîte (1 cuillère à café)</li>
+	<li>lait de coco (1 boîte soit environ 300 g)</li>
+	<li>du curry en poudre (2 à 3 cuillères à soupe rases)</li>
+	<li>2 oignons jaunes</li>
+	<li>facultatif : champignons de Paris</li>
+</ul>
+
+<h1>Préparation</h1>
+
+<ul>
+	<li>Faire dorer les oignons dans de l'huile d'olive à feu moyen, jusqu'à ce qu'ils soit transparents.</li>
+	<li>Ajouter la moitié du curry, puis faites dorer les escalopes en remuant de temps en temps. Saler et poivrer.</li>
+	<li>Baisser le feu, et ajouter le gingembre, puis couvrir de lait de coco, ajouter le reste du curry, et les copeaux de coco, et les chamignons si souhaité.</li>
+	<li>Laisser mijoter environ 30 mn. Servir chaud accompagné de riz thaï. bon appétit!</li>
+</ul>
