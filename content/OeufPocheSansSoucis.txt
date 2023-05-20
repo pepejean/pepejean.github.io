@@ -1,9 +1,0 @@
-<h1>Oeufs pochés sans souci</h1>
-
-<ul>
-	<li>Tapisser l’intérieur d’une tasse à café de film alimentaire en centrant bien et en laissant un grand rebord à l’extérieur. </li>
-	<li>Casser délicatement l'oeuf dans la tasse, éventuellement y ajouter sel, poivre, basilic, ciboulette, piment d'Espelette, etc.</li>
-	<li>Fermer les bords du film en tournant et faire un noeud hermétique.</li>
-	<li>Porter une grande casserole d'eau à ébulition, attacher les oeufs dans leur film sur une cuillère en bois à l'aide d'une ficelle ou sur une pique à brochette; les plonger ainsi dans l'eau bouillante, suspendus à leur support.</li>
-	<li>Il ne reste plus qu'à égoutter, retirer le film et présenter sur un lit de frisée, des épinards, etc.</li>
-</ul>
