@@ -1,27 +1,32 @@
-# Champignons à la grecque
+<h1>Champignons à la grecque</h1>
 
-- Cette délicieuse recette est de **Paul Bocuse**
+<p>Cette délicieuse recette est de <b>Paul Bocuse</b></p>
 
-## Ingrédients pour 4 personnes
-* 600 g de champignons de Paris
-* Sel marin
-* Poivre noir du moulin
-* Le jus d'un citron
-* 1/4 l de vin blanc
-* Un peu de thym 
-* 1 petite feuille de laurier
-* 10 grains de coriandre
-* 1 grosse tomate
-* 1 tasse de persil haché
-* 1 tasse d'huile d'olive
-* 1 gros oignon
+<h1>Ingrédients pour 4 personnes</h1>
 
-## Préparation
+<ul>
+	<li>600 g de champignons de Paris</li>
+	<li>Sel marin</li>
+	<li>Poivre noir du moulin</li>
+	<li>Le jus d'un citron</li>
+	<li>1/4 l de vin blanc</li>
+	<li>Un peu de thym </li>
+	<li>1 petite feuille de laurier</li>
+	<li>10 grains de coriandre</li>
+	<li>1 grosse tomate</li>
+	<li>1 tasse de persil haché</li>
+	<li>1 tasse d'huile d'olive</li>
+	<li>1 gros oignon</li>
+</ul>
 
-- ![Champignons à la grecque](img/champignonsgrecque.jpg)
+<h1>Préparation</h1>
 
-* Mettez dans une terrine les champignons nettoyés avec le sel, le poivre et le jus de citron.
-* Ajouter le vin blanc, le thym, le laurier, la coriandre, la tomate pelée épépinée et concassée, puis le persil. Mélangez, laissez reposer un peu.
-* Chauffez fortement l'huile dans une poêle,  faites y revenir l'oignon débité en petits dés sans lui laisser prendre couleur.
-* Ajoutez les autres ingrédients, couvrez la poêle et laissez cuire 5 minutes à gros bouillons.
-* Transvasez dans un autre récipient pour arrêter la cuisson. Servez tiède ou placez le récipient au réfrigérateur pour le lendemain.
+<p><img src="img/champignonsgrecque.jpg" alt="Champignons à la grecque"</p>
+
+<ul>
+	<li>Mettez dans une terrine les champignons nettoyés avec le sel, le poivre et le jus de citron.</li>
+	<li>Ajouter le vin blanc, le thym, le laurier, la coriandre, la tomate pelée épépinée et concassée, puis le persil. Mélangez, laissez reposer un peu.</li>
+	<li>Chauffez fortement l'huile dans une poêle,  faites y revenir l'oignon débité en petits dés sans lui laisser prendre couleur.</li>
+	<li>Ajoutez les autres ingrédients, couvrez la poêle et laissez cuire 5 minutes à gros bouillons.</li>
+	<li>Transvasez dans un autre récipient pour arrêter la cuisson. Servez tiède ou placez le récipient au réfrigérateur pour le lendemain.</li>
+</ul>
