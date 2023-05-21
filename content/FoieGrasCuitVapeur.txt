@@ -15,7 +15,8 @@
 
 <h1>Préparation</h1>
 
--- Il faut 30 minutes de préparation, 25 minutes de cuisson en fermant le couvercle et 10 minutes en ôtant le couvercle.
+<p>Il faut 30 minutes de préparation, 25 minutes de cuisson en fermant le couvercle et 10 minutes en ôtant le couvercle.</p>
+
 <p>Une nuit de repos avant finition.</p>
 
 <ul>

@@ -1,6 +1,7 @@
 <h1>Un riz qui ne colle pas</h1>
 
--- Il existe plusieurs méthodes pour préparer un riz qui ne colle pas.
+<p>Il existe plusieurs méthodes pour préparer un riz qui ne colle pas.</p>
+
 <p>Ma méthode préférée est:</p>
 
 <h1>La méthode à la vapeur</h1>

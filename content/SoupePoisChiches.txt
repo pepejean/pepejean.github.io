@@ -2,7 +2,7 @@
 
 <p>Cette délicieuse soupe libanaise est très vite préparée.</p>
 
-<h1>Ingrédients</h1>
+<h2>Ingrédients</h2>
 
 <ul>
 	<li>450 g de pois chiches en conserve</li>
@@ -15,9 +15,10 @@
 	<li>sel et poivre</li>
 </ul>
 
-<h1>Préparation</h1>
+<h2>Préparation</h2>
 
-### Le houmous
+<h3>Le houmous</h3>
+
 <ul>
 	<li>Pelez et râpez l'oignon.</li>
 	<li>Epluchez l'ail. </li>
@@ -25,7 +26,9 @@
 	<li>Ajoutez l'huile d'olive, l'oignon, l'ail, du sel et du poivre. </li>
 	<li>Mixez le tout, en ajou­tant un peu de jus de pois chiches si nécessai­re. </li>
 </ul>
-### La soupe
+
+<h3>La soupe</h3>
+
 <ul>
 	<li>Versez ce houmous dans une casserole.</li>
 	<li>Réchauffez le bouillon et versez-le, brûlant, dans la casserole. </li>

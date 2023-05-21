@@ -1,6 +1,7 @@
 <h1>Lapin aux pruneaux maison</h1>
 
--- En souvenir de maman, Denis Alphonsine, qui me préparait si bien ce lapin aux pruneaux.
+<p>En souvenir de maman, Denis Alphonsine, qui me préparait si bien ce lapin aux pruneaux.</p>
+
 <p>Je pense souvent à toi, maman.</p>
 
 <p><img loading="lazy" src="img/maman.jpg" alt="Maman"</p>

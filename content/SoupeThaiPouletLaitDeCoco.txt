@@ -1,9 +1,10 @@
 <h1>Soupe thaï au poulet et lait de coco</h1>
 
--- Temps de préparation : 30 minutes
+<p>Temps de préparation : 30 minutes</p>
+
 <p>Temps de cuisson : 20 minutes</p>
 
-<h1>Ingrédients pour 8 personnes :</h1>
+<h2>Ingrédients pour 8 personnes :</h2>
 
 <ul>
 	<li>1 oignon</li>
@@ -21,7 +22,7 @@
 	<li>sel et poivre</li>
 </ul>
 
-<h1>Préparation de la recette :</h1>
+<h2>Préparation de la recette :</h2>
 
 <ul>
 	<li>Couper tous les légumes et le poulet en fines lamelles.</li>

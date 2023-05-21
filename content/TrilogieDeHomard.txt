@@ -19,7 +19,9 @@
 </ul>
 
 <h1>La bisque de homard (potage)</h1>
-### Ingrédients pour 4 personnes
+
+<h3>Ingrédients pour 4 personnes</h3>
+
 <ul>
 	<li>2 carottes </li>
 	<li>1 petite pomme de terre </li>
@@ -33,7 +35,8 @@
 	<li>2 dl de crème fraîche. </li>
 </ul>
 
-### Préparation
+<h3>Préparation</h3>
+
 <ul>
 	<li>Hachez les carottes, l'oignon et la petite pomme de terre et faites revenir le tout dans un peu de beurre. </li>
 	<li>Ajoutez-y le cognac et faites flamber le tout, mouillez avec le vin banc ajouter la chair des tomates préalablement épluchées et épépinées, un ½ morceau de sucre et les miettes de homard. </li>
@@ -43,7 +46,7 @@
 </ul>
 
 <h1>Nage de homard et Saint-Jacques aux truffes (entrée)</h1>
-### Ingrédients 
+<h3>Ingrédients</h3>
 <ul>
 	<li>6 coquilles Saint-Jacques </li>
 	<li>La chair contenue dans les pinces du homard </li>
@@ -55,7 +58,8 @@
 	<li>Herbes fraîches (ciboulette et cerfeuil) </li>
 </ul>
 
-### Préparation
+<h3>Préparation</h3>
+
 <ul>
 	<li>Rincez les coquilles afin d'éliminer le sable résiduel, puis épongez-les sur un linge. </li>
 	<li>Ouvrez le poireau en 4 dans le sens de la longueur et lavez-les bien, puis émincez-les en fine julienne. </li>
@@ -68,7 +72,9 @@
 </ul>
 
 <h1>Le homard grillé au cognac (plat)</h1>
-### Ingrédients 
+
+<h3>Ingrédients</h3>
+
 <ul>
 	<li>Les queues du homard </li>
 	<li>Du cognac </li>
@@ -77,7 +83,8 @@
 	<li>1 un peu de persil haché </li>
 </ul>
 
-### Préparation 
+<h3>Préparation</h3>
+
 <ul>
 	<li>Placez les queues de homard dans un plat allant au four, côté carapace contre le fond du plat. </li>
 	<li>Arrosez d'un jet de cognac et 50 gr de beurre fondu. </li>
@@ -89,13 +96,16 @@
 </ul>
 
 <h1>Astuces</h1>
-### Reconnaître les homards mâles des homards femelles.
+
+<h3>Reconnaître les homards mâles des homards femelles.</h3>
+
 <ul>
 	<li>Le mâle possède un thorax bombé alors que la femelle présente une large queue.</li>
 	<li>La femelle a, sous la carapace, deux petites palmes pour retenir les oeufs.</li>
 </ul>
 
-### La chair des petites pattes est très facile à extraire
+<h3>La chair des petites pattes est très facile à extraire</h3>
+
 <ul>
 	<li>Coupez les 8 petites pattes avant la base, au ciseau.</li>
 	<li>Videz-les en les roulant sur une planche à l'aide du rouleau à pâtisserie, la chair sort de la patte comme un macaroni.</li>

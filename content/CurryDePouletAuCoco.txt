@@ -18,7 +18,7 @@
 
 <h1>Préparation</h1>
 
-<img loading="lazy" src="img/currypouletcoco.jpg" alt="Poulet au coco et curry"
+<img loading="lazy" src="img/currypouletcoco.jpg" alt="Poulet au coco et curry">
 
 <ul>
 	<li>Chauffez le lait de coco avec la pâte de curry, la cassonade, la sauce poisson et les feuilles de citronnier, dans un wok ou une poêle profonde. Laissez mijoter pendant 10 minutes, sans couvercle.</li>

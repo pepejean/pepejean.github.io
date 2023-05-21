@@ -1,6 +1,6 @@
 <h1>Soupe aux poireaux maison</h1>
 
-<h1>Ingrédients</h1>
+<h2>Ingrédients</h2>
 
 <ul>
 	<li>Poireaux </li>
@@ -11,9 +11,9 @@
 	<li>Laurier</li>
 </ul>
 
-<img loading="lazy" src="./img/poireaux.jpg" alt="Poireaux"
+<img loading="lazy" src="./img/poireaux.jpg" alt="Poireaux">
 
-<h1>Préparation</h1>
+<h2>Préparation</h2>
 
 <ul>
 	<li>Nettoyez les poireaux, en laissant un peu de vert. Coupez-les en 2 dans le sens de la longueur, débitez-les en morceaux de 1,5 à 2 cm de long puis lavez-les bien. </li>

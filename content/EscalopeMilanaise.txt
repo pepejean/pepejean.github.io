@@ -19,11 +19,9 @@
 
 <ul>
 	<li>Préparez 3 assiettes:</li>
-</ul>
-  * L'une avec de la farine.
-  * Dans une deuxième, battez l'oeuf en omelette avec un peu de sel et de poivre, avec éventuellement une pincée de muscade ou un peu de moutarde.
-  * Une troisième avec la chapelure mélangée au parmesan râpé.
-<ul>
+	<li>L'une avec de la farine.</li>
+	<li>Dans une deuxième, battez l'oeuf en omelette avec un peu de sel et de poivre, avec éventuellement une pincée de muscade ou un peu de moutarde.</li>
+	<li>Une troisième avec la chapelure mélangée au parmesan râpé.</li>
 	<li>Prenez une escalope, passez-là des 2 côtés dans la farine, puis dans l'œuf et enfin d'un coté sur la chapelure. Pour que la chapelure colle bien à l'escalope, appuyez sur celle-ci avec la paume de la main, puis faites la même chose pour l'autre côté de l'escalope</li>
 	<li>Préparez ainsi chaque escalope.</li>
 	<li>Mettez un mélange beurre/huile à fondre dans une poêle jusqu'à ce qu'il devienne mousseux.</li>
