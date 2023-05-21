@@ -12,7 +12,7 @@
 	<li>Laurier</li>
 </ul>
 
-<img src="./img/cerfeuil.jpg" alt="Cerfeuil"
+<img loading="lazy" src="./img/cerfeuil.jpg" alt="Cerfeuil"
 
 <h1>Préparation</h1>
 

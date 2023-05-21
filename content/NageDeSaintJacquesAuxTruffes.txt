@@ -12,7 +12,7 @@
 
 <h1>Préparation</h1>
 
-<p><img src="img/saintjacquesauxtruffes.jpg" alt="Saint-Jacques aux truffes"</p>
+<p><img loading="lazy" src="img/saintjacquesauxtruffes.jpg" alt="Saint-Jacques aux truffes"</p>
 
 <ul>
 	<li>Rincez les coquilles afin d'éliminer le sable résiduel, puis épongez-les sur un linge. </li>

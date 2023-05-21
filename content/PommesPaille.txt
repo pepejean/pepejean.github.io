@@ -10,7 +10,7 @@
 
 <h1>Préparation</h1>
 
-<p><img src="img/pommespaille.jpg" alt="Pommes paille"</p>
+<p><img loading="lazy" src="img/pommespaille.jpg" alt="Pommes paille"</p>
 
 <ul>
 	<li>Épluchez les pommes de terre.</li>

@@ -21,7 +21,7 @@
 
 <h1>Préparation</h1>
 
-<p><img src="img/champignonsgrecque.jpg" alt="Champignons à la grecque"</p>
+<p><img loading="lazy" src="img/champignonsgrecque.jpg" alt="Champignons à la grecque"</p>
 
 <ul>
 	<li>Mettez dans une terrine les champignons nettoyés avec le sel, le poivre et le jus de citron.</li>

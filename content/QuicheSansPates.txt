@@ -14,7 +14,7 @@
 
 <p>Source : <http://www.cuisineaz.com/recettes/mini-quiches-lorraine-sans-pate-81376.aspx></p>
 
-<img src="img/quichessanspate.jpg" alt="quiche sans pâte"
+<img loading="lazy" src="img/quichessanspate.jpg" alt="quiche sans pâte"
 
 <h1>Ingrédients</h1>
 

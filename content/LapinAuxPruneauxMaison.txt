@@ -3,7 +3,7 @@
 -- En souvenir de maman, Denis Alphonsine, qui me préparait si bien ce lapin aux pruneaux.
 <p>Je pense souvent à toi, maman.</p>
 
-<p><img src="img/maman.jpg" alt="Maman"</p>
+<p><img loading="lazy" src="img/maman.jpg" alt="Maman"</p>
 
 <h1>Ingrédients </h1>
 

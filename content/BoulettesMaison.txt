@@ -14,7 +14,7 @@
 
 <h1>Préparation</h1>
 
-<p><img src="img/boulettes.jpg" alt="boulettes maison"</p>
+<p><img loading="lazy" src="img/boulettes.jpg" alt="boulettes maison"</p>
 
 <ul>
 	<li>Couper la viande, bien mélanger et hacher</li>

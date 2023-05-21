@@ -11,7 +11,7 @@
 	<li>Laurier</li>
 </ul>
 
-<img src="./img/poireaux.jpg" alt="Poireaux"
+<img loading="lazy" src="./img/poireaux.jpg" alt="Poireaux"
 
 <h1>Préparation</h1>
 

@@ -15,7 +15,7 @@
 	<li>Poivre</li>
 </ul>
 
-<p><img src="img/porcmiel.jpg" alt="Noisettes de porc au miel"</p>
+<p><img loading="lazy" src="img/porcmiel.jpg" alt="Noisettes de porc au miel"</p>
 
 <h1>Préparation : 45 mn - Cuisson : 35 mn</h1>
 
