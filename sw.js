@@ -1,4 +1,4 @@
-const CACHE_NAME = "cook-0010";
+const CACHE_NAME = "cook-0011";
 
 // Adding the offline page when installing the service worker
 self.addEventListener('install', e => {
