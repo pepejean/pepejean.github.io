@@ -1,20 +1,17 @@
-<h1>Bouchée parfaite aux cèpes, Saint-Jacques et foie gras</h1>
+# Bouchée parfaite aux cèpes, Saint-Jacques et foie gras
 
-<h1>Ingrédients pour 2 personnes</h1>
+# Ingrédients pour 2 personnes
 
-<ul>
-	<li>4 Saint-Jacques de petites tailles</li>
-	<li>1 tranches de foie gras de canard</li>
-	<li>2 petites cèpes de bordeaux</li>
-	<li>éventuellement de la fleur de sel</li>
-</ul>
+* 4 Saint-Jacques de petites tailles
+* 1 tranches de foie gras de canard
+* 2 petites cèpes de bordeaux
+* éventuellement de la fleur de sel
 
-<h1>Préparation </h1>
+# Préparation
 
-<ul>
-	<li>Couper les cèpes de Bordeaux en lamelles.</li>
-	<li>Les faire cuire au beurre pendant 2 min, les réserver.</li>
-	<li>Faire revenir les Saint-Jacques pendant 1 minute pour chaque face.</li>
-	<li>Dans une cuillère, empiler quelques lamelles de cèpe, une Saint-Jacques et un morceau de foie gras.</li>
-	<li>Servir immédiatement.</li>
-</ul>
+* Couper les cèpes de Bordeaux en lamelles.
+* Les faire cuire au beurre pendant 2 min, les réserver.
+* Faire revenir les Saint-Jacques pendant 1 minute pour chaque face.
+* Dans une cuillère, empiler quelques lamelles de cèpe, une Saint-Jacques et un morceau de foie gras.
+* Servir immédiatement.
+

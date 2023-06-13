@@ -1,20 +1,17 @@
-<h1>Poêlées de saint-jacques aux amandes</h1>
+# Poêlées de saint-jacques aux amandes
 
-<h1>Ingrédients pour 2 personnes</h1>
+# Ingrédients pour 2 personnes
 
-<ul>
-	<li>4 grosses Saint-Jacques.</li>
-	<li>Amandes effilées</li>
-	<li>Farine fluide Francine </li>
-	<li>Poivre</li>
-</ul>
+* 4 grosses Saint-Jacques.
+* Amandes effilées
+* Farine fluide Francine
+* Poivre
 
-<h1>Préparation</h1>
+# Préparation
 
-<ul>
-	<li>Séchez les Saint-Jacques à l'aide d'un papier absorbant.</li>
-	<li>Poivrez légèrement.</li>
-	<li>Farinez.</li>
-	<li>Poêlez 2 à 3 minutes par face, pour faire prendre légèrement couleur.</li>
-	<li>A mi-cuisson, ajoutez les amandes effilées.</li>
-</ul>
+* Séchez les Saint-Jacques à l'aide d'un papier absorbant.
+* Poivrez légèrement.
+* Farinez.
+* Poêlez 2 à 3 minutes par face, pour faire prendre légèrement couleur.
+* A mi-cuisson, ajoutez les amandes effilées.
+

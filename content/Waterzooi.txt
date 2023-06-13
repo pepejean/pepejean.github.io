@@ -1,26 +1,23 @@
-<h1>Waterzooi</h1>
+# Waterzooi
 
-<h1>Ingrédients pour 4 personnes</h1>
+# Ingrédients pour 4 personnes
 
-<ul>
-	<li>1 poulet fermier</li>
-	<li>1L de bouillon de volaille (eau + 2 cubes)</li>
-	<li>4 carottes</li>
-	<li>2 poireaux</li>
-	<li>3 branches de céleri</li>
-	<li>2 chicons</li>
-	<li>2 gousses d'ail</li>
-	<li>2 jaunes d'oeuf</li>
-	<li>2 dl de crème fraîche</li>
-	<li>2 cuillers à soupe de persil haché</li>
-	<li>Sel, poivre </li>
-</ul>
+* 1 poulet fermier
+* 1L de bouillon de volaille (eau + 2 cubes)
+* 4 carottes
+* 2 poireaux
+* 3 branches de céleri
+* 2 chicons
+* 2 gousses d'ail
+* 2 jaunes d'oeuf
+* 2 dl de crème fraîche
+* 2 cuillers à soupe de persil haché
+* Sel, poivre
 
-<h1>Préparation</h1>
+# Préparation
 
-<ul>
-	<li>Coupez le poulet en huit. Mettez les morceaux dans une grande casserole et versez le bouillon par-dessus. Portez à ébullition et laissez mijoter le tout à feu doux pendant environ 1h.</li>
-	<li>Pelez les carottes et coupez-les en morceaux. Faites-les revenir dans une noisette de beurre fondu avec les poireaux émincés, les branches de céleri coupées en rondelles, les chicons coupés en morceaux et les gousses d'ail hachées. Ajoutez-les au poulet et prolongez la cuisson pendant 20 minutes.</li>
-	<li>Mélangez les jaunes d'oeuf avec la crème fraîche et le persil. Ajoutez-les au waterzooi, sans cesser de tourner.</li>
-	<li>Mélangez bien et retirez la casserole du feu. Salez et poivrez si nécessaire et prolongez la cuisson quelques instants jusqu'à ce que la sauce épaississe.</li>
-</ul>
+* Coupez le poulet en huit. Mettez les morceaux dans une grande casserole et versez le bouillon par-dessus. Portez à ébullition et laissez mijoter le tout à feu doux pendant environ 1h.
+* Pelez les carottes et coupez-les en morceaux. Faites-les revenir dans une noisette de beurre fondu avec les poireaux émincés, les branches de céleri coupées en rondelles, les chicons coupés en morceaux et les gousses d'ail hachées. Ajoutez-les au poulet et prolongez la cuisson pendant 20 minutes.
+* Mélangez les jaunes d'oeuf avec la crème fraîche et le persil. Ajoutez-les au waterzooi, sans cesser de tourner.
+* Mélangez bien et retirez la casserole du feu. Salez et poivrez si nécessaire et prolongez la cuisson quelques instants jusqu'à ce que la sauce épaississe.
+

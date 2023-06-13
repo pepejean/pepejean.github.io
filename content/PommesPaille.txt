@@ -1,23 +1,20 @@
-<h1>Pommes paille</h1>
+# Pommes paille
 
-<h1>Ingrédients pour 4 personnes</h1>
+# Ingrédients pour 4 personnes
 
-<ul>
-	<li>1 kg de pommes de terre</li>
-	<li>Huile de friture</li>
-	<li>Sel fin</li>
-</ul>
+* 1 kg de pommes de terre
+* Huile de friture
+* Sel fin
 
-<h1>Préparation</h1>
+# Préparation
 
-<p><img loading="lazy" src="img/pommespaille.jpg" alt="Pommes paille"</p>
+![alt text](./img/pommespaille.jpg)
 
-<ul>
-	<li>Épluchez les pommes de terre.</li>
-	<li>Râpez-les</li>
-	<li>Mettez-les dans une passoire, versez dessus de l'eau chaude séchez-les dans un linge.</li>
-	<li>Plongez-y les pommes paille davs une friture à 180 °C.</li>
-	<li>Remuez pour éviter qu'elles ne s'agglomèrent entre elles.</li>
-	<li>Laissez-les cuire jusqu'à ce qu'elles soient dorées, environ 4 min</li>
-	<li>Salez et servez.</li>
-</ul>
+* Épluchez les pommes de terre.
+* Râpez-les
+* Mettez-les dans une passoire, versez dessus de l'eau chaude séchez-les dans un linge.
+* Plongez-y les pommes paille davs une friture à 180 °C.
+* Remuez pour éviter qu'elles ne s'agglomèrent entre elles.
+* Laissez-les cuire jusqu'à ce qu'elles soient dorées, environ 4 min
+* Salez et servez.
+

@@ -1,11 +1,16 @@
-<h1>Temps de cuisson</h1>
+# Temps de cuisson
 
-<h3>Pommes de terre:</h3>
-<p>Non épluchées, 45 min dans l'eau ou au four</p>
-<p>Épluchées, 20 min dans l'eau ou à la vapeur</p>
+### Pommes de terre:
 
-<h3>Haricots verts, haricots beurre</h3>
-<p>8 minutes dans l'eau, vérifier en goûtant</p>
+Non épluchées, 45 min dans l'eau ou au four
 
-<h3>Chou-fleur</h3>
-<p>12 minutes à la vapeur et vérifier</p>
+Épluchées, 20 min dans l'eau ou à la vapeur
+
+### Haricots verts, haricots beurre
+
+8 minutes dans l'eau, vérifier en goûtant
+
+### Chou-fleur
+
+12 minutes à la vapeur et vérifier
+

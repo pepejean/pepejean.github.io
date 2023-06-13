@@ -1,25 +1,22 @@
-<h1>Croquettes aux crevettes</h1>
+# Croquettes aux crevettes
 
-<h1>Ingrédients</h1>
+# Ingrédients
 
-<ul>
-	<li>500 g de petites crevettes grises décortiquées,</li>
-	<li>200 g de farine</li>
-	<li>2 verres de court-bouillon de poisson</li>
-	<li>2 verres de lait</li>
-	<li>1 pincée de noix de muscade râpée</li>
-	<li>3 gros œufs</li>
-	<li>chapelure</li>
-	<li>200 g de saindoux</li>
-	<li>poivre</li>
-</ul>
+* 500 g de petites crevettes grises décortiquées,
+* 200 g de farine
+* 2 verres de court-bouillon de poisson
+* 2 verres de lait
+* 1 pincée de noix de muscade râpée
+* 3 gros œufs
+* chapelure
+* 200 g de saindoux
+* poivre
 
-<h1>Préparation</h1>
+# Préparation
 
-<ul>
-	<li>Préparez la sauce: Mettez le beurre dans une casserole. Lorsqu'il est fondu, ajoutez la farine et remuez bien pour mélanger. Prévoir un bon verre de court-bouillon de poisson. Dans une casserole, à feu doux, versez le lait et le court-bouillon (froids tous deux) et mélanger jusqu'à ce que la sauce devienne homogène puis épaississe.</li>
-	<li>Hors du feu, salez, poivrez et ajoutez la noix de muscade râpée. Vérifiez l'assaisonnement puis incorporez les crevettes. Cassez les œufs et séparez les blancs des jaunes. Ajoutez les jaunes à la préparation et mélangez bien le tout pour avoir une pâte épaisse.</li>
-	<li>Versez la préparation sur un plan de travail, étalez là et laissez là bien refroidir. Faites chauffer l'huile de friture. Dans la préparation bien refroidie, découpez des croquettes et trempez les dans les blancs d'œufs légèrement battus.</li>
-	<li>Passez ensuite les croquettes dans la chapelure disposée dans un plat creux. </li>
-	<li>Enfin, faites cuire à grande friture environ 5 minutes.</li>
-</ul>
+* Préparez la sauce: Mettez le beurre dans une casserole. Lorsqu'il est fondu, ajoutez la farine et remuez bien pour mélanger. Prévoir un bon verre de court-bouillon de poisson. Dans une casserole, à feu doux, versez le lait et le court-bouillon (froids tous deux) et mélanger jusqu'à ce que la sauce devienne homogène puis épaississe.
+* Hors du feu, salez, poivrez et ajoutez la noix de muscade râpée. Vérifiez l'assaisonnement puis incorporez les crevettes. Cassez les œufs et séparez les blancs des jaunes. Ajoutez les jaunes à la préparation et mélangez bien le tout pour avoir une pâte épaisse.
+* Versez la préparation sur un plan de travail, étalez là et laissez là bien refroidir. Faites chauffer l'huile de friture. Dans la préparation bien refroidie, découpez des croquettes et trempez les dans les blancs d'œufs légèrement battus.
+* Passez ensuite les croquettes dans la chapelure disposée dans un plat creux.
+* Enfin, faites cuire à grande friture environ 5 minutes.
+

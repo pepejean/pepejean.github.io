@@ -1,21 +1,17 @@
-<h1>La tarte aux pommes</h1>
+# La tarte aux pommes
 
-<h1>Ingrédients</h1>
+# Ingrédients
 
-<ul>
-	<li>1 [Pâte levée pour tarte](PateLeveePourTarte)</li>
-	<li>1 pomme</li>
-	<li>100 g de sucre fin</li>
-	<li>1 oeuf</li>
-	<li>2 cuillères à soupe de lait</li>
-	<li>Quelques noisettes de beurre</li>
-</ul>
+* 1 [Pâte levée pour tarte](PateLeveePourTarte)
+* 1 pomme
+* 100 g de sucre fin
+* 1 oeuf
+* 2 cuillères à soupe de lait
+* Quelques noisettes de beurre
 
-<h1>Préparation</h1>
+# Préparation
 
-<ul>
-	<li>Vider la pomme, l'éplucher et la couper en fines rondelles.</li>
-	<li>Battre l'oeuf avec 2 cuillers à soupe de lait.</li>
-	<li>Sur une pâte levée dans une platine, étendre la moitié de l'oeuf battu, les rondelles de pommes, l'autre moitié de l'œuf battu, le sucre, quelques noisettes de beurre.</li>
-	<li>Cuire au four préchauffé à 180°C pendant 15 minutes.</li>
-</ul>
+* Vider la pomme, l'éplucher et la couper en fines rondelles.
+* Battre l'oeuf avec 2 cuillers à soupe de lait.
+* Sur une pâte levée dans une platine, étendre la moitié de l'oeuf battu, les rondelles de pommes, l'autre moitié de l'œuf battu, le sucre, quelques noisettes de beurre.
+* Cuire au four préchauffé à 180°C pendant 15 minutes.

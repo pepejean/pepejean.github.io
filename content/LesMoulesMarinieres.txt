@@ -1,28 +1,23 @@
-<h1>Les moules marinières</h1>
+# Les moules marinières
 
-<h1>Ingrédients pour 2 personnes</h1>
+# Ingrédients pour 2 personnes
 
-<ul>
-	<li>1.4 à 2 Kg de moules de zélande</li>
-	<li>1 gros oignon</li>
-	<li>1 céleri</li>
-	<li>Quelques carottes</li>
-	<li>25 g de beurre</li>
-	<li>2 dl de vin blanc ou le jus d'un citron</li>
-	<li>Poivre</li>
-</ul>
+* 1.4 à 2 Kg de moules de zélande
+* 1 gros oignon
+* 1 céleri
+* Quelques carottes
+* 25 g de beurre
+* 2 dl de vin blanc ou le jus d'un citron
+* Poivre
 
-<h1>Préparation</h1>
+# Préparation
 
-<ul>
-	<li>Nettoyer les moules, gratter les coquilles. Jeter les moules ouvertes ou qui se brisent entre vos doigts</li>
-	<li>Éplucher et émincer l’oignon, enlever les feuilles. Coupez le céleri en petits dés et débitez les carottes épluchées en rondelles.</li>
-	<li>Dans une grande casserole, faire fondre le beurre à feu moyen et jetez-y les oignons, le céleri et les carottes.</li>
-	<li>Laissez rissoler pendant 5 minutes, puis ajoutez un demi-verre d'eau.</li>
-	<li>Augmenter le feu sur un feu vif, puis couvrir. </li>
-	<li>Dès que la casserole est pleine de vapeur, jeter les moules. Ajoutez un peu de beurre et arrosez d'un verre de vin blanc ou du jus d'un citron. Mélangez énergiquement avec les légumes.</li>
-	<li>Remettre le couvercle et laisser cuire quelques minutes, en remuant de temps en temps.</li>
-	<li>Poivrez et servez en casserole dès que les moules sont bien ouvertes, accompagnées d'un ravier de pommes de terre frites bien dorées et croustillantes.</li>
-</ul>
-
+* Nettoyer les moules, gratter les coquilles. Jeter les moules ouvertes ou qui se brisent entre vos doigts
+* Éplucher et émincer l’oignon, enlever les feuilles. Coupez le céleri en petits dés et débitez les carottes épluchées en rondelles.
+* Dans une grande casserole, faire fondre le beurre à feu moyen et jetez-y les oignons, le céleri et les carottes.
+* Laissez rissoler pendant 5 minutes, puis ajoutez un demi-verre d'eau.
+* Augmenter le feu sur un feu vif, puis couvrir.
+* Dès que la casserole est pleine de vapeur, jeter les moules. Ajoutez un peu de beurre et arrosez d'un verre de vin blanc ou du jus d'un citron. Mélangez énergiquement avec les légumes.
+* Remettre le couvercle et laisser cuire quelques minutes, en remuant de temps en temps.
+* Poivrez et servez en casserole dès que les moules sont bien ouvertes, accompagnées d'un ravier de pommes de terre frites bien dorées et croustillantes.
 

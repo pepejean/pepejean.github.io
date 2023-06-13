@@ -1,29 +1,26 @@
-<h1>Lapin aux pruneaux maison</h1>
+# Lapin aux pruneaux maison
 
-<p>En souvenir de maman, Denis Alphonsine, qui me préparait si bien ce lapin aux pruneaux.</p>
+En souvenir de maman, Denis Alphonsine, qui me préparait si bien ce lapin aux pruneaux.
 
-<p>Je pense souvent à toi, maman.</p>
+Je pense souvent à toi, maman.
 
-<p><img loading="lazy" src="img/maman.jpg" alt="Maman"</p>
+![alt text](./img/maman.jpg)
 
-<h1>Ingrédients </h1>
+# Ingrédients
 
-<ul>
-	<li>1 beau lapin pour 4 personnes </li>
-	<li>500 g de champignons pour 4 personnes </li>
-	<li>2 à 3 oignons moyens par personne </li>
-	<li>2 à 6 pruneaux par personne</li>
-	<li>Thym, laurier, ail, sel, poivre</li>
-</ul>
+* 1 beau lapin pour 4 personnes
+* 500 g de champignons pour 4 personnes
+* 2 à 3 oignons moyens par personne
+* 2 à 6 pruneaux par personne
+* Thym, laurier, ail, sel, poivre
 
-<h1>Méthode</h1>
+# Méthode
 
-<ul>
-	<li>Coupez les oignons en rondelles. </li>
-	<li>Faites dorer les morceaux de lapin à la casserole, dans un mélange moitié beurre, moitié huile (l'huile est nécessaire pour que le beurre ne brûle pas). </li>
-	<li>Retirez ensuite les morceaux de lapin, posez les rondelles d'oignons dans le jus de cuisson et reposez les morceaux de lapin au-dessus des oignons. </li>
-	<li>Salez et poivrez le tout, assaisonnez avec du thym, du laurier et une demi-gousse d'ail coupée très fin. </li>
-	<li>Faites cuire doucement le lapin pendant 1h15 pour un lapin de 1,5 kg (les lapins plus gros sont coriaces). </li>
-	<li>Le jus se fait très vite en début de cuisson. Quand vous verrez le jus au-dessus des oignons, ajoutez-y les champignons épluchés et coupés en morceaux. </li>
-	<li>15 minutes avant la fin de la cuisson, ajoutez les pruneaux dénoyautés</li>
-</ul>
+* Coupez les oignons en rondelles.
+* Faites dorer les morceaux de lapin à la casserole, dans un mélange moitié beurre, moitié huile (l'huile est nécessaire pour que le beurre ne brûle pas).
+* Retirez ensuite les morceaux de lapin, posez les rondelles d'oignons dans le jus de cuisson et reposez les morceaux de lapin au-dessus des oignons.
+* Salez et poivrez le tout, assaisonnez avec du thym, du laurier et une demi-gousse d'ail coupée très fin.
+* Faites cuire doucement le lapin pendant 1h15 pour un lapin de 1,5 kg (les lapins plus gros sont coriaces).
+* Le jus se fait très vite en début de cuisson. Quand vous verrez le jus au-dessus des oignons, ajoutez-y les champignons épluchés et coupés en morceaux.
+* 15 minutes avant la fin de la cuisson, ajoutez les pruneaux dénoyautés
+

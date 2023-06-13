@@ -1,27 +1,24 @@
-<h1>Pâte levée pour tarte</h1>
+# Pâte levée pour tarte
 
-<h1>Ingrédients</h1>
+# Ingrédients
 
-<ul>
-	<li>200 g de farine</li>
-	<li>20 g de levure</li>
-	<li>1 oeuf</li>
-	<li>1 cuillère à soupe de sucre</li>
-	<li>1 pincée de sel</li>
-	<li>un peu de lait (environ 3 cuillères à soupe)</li>
-</ul>
+* 200 g de farine
+* 20 g de levure
+* 1 oeuf
+* 1 cuillère à soupe de sucre
+* 1 pincée de sel
+* un peu de lait (environ 3 cuillères à soupe)
 
-<h1>Préparation</h1>
+# Préparation
 
-<ul>
-	<li>Tiédir un peu de lait et y dissoudre le sucre.</li>
-	<li>Mettre la farine dans une grande terrine, placer au centre la levure délayée dans le lait tiède, l'oeuf et le sel.</li>
-	<li>Ajouter le beurre ramolli.</li>
-	<li>Pétrir cette pâte jusqu'à ce qu'elle ne colle plus aux doigts.</li>
-	<li>Recouvrir la terrine d'un linge et laisser reposer 1/4 d'heure dans un lieu tiède.</li>
-	<li>Quand la pâte a presque doublé de volume, en abaisser la partie supérieure  pour couvrir la surface de la platine à tarte.</li>
-	<li>Graisser la platine et y déposer la tarte.</li>
-	<li>La relever contre les bords avec les doigts, piquer le fond avec une fourchette.</li>
-	<li>Laisser lever à nouveau pendant 1/2 heure.</li>
-	<li>Garnir la tarte.</li>
-</ul>
+* Tiédir un peu de lait et y dissoudre le sucre.
+* Mettre la farine dans une grande terrine, placer au centre la levure délayée dans le lait tiède, l'oeuf et le sel.
+* Ajouter le beurre ramolli.
+* Pétrir cette pâte jusqu'à ce qu'elle ne colle plus aux doigts.
+* Recouvrir la terrine d'un linge et laisser reposer 1/4 d'heure dans un lieu tiède.
+* Quand la pâte a presque doublé de volume, en abaisser la partie supérieure  pour couvrir la surface de la platine à tarte.
+* Graisser la platine et y déposer la tarte.
+* La relever contre les bords avec les doigts, piquer le fond avec une fourchette.
+* Laisser lever à nouveau pendant 1/2 heure.
+* Garnir la tarte.
+

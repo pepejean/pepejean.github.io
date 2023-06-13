@@ -1,45 +1,42 @@
-<h1>Foie gras cuit à la vapeur</h1>
+# Foie gras cuit à la vapeur
 
-<p>Recette de Jacques Maniere dans "Le grand livre de la cuisine à la vapeur" (livre malheureusement épuisé)</p>
+Recette de Jacques Maniere dans "Le grand livre de la cuisine à la vapeur" (livre malheureusement épuisé)
 
-<h1>Ingrédients  pour une terrine de 700 à 800 g</h1>
+# Ingrédients  pour une terrine de 700 à 800 g
 
-<ul>
-	<li>Un foie d'oie de 800 g environ, de belle couleur ivoire rosé, de préférence, et dont les pointes des lobes ne laissent pas apparaître de vaisseaux sanguins </li>
-	<li>Sous la pression du doigt, le foie gras doit être ferme sans être dur </li>
-	<li>1/2 verre à liqueur de Sauternes ou à défaut de porto</li>
-	<li>Sel et poivre blanc mélangés </li>
-	<li>Terrine</li>
-	<li>Papier d'aluminium</li>
-</ul>
+* Un foie d'oie de 800 g environ, de belle couleur ivoire rosé, de préférence, et dont les pointes des lobes ne laissent pas apparaître de vaisseaux sanguins
+* Sous la pression du doigt, le foie gras doit être ferme sans être dur
+* 1/2 verre à liqueur de Sauternes ou à défaut de porto
+* Sel et poivre blanc mélangés
+* Terrine
+* Papier d'aluminium
 
-<h1>Préparation</h1>
+# Préparation
 
-<p>Il faut 30 minutes de préparation, 25 minutes de cuisson en fermant le couvercle et 10 minutes en ôtant le couvercle.</p>
+Il faut 30 minutes de préparation, 25 minutes de cuisson en fermant le couvercle et 10 minutes en ôtant le couvercle.
 
-<p>Une nuit de repos avant finition.</p>
+Une nuit de repos avant finition.
 
-<ul>
-	<li>Mettez le foie gras 15 minutes au freezer, pour bien le refroidir. </li>
-	<li>Séparez les lobes du foie gras. Sur le talon du plus gros lobe, vous apercevrez un petit boyau. </li>
-	<li>Dégagez-le avec la pointe d'un couteau et extrayez-le en tirant vers l'extérieur au fur et à mesure qu'il se détache. </li>
-	<li>Enlevez les parties vertes ainsi que les quelques vaisseaux sanguins adhérents. </li>
-	<li>Enlevez la peau fine qui entoure le foie gras. </li>
-	<li>Saupoudrez la surface de chacun des lobes d'un nuage de sel fin et de poivre blanc que vous aurez préalablement mélangés. </li>
-	<li>Calez alors dans une terrine les lobes en les faisant chevaucher tête-bêche. </li>
-	<li>Pressez bien le tout. </li>
-	<li>Versez sur la terrine 1/2 verre à liqueur de Sauternes ou à défaut de porto. </li>
-	<li>Recouvrez le tout d'une feuille de papier d'aluminium. </li>
-	<li>Mettez cette terrine dans le compartiment perforé du cuit-vapeur. </li>
-	<li>Couvrez le tout. </li>
-	<li>Faites cuire à la vapeur pendant 25 minutes en fermant le couvercle, puis 10 minutes en ôtant le couvercle. </li>
-	<li>Laissez reposer toute la nuit dans la cuisine. </li>
-	<li>Faites alors égoutter les graisses et le jus rendus. </li>
-	<li>Si sous souhaitez le presser, recouvrez la terrine d'une planchette coupée à la dimension intérieure. </li>
-	<li>Déposez un poids sur la planchette. </li>
-	<li>Mettez le tout au réfrigérateur. </li>
-</ul>
+* Mettez le foie gras 15 minutes au freezer, pour bien le refroidir.
+* Séparez les lobes du foie gras. Sur le talon du plus gros lobe, vous apercevrez un petit boyau.
+* Dégagez-le avec la pointe d'un couteau et extrayez-le en tirant vers l'extérieur au fur et à mesure qu'il se détache.
+* Enlevez les parties vertes ainsi que les quelques vaisseaux sanguins adhérents.
+* Enlevez la peau fine qui entoure le foie gras.
+* Saupoudrez la surface de chacun des lobes d'un nuage de sel fin et de poivre blanc que vous aurez préalablement mélangés.
+* Calez alors dans une terrine les lobes en les faisant chevaucher tête-bêche.
+* Pressez bien le tout.
+* Versez sur la terrine 1/2 verre à liqueur de Sauternes ou à défaut de porto.
+* Recouvrez le tout d'une feuille de papier d'aluminium.
+* Mettez cette terrine dans le compartiment perforé du cuit-vapeur.
+* Couvrez le tout.
+* Faites cuire à la vapeur pendant 25 minutes en fermant le couvercle, puis 10 minutes en ôtant le couvercle.
+* Laissez reposer toute la nuit dans la cuisine.
+* Faites alors égoutter les graisses et le jus rendus.
+* Si sous souhaitez le presser, recouvrez la terrine d'une planchette coupée à la dimension intérieure.
+* Déposez un poids sur la planchette.
+* Mettez le tout au réfrigérateur.
 
-<h1>Conservation</h1>
+# Conservation
 
-<p>Au réfrigérateur, le foie gras peut se conserver une quinzaine de jours.</p>
+Au réfrigérateur, le foie gras peut se conserver une quinzaine de jours.
+

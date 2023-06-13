@@ -1,33 +1,29 @@
-<h1>Courgettes farcies aux pois chiches et champignons</h1>
+# Courgettes farcies aux pois chiches et champignons
 
-<h1>Ingrédients</h1>
+# Ingrédients
 
-<ul>
-	<li>2 courgettes, coupées en deux</li>
-	<li>1 cuillère à soupe d’huile d’olive</li>
-	<li>1 oignon, coupé en morceaux</li>
-	<li>2 gousses d’ail, écrasées</li>
-	<li>100 g de champignons, coupés en lamelles</li>
-	<li>1 cuillère à café de coriandre moulue</li>
-	<li>1 1/2 cuillères à café de cumin moulu, ajusté selon gout</li>
-	<li>1 boîte de pois chiches, égouttés et rincés</li>
-	<li>1/2 citron, pressé</li>
-	<li>Une poignée de persil</li>
-	<li>Sel de mer et poivre du moulin, au goût</li>
-</ul>
+* 2 courgettes, coupées en deux
+* 1 cuillère à soupe d’huile d’olive
+* 1 oignon, coupé en morceaux
+* 2 gousses d’ail, écrasées
+* 100 g de champignons, coupés en lamelles
+* 1 cuillère à café de coriandre moulue
+* 1 1/2 cuillères à café de cumin moulu, ajusté selon gout
+* 1 boîte de pois chiches, égouttés et rincés
+* 1/2 citron, pressé
+* Une poignée de persil
+* Sel de mer et poivre du moulin, au goût
 
-<h1>Préparation</h1>
+# Préparation
 
-<ul>
-	<li>Préchauffez le four à 180°C</li>
-	<li>Beurrez un plat de cuisson peu profond.</li>
-	<li>Retirez la chair des courgettes à l’aide d’une cuillère, hachez la chair et mettez de côté. Placez les courgettes évidées dans le plat de cuisson, côté creusé en haut.</li>
-	<li>Faites chauffer l’huile dans une poêle sur feu moyen.</li>
-	<li>Faites revenir l’oignon pendant 5 minutes, puis ajoutez l’ail et faites revenir 2 minutes de plus.</li>
-	<li>Versez la chair de courgettes hachée et les champignons, faites revenir 5 minutes. Versez la coriandre, le cumin, les pois chiches, le jus de citron, sel et poivre. Garnir les courgettes avec la farce à l’aide d’une cuillère.</li>
-	<li>Enfournez à four chaud entre 30 et 40 minutes, ou jusqu’à ce que les courgettes soient tendres.</li>
-</ul>
+* Préchauffez le four à 180°C
+* Beurrez un plat de cuisson peu profond.
+* Retirez la chair des courgettes à l’aide d’une cuillère, hachez la chair et mettez de côté. Placez les courgettes évidées dans le plat de cuisson, côté creusé en haut.
+* Faites chauffer l’huile dans une poêle sur feu moyen.
+* Faites revenir l’oignon pendant 5 minutes, puis ajoutez l’ail et faites revenir 2 minutes de plus.
+* Versez la chair de courgettes hachée et les champignons, faites revenir 5 minutes. Versez la coriandre, le cumin, les pois chiches, le jus de citron, sel et poivre. Garnir les courgettes avec la farce à l’aide d’une cuillère.
+* Enfournez à four chaud entre 30 et 40 minutes, ou jusqu’à ce que les courgettes soient tendres.
 
-<h1>Suggestions</h1>
+# Suggestions
 
-<p>Ajouter sur le dessus de la farce un peu de fromage râpé, ou arroser avec un bouillon de légumes.</p>
+Ajouter sur le dessus de la farce un peu de fromage râpé, ou arroser avec un bouillon de légumes.

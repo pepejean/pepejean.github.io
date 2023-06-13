@@ -1,19 +1,16 @@
-<h1>Gelée au Sauternes</h1>
+# Gelée au Sauternes
 
-<p>La gelée au sauternes, en accompagnement du foie gras.</p>
+La gelée au sauternes, en accompagnement du foie gras.
 
-<h1>Ingrédients pour 2 personnes</h1>
+# Ingrédients pour 2 personnes
 
-<ul>
-	<li>1 verre à vin de sauternes (15 cl) </li>
-	<li>1 feuille de gélatine </li>
-</ul>
+* 1 verre à vin de sauternes (15 cl)
+* 1 feuille de gélatine
 
-<h1>Préparation</h1>
+# Préparation
 
-<ul>
-	<li>Faites tremper la feuille de gélatine dans l'eau froide pour qu'elle ramollisse(environ 15 minutes). </li>
-	<li>Portez le Sauternes à ébullition. Laissez-le ensuite frémir pendant 5 minutes, pour que l'alcool s'évapore. </li>
-	<li>Ajoutez-y la gélatine parfaitement égouttée et fouettez-la pour qu'elle se dissolve. </li>
-	<li>Versez ensuite le tout dans un plat et faites-le prendre au frigo.</li>
-</ul>
+* Faites tremper la feuille de gélatine dans l'eau froide pour qu'elle ramollisse(environ 15 minutes).
+* Portez le Sauternes à ébullition. Laissez-le ensuite frémir pendant 5 minutes, pour que l'alcool s'évapore.
+* Ajoutez-y la gélatine parfaitement égouttée et fouettez-la pour qu'elle se dissolve.
+* Versez ensuite le tout dans un plat et faites-le prendre au frigo.
+

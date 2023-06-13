@@ -1,31 +1,28 @@
-<h1>Cabillaud au curry et raisins</h1>
+# Cabillaud au curry et raisins
 
-<h1>Ingrédients pour 4 personnes</h1>
+# Ingrédients pour 4 personnes
 
-<ul>
-	<li>700 g de cœur de cabillaud </li>
-	<li>2 échalotes </li>
-	<li>500 g de raisins blancs sans pépins (Italia) </li>
-	<li>4 cuillers à soupe de curry </li>
-	<li>20 cl de lait de coco en boîte </li>
-	<li>10 cl de crème </li>
-	<li>30 g de beurre </li>
-	<li>1 bouquet de coriandre fraîche </li>
-	<li>sel, poivre </li>
-</ul>
+* 700 g de cœur de cabillaud
+* 2 échalotes
+* 500 g de raisins blancs sans pépins (Italia)
+* 4 cuillers à soupe de curry
+* 20 cl de lait de coco en boîte
+* 10 cl de crème
+* 30 g de beurre
+* 1 bouquet de coriandre fraîche
+* sel, poivre
 
-<h1>Préparation</h1>
+# Préparation
 
-<ul>
-	<li>Préchauffez le four à 180°C. </li>
-	<li>Découpez les cœurs de cabillaud en 4 parts, beurrez un plat à four, disposez-y les pavés de poisson, salez et poivrez. </li>
-	<li>Enfournez le tout et laissez cuire 20 minutes. </li>
-	<li>Hachez finement les échalotes. </li>
-	<li>Faites fondre la moitié du beurre dans une petite casserole puis ajoutez-y les échalotes et laissez-les devenir translucides. </li>
-	<li>Saupoudrez de curry, mélangez, ajoutez le lait de coco puis laissez frémir le tout pendant 5 minutes. </li>
-	<li>Ajoutez la crème, salez et poivrez, poursuivez la cuisson 5 minutes. </li>
-	<li>Lavez et fendez les grains de raisins en deux puis réchauffez dans la sauce curry. </li>
-	<li>Nappez les assiettes chaudes de la sauce, disposez un pavé de cabillaud au centre et décorez de feuilles de coriandre. </li>
-	<li>Accompagnez ce plat de riz Basmati. </li>
-	<li>Vous pouvez éventuellement poêler les pavés de cabillaud 4 minutes de chaque côté.</li>
-</ul>
+* Préchauffez le four à 180°C.
+* Découpez les cœurs de cabillaud en 4 parts, beurrez un plat à four, disposez-y les pavés de poisson, salez et poivrez.
+* Enfournez le tout et laissez cuire 20 minutes.
+* Hachez finement les échalotes.
+* Faites fondre la moitié du beurre dans une petite casserole puis ajoutez-y les échalotes et laissez-les devenir translucides.
+* Saupoudrez de curry, mélangez, ajoutez le lait de coco puis laissez frémir le tout pendant 5 minutes.
+* Ajoutez la crème, salez et poivrez, poursuivez la cuisson 5 minutes.
+* Lavez et fendez les grains de raisins en deux puis réchauffez dans la sauce curry.
+* Nappez les assiettes chaudes de la sauce, disposez un pavé de cabillaud au centre et décorez de feuilles de coriandre.
+* Accompagnez ce plat de riz Basmati.
+* Vous pouvez éventuellement poêler les pavés de cabillaud 4 minutes de chaque côté.
+

@@ -1,29 +1,24 @@
-<h1>Foie gras frais poêlé</h1>
+# Foie gras frais poêlé
 
-<p>Pour un foie gras bien cuit et qui ne se ne se défait pas.</p>
+Pour un foie gras bien cuit et qui ne se ne se défait pas.
 
-<h1>Ingrédients</h1>
+# Ingrédients
 
-<ul>
-	<li>Tranches de foie gras cru de 80 à 120 g</li>
-</ul>
+* Tranches de foie gras cru de 80 à 120 g
 
-<h1>Préparation</h1>
+# Préparation
 
-<ul>
-	<li>Aplatissez les tranches avant de les sortir de leur sachet sous vide (mettre la tranche entre 2 planches à pain et appuyez de toutes vos ~~fesses~~ forces.) </li>
-	<li>Congelez les tranches de foie gras pendant 3 h.</li>
-	<li>Éventuellement salez et poivrez, saupoudrez de farine avec un tamis, enlevez le surplus avec les mains.</li>
-	<li>Faire cuire une minute par face dans une poêle très chaude.</li>
-	<li>Laisser reposer 20 minutes hors de la poêle.</li>
-	<li>Passez 12 min dans un four à 100°C et servez.</li>
-</ul>
+* Aplatissez les tranches avant de les sortir de leur sachet sous vide (mettre la tranche entre 2 planches à pain et appuyez de toutes vos ~~fesses~~ forces.)
+* Congelez les tranches de foie gras pendant 3 h.
+* Éventuellement salez et poivrez, saupoudrez de farine avec un tamis, enlevez le surplus avec les mains.
+* Faire cuire une minute par face dans une poêle très chaude.
+* Laisser reposer 20 minutes hors de la poêle.
+* Passez 12 min dans un four à 100°C et servez.
 
-<h1>Si vous voulez accompagner de poires cuites</h1>
+# Si vous voulez accompagner de poires cuites
 
-<ul>
-	<li>Utilisez 1 boîte de poires au sirop léger</li>
-	<li>Pendant que le foie gras est au four, enlevez une partie de la matière grasse de la poêle et faites-y dorer les poires (c'est rapide).</li>
-	<li>En fin de cuisson ajoutez du jus de poires.</li>
-	<li>Servez le tout dans une assiette bien chaude.</li>
-</ul>
+* Utilisez 1 boîte de poires au sirop léger
+* Pendant que le foie gras est au four, enlevez une partie de la matière grasse de la poêle et faites-y dorer les poires (c'est rapide).
+* En fin de cuisson ajoutez du jus de poires.
+* Servez le tout dans une assiette bien chaude.
+

@@ -1,33 +1,28 @@
-<h1>Faire soi-même ses pâtes fraîches</h1>
+# Faire soi-même ses pâtes fraîches
 
-<h1>Ingrédients pour 450 g de pâtes fraîches </h1>
+# Ingrédients pour 450 g de pâtes fraîches
 
-<ul>
-	<li>300 g de semoule de blé dur </li>
-	<li>1 pincée de sel </li>
-	<li>1 filet d'huile </li>
-	<li>3 gros oeufs </li>
-</ul>
+* 300 g de semoule de blé dur
+* 1 pincée de sel
+* 1 filet d'huile
+* 3 gros oeufs
 
-<h1>Préparation</h1>
+# Préparation
 
-<ul>
-	<li>Mélangez le sel à la semoule de blé dur. </li>
-	<li>Faites une fontaine et versez-y l'huile et les oeufs. </li>
-	<li>Mélangez le tout à la main ou à la machine à pain, comme une pâte à pain, jusqu'à ce qu'elle ne colle plus du tout. Si la pâte est trop sèche, ajoutez-y un peu d'eau tout en mélangeant. </li>
-	<li>Laissez reposer le tout pendant 30 minutes. </li>
-	<li>Aplatissez la pâte et farinez-la puis coupez-la en 4. </li>
-	<li>Passez les morceaux ainsi obtenus dans la machine au 1er trou, au 2ième et ainsi de suite jusqu'au dernier. </li>
-</ul>
+* Mélangez le sel à la semoule de blé dur.
+* Faites une fontaine et versez-y l'huile et les oeufs.
+* Mélangez le tout à la main ou à la machine à pain, comme une pâte à pain, jusqu'à ce qu'elle ne colle plus du tout. Si la pâte est trop sèche, ajoutez-y un peu d'eau tout en mélangeant.
+* Laissez reposer le tout pendant 30 minutes.
+* Aplatissez la pâte et farinez-la puis coupez-la en 4.
+* Passez les morceaux ainsi obtenus dans la machine au 1er trou, au 2ième et ainsi de suite jusqu'au dernier.
 
-<h1>Utilisations</h1>
+# Utilisations
 
-<ul>
-	<li>Telles qu'elles pour en faire des lasagnes</li>
-	<li>Couper des rectangles de 10 cm sur 12 cm pour en faire des cannellonis</li>
-	<li>Utiliser le haut de la machine pour en faire des nouilles ou des macaronis </li>
-</ul>
+* Telles qu'elles pour en faire des lasagnes
+* Couper des rectangles de 10 cm sur 12 cm pour en faire des cannellonis
+* Utiliser le haut de la machine pour en faire des nouilles ou des macaronis
 
-<h1>Cuisson</h1>
+# Cuisson
 
-<p>Les pâtes fraîches cuisent très rapidement, en 2 minutes. Elles deviennent plus blanches quand elles sont cuites.</p>
+Les pâtes fraîches cuisent très rapidement, en 2 minutes. Elles deviennent plus blanches quand elles sont cuites.
+

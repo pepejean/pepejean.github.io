@@ -1,27 +1,24 @@
-<h1>Soupe au potiron maison</h1>
+# Soupe au potiron maison
 
-<h1>Ingrédients</h1>
+# Ingrédients
 
-<ul>
-	<li>Potiron </li>
-	<li>Tomates </li>
-	<li>1 oignon ou 1 poireau </li>
-	<li>Sel (1 cuiller à café) </li>
-	<li>Poivre </li>
-</ul>
+* Potiron
+* Tomates
+* 1 oignon ou 1 poireau
+* Sel (1 cuiller à café)
+* Poivre
 
-<h1>Préparation</h1>
+# Préparation
 
-<ul>
-	<li>Equeutez des tomates puis rincez-les. </li>
-	<li>Mettez 1 cm d'eau dans une grande casserole, ajoutez-y 1 feuille de laurier, du thym puis salez le tout et faites bouillir. </li>
-	<li>Quand l'eau bout, ajoutez les tomates coupées en 4 (pour bien cuire la pulpe et bien épaissir la soupe). Faites ensuite cuire le tout en remuant de temps en temps. </li>
-	<li>Pendant ce temps, coupez le potiron en demi-secteurs, épluchez-le et coupez-le en cubes d'environ 1 cm de côté. </li>
-	<li>Après 30 minutes de cuisson, mettez  un passe-vite avec une fine grille sur une casserole, versez-y les tomates et leur jus et passez le tout. Attention: les pépins et la peau des tomates ne passent pas. Pensez également à bien récupérer la pulpe qui colle sous la grille. </li>
-	<li>Chauffez et ajoutez de l'eau, en rapport avec le volume de potiron. </li>
-	<li>Coupez l'oignon en 8 et retirez-en la grosse peau. Un poireau peut remplacer l'oignon. </li>
-	<li>Quand l'ébullition a bien repris, ajoutez les potirons et l'oignon. Il faut toujours mettre les légumes dans l'eau bouillante, autrement l'oxygène contenu dans l'eau rend les légumes fades. </li>
-	<li>Faites cuire le tout pendant 30 minutes si les potirons sont bien mûrs. Vérifiez la cuisson en piquant les potirons à la fourchette. </li>
-	<li>Passez le tout au mixer. </li>
-	<li>Rectifiez ensuite l'assaisonnement, si nécessaire.</li>
-</ul>
+* Equeutez des tomates puis rincez-les.
+* Mettez 1 cm d'eau dans une grande casserole, ajoutez-y 1 feuille de laurier, du thym puis salez le tout et faites bouillir.
+* Quand l'eau bout, ajoutez les tomates coupées en 4 (pour bien cuire la pulpe et bien épaissir la soupe). Faites ensuite cuire le tout en remuant de temps en temps.
+* Pendant ce temps, coupez le potiron en demi-secteurs, épluchez-le et coupez-le en cubes d'environ 1 cm de côté.
+* Après 30 minutes de cuisson, mettez  un passe-vite avec une fine grille sur une casserole, versez-y les tomates et leur jus et passez le tout. Attention: les pépins et la peau des tomates ne passent pas. Pensez également à bien récupérer la pulpe qui colle sous la grille.
+* Chauffez et ajoutez de l'eau, en rapport avec le volume de potiron.
+* Coupez l'oignon en 8 et retirez-en la grosse peau. Un poireau peut remplacer l'oignon.
+* Quand l'ébullition a bien repris, ajoutez les potirons et l'oignon. Il faut toujours mettre les légumes dans l'eau bouillante, autrement l'oxygène contenu dans l'eau rend les légumes fades.
+* Faites cuire le tout pendant 30 minutes si les potirons sont bien mûrs. Vérifiez la cuisson en piquant les potirons à la fourchette.
+* Passez le tout au mixer.
+* Rectifiez ensuite l'assaisonnement, si nécessaire.
+
