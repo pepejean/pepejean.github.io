@@ -105,7 +105,7 @@ function encompressme(s){return LZString.compress(s)}
 	let lifiles = [];
 	for (let file in contents ){
 		contents[file] = mmd(contents[file]);
-		titles[file] = contents[file].match(/^<h.*$/m)[0].replace(/<.*?>/g , '').trim();
+		titles[file] = contents[file].match(/^<h(\d)>.*?<\/h\1>/m)[0].replace(/<.*?>/g , '').trim();
 		lifiles.push(`<li><a href="#${file}"><span>${titles[file]}</span></a> <span>${file}</span></li>`);
 		posts.push(`\n<section tabindex=0 id="${file}">\n${contents[file]}\n</section>\n`);
 	}	
