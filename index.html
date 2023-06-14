@@ -23,7 +23,7 @@ if (navigator.serviceWorker) {
 <script src="js/lz-string.js"></script>
 <script src="js/filtre.js"></script>
 <script src="js/idb.js"></script>
-<script src="js/mdp.js"></script>
+<script src="js/mmd.js"></script>
 </head>
 <body>
 <header>
@@ -104,8 +104,7 @@ function encompressme(s){return LZString.compress(s)}
 	let posts = [];	
 	let lifiles = [];
 	for (let file in contents ){
-		let mdp = makeMDP();
-		contents[file] = mdp.render(contents[file]).split('\n</p>').join('</p>');
+		contents[file] = mmd(contents[file]);
 		titles[file] = contents[file].match(/^<h.*$/m)[0].replace(/<.*?>/g , '').trim();
 		lifiles.push(`<li><a href="#${file}"><span>${titles[file]}</span></a> <span>${file}</span></li>`);
 		posts.push(`\n<section tabindex=0 id="${file}">\n${contents[file]}\n</section>\n`);
