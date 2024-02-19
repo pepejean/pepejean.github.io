@@ -5,24 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" href="img/favicon.ico">
 <link rel=stylesheet href="css/style.css">
-<script>
-// Check if browser supports service workers
-if (navigator.serviceWorker) {
-	console.log("Service Worker Supported");
-	// Start registration process on page load
-	window.addEventListener("load", () => {
-		navigator.serviceWorker
-		// The register function takes as argument the file path to the worker's file
-		.register("./sw.js")
-		// Gives us registration object
-		.then(reg => console.log("Service Worker Registered"))
-		.catch(swErr => console.log(`Service Worker Error: ${swErr}}`));
-	});
-}
-</script>
 <script src="js/lz-string.js"></script>
 <script src="js/filtre.js"></script>
-<script src="js/idb.js"></script>
 <script src="js/mmd.js"></script>
 </head>
 <body>
@@ -55,36 +39,22 @@ if (navigator.serviceWorker) {
 
 <script>
 
-function decompressme(s){return LZString.decompress(s)}
-function encompressme(s){return LZString.compress(s)}
-
 ;(async function(){
 	var response = await fetch(`infossite.txt` , {cache: "no-cache"});
 	let infos = await response.json();
 	let files = [];
 	let contents = {};
 	let s_contents;
-	let infos0 = await IDB.get("infossite")
-	console.log(JSON.stringify(infos0));
-	console.log(JSON.stringify(infos));
-	if (JSON.stringify(infos0) != JSON.stringify(infos)) {
-		console.log(files);
-		console.log('from fetch');
-		if (location.origin.endsWith('.loc')) {
-			// site local, index directory
-			var response = await fetch('content/');
-			var data = await response.text();
-			const body = new DOMParser().parseFromString(data, "text/html").body;
-			for (let a of body.querySelectorAll('a')) {
-				if (a.href.endsWith('.txt')) files.push(a.href.split('/').pop().slice(0 , -4));
-			}
-		} else {
-			// github, voir https://stackoverflow.com/questions/39048654/how-to-enable-directory-indexing-on-github-pages
-			var response = await fetch('https://api.github.com/repos/pepejean/pepejean.github.io/contents/content/');
-			var data = await response.json();
-			 for (let file of data) {
-				 if (file.name.endsWith('.txt')) files.push(file.name.slice(0 , -4));
-			}
+	if (!sessionStorage.getItem('cook_infossite')) {
+		var response = await fetch(`infossite.txt` , {cache: "no-cache"});
+		let infos = await response.json();
+		console.log(infos);
+		var response = await fetch('content.txt');
+		var data = await response.text();
+		console.log(data);
+		const body = new DOMParser().parseFromString(data, "text/html").body;
+		for (let a of body.querySelectorAll('a')) {
+			if (a.href.endsWith('.txt')) files.push(a.href.split('/').pop().slice(0 , -4));
 		}
 
 		for (let file of files){
@@ -92,12 +62,13 @@ function encompressme(s){return LZString.compress(s)}
 			var content = await response.text();
 			contents[file] = content;
 		}
-		let s_contents = encompressme(JSON.stringify(contents));
-		IDB.setMany([ ["infossite" , infos] , ["contents" , s_contents] ]);
+		let s_contents = LZString.compress(JSON.stringify(contents));
+		sessionStorage.setItem('cook_infossite' , infos);
+		sessionStorage.setItem('cook_contents' , s_contents);
 	} else {
-		[infos , s_contents] = await IDB.getMany(["infossite" , "contents"]);
-		contents = JSON.parse(decompressme(s_contents));
-		console.log('from indexedDB');
+		[infos , s_contents] = [sessionStorage.getItem('cook_infossite') ,sessionStorage.getItem('cook_contents')];
+		contents = JSON.parse(LZString.decompress(s_contents));
+		console.log('from sessionStorage');
 	}
 
 	let titles = {};	

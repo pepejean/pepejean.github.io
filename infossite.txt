@@ -1,5 +1,4 @@
 {
 "site_title": "Les recettes de cuisine de Jean" ,
-"site_about": "Un site de ilu.be",
-"version": "1.005"
+"site_about": "Un site de ilu.be"
 }
