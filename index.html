@@ -1,101 +1,21 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="icon" href="img/favicon.ico">
-<link rel=stylesheet href="css/style.css">
-<script src="js/lz-string.js"></script>
-<script src="js/filtre.js"></script>
-<script src="js/mmd.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<style>
+body {padding-top: 2em;}
+.index {position: fixed;top: 5px;left: 10px;}
+.index button {background-color: yellow;}
+.listindex {font-size: 1.5em;}
+</style>
+<title>index</title>
 </head>
 <body>
-<header>
-<h1>
-<a href="#top" id=top1 onclick="filtrer('')"></a>
-</h1>
-</header>
-<main>
-
-<section tabindex="0" id="top">
-<nav id=nav>
-</nav>
-</section>
-
-<section tabindex="0" id="about">
-</section>
-
-<div id=placeposts></div>
-
-<section tabindex="0" id="home">
-<nav id=nav1>
-</nav>
-</section>
-</main>
-<footer>
-<small>Un site de ilu.be</small>
-<small><a href="#about">About</a></small> 
-</footer>
-
-<script>
-
-;(async function(){
-	var response = await fetch(`infossite.txt` , {cache: "no-cache"});
-	let infos = await response.json();
-	let files = [];
-	let contents = {};
-	let s_contents;
-	if (!sessionStorage.getItem('cook_infossite')) {
-		var response = await fetch(`infossite.txt` , {cache: "no-cache"});
-		let infos = await response.json();
-		console.log(infos);
-		var response = await fetch('content.txt');
-		var data = await response.text();
-		console.log(data);
-		const body = new DOMParser().parseFromString(data, "text/html").body;
-		for (let a of body.querySelectorAll('a')) {
-			if (a.href.endsWith('.txt')) files.push(a.href.split('/').pop().slice(0 , -4));
-		}
-
-		for (let file of files){
-			var response = await fetch(`content/${file}.txt` , {cache: "no-cache"});
-			var content = await response.text();
-			contents[file] = content;
-		}
-		let s_contents = LZString.compress(JSON.stringify(contents));
-		sessionStorage.setItem('cook_infossite' , infos);
-		sessionStorage.setItem('cook_contents' , s_contents);
-	} else {
-		[infos , s_contents] = [sessionStorage.getItem('cook_infossite') ,sessionStorage.getItem('cook_contents')];
-		contents = JSON.parse(LZString.decompress(s_contents));
-		console.log('from sessionStorage');
-	}
-
-	let titles = {};	
-	let posts = [];	
-	let lifiles = [];
-	for (let file in contents ){
-		contents[file] = mmd(contents[file]);
-		titles[file] = contents[file].match(/^<h(\d)>.*?<\/h\1>/m)[0].replace(/<.*?>/g , '').trim();
-		lifiles.push(`<li><a href="#${file}"><span>${titles[file]}</span></a> <span>${file}</span></li>`);
-		posts.push(`\n<section tabindex=0 id="${file}">\n${contents[file]}\n</section>\n`);
-	}	
-
-	document.title = infos.site_title;		
-	top1.insertAdjacentHTML('beforeEnd' , infos.site_title);
-	about.innerHTML = infos.site_about;
-	nav.innerHTML = `<p>Recherche de <input type="text" oninput="filtrer(this.value);"></p>` 
-					+ `\n<ul class=toc>\n${lifiles.join('\n')}\n</ul>`;	
-	nav1.innerHTML = nav.innerHTML;
-	placeposts.outerHTML = posts.join('\n');
-})();	
-	
-function filtrer(inputstring) {
-	document.querySelectorAll('nav p input').forEach(input => {input.value = inputstring});
-	lefiltre.init(inputstring);
-	window.reg = new RegExp(inputstring , 'i');
-	document.querySelectorAll('nav ul.toc li').forEach(li => li.style.display = lefiltre.match(li.textContent) ? '' : 'none')
-}
-</script>
+<div class="index">
+<ul class="listindex">
+<li><a href="./cuisine/index.html"><button type="button">Cuisine</button></a></li>
+</ul>
+</div>
 </body>
 </html>
