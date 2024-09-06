@@ -1,3 +1,3 @@
 # pepejean.github.io
-Mon site de recettes de cuisine.
+Mon site perso, pour le moment rien que des recettes de cuisine.
 Bon appétit !!
